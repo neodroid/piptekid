@@ -7,6 +7,7 @@ import Header from './component/header'
 
 import HomeFix from './component/Home'
 import Pengertian from './component/Pengertian'
+import Vismis from './component/Vismis'
 
 // function makeSound(){
 //   var snare= new Audio("https://www.mboxdrive.com/Jingle%20PSAF.mp3")
@@ -27,7 +28,7 @@ export default function Home() {
       {/* <Header/> */}
      <HomeFix/>
      <Pengertian/>
-      
+      <Vismis/>
 
       
     </div>

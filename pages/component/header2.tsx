@@ -18,21 +18,21 @@ const MenuItems = ({ children }) => (
 );
 
 // Note: This code could be better, so I'd recommend you to understand how I solved and you could write yours better :)
-const Header = () => {
+const Header2 = () => {
   const [show, setShow] = React.useState(false);
   const handleToggle = () => setShow(!show);
 
   return (
     <Flex
       w="100%"
-     
+      bg="#333333"
       align="center"
       justify="center"
       top="0" left="0"
       overflow="hidden"
-      zIndex={2}
+      zIndex={4}
       shadow=""
-
+      pos="fixed" 
     >
       <Flex
         width={[
@@ -75,6 +75,7 @@ const Header = () => {
         </Box>
 
         <Flex
+         textAlign="right"
           display={[
             show ? "block" : "none", // base
             show ? "block" : "none", // 480px upwards
@@ -90,9 +91,10 @@ const Header = () => {
 
 
           flexGrow={1}
-          textAlign="justify"
+         
           flexDirection="row-reverse"
-          align="right"
+          
+
         >
           
           <MenuItems><Link href="/technoskill">TECHNOSKILL</Link></MenuItems>
@@ -106,4 +108,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header2;

@@ -14,7 +14,7 @@ const BannerTechno = () => {
     return (
 
         <Flex w="100%" flexDirection="column"
-            
+            pt="10"
             bg=""
         >
             <Box
@@ -29,7 +29,7 @@ const BannerTechno = () => {
                 textAlign="center"
 
             >
-                <Header />
+               
                 <TitleTechno />
                 {/* <HomeBan /> */}
             </Box>

@@ -15,7 +15,12 @@ const TitleHome = () => {
             bg=""
             align="center"
             justify="center"
-
+            mb={[
+                "5", // base
+                "5", // 480px upwards
+                "20", // 768px upwards
+                "20", // 992px upwards
+            ]}
         >
 
             <Box
@@ -88,7 +93,13 @@ const TitleHome = () => {
                 }}>
                     <Box
                        
-                        fontSize= "3rem"
+                        
+                        fontSize={[
+                            "2rem", // base
+                            "2rem", // 480px upwards
+                            "3rem", // 768px upwards
+                            "4.5rem", // 992px upwards
+                          ]}
                         fontWeight="bold"
                         fontFamily="heading"
                         color="white"

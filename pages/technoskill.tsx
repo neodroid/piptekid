@@ -5,6 +5,7 @@ import React from 'react'
 import AboutTechno from './component/AboutTechno'
 import BannerTechno from './component/BannerTechno'
 import Header from './component/header'
+import Header2 from './component/header2'
 
 
 import HomeFix from './component/Home'
@@ -27,6 +28,7 @@ export default function Technoskill() {
       
       </Head>
       {/* <Header/> */}
+      <Header2/>
      <BannerTechno/>
      <AboutTechno/>
       

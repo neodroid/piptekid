@@ -32,11 +32,17 @@ const TitleTechno = () => {
                     "75%", // 992px upwards
                 ]}
                 as="nav"
-                textAlign="left"
+               
+                textAlign={[
+                    "center", // base
+                    "center", // 480px upwards
+                    "left", // 768px upwards
+                    "left", // 992px upwards
+                ]}
                 padding="1.5rem"
                 bg=""
                 color="white"
-
+                
 
             ><motion.div initial="hidden" animate="visible" variants={{
                 hidden: {
@@ -51,7 +57,13 @@ const TitleTechno = () => {
                     }
                 },
             }}>
-                <Flex  align="center"
+                <Flex  align="center" mt="10"  
+                justify={[
+                    "center", // base
+                    "center", // 480px upwards
+                    "left", // 768px upwards
+                    "left", // 992px upwards
+                ]}
             ><img width="100px" src="1 PIPTEK.png"/></Flex></motion.div>
             <motion.div initial="hidden" animate="visible" variants={{
                 hidden: {
@@ -88,7 +100,12 @@ const TitleTechno = () => {
                 }}>
                     <Box
                        
-                        fontSize= "3rem"
+                       fontSize={[
+                        "2rem", // base
+                        "2rem", // 480px upwards
+                        "3rem", // 768px upwards
+                        "4.5rem", // 992px upwards
+                      ]}
                         fontWeight="bold"
                         fontFamily="heading"
                         color="white"
@@ -129,7 +146,12 @@ const TitleTechno = () => {
                 }}>
                     <Box
                         mt="20"
-                        fontSize="xl"
+                        fontSize={[
+                            "md", // base
+                            "md", // 480px upwards
+                            "xl", // 768px upwards
+                            "xl", // 992px upwards
+                          ]}
                         color="white"
                         fontWeight="bold"
                     >WORKSHOP - SEMINAR - COMPETITION</Box>
@@ -147,8 +169,34 @@ const TitleTechno = () => {
                         }
                     },
                 }}>
-                <Button width="200px" mb="10" mt="5" color="#254D69" rounded="full" mx="2" variant="solid"> REGISTER</Button> 
-                <Button width="200px" mb="10" mt="5" color="white" rounded="full" bg="#254D69" mx="2" variant="solid" borderWidth="2px" borderColor="white"> GUIDEBOOK</Button></motion.div>
+                <Button 
+                width={[
+                    "75%", // base
+                    "75%", // 480px upwards
+                    "200px", // 768px upwards
+                    "200px", // 992px upwards
+                  ]}
+                  mb={[
+                    "0", // base
+                    "0", // 480px upwards
+                    "10", // 768px upwards
+                    "10", // 992px upwards
+                  ]}
+                 mt="5" color="#254D69" rounded="full" mx="2" variant="solid"> REGISTER</Button> 
+                <Button 
+                width={[
+                    "75%", // base
+                    "75%", // 480px upwards
+                    "200px", // 768px upwards
+                    "200px", // 992px upwards
+                  ]}
+                  mb={[
+                    "0", // base
+                    "0", // 480px upwards
+                    "10", // 768px upwards
+                    "10", // 992px upwards
+                  ]}
+                 mt="5" color="white" rounded="full" bg="#254D69" mx="2" variant="solid" borderWidth="2px" borderColor="white"> GUIDEBOOK</Button></motion.div>
             </Box>
 
         </Flex>
