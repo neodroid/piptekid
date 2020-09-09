@@ -73,7 +73,7 @@ const Footer = props => {
                                             width="30px"
                                             h="30px"
                                             m="1"
-                                        ><img src="/sos ig.png" /></Box>
+                                        ><img src="/sos/sos ig.png" /></Box>
                                     </ChakraLink>
 
 
@@ -83,7 +83,7 @@ const Footer = props => {
                                             width="30px"
                                             h="30px"
                                             m="1"
-                                        ><img src="/sos line.png" /></Box>
+                                        ><img src="/sos/sos line.png" /></Box>
                                     </ChakraLink>
 
 
@@ -93,14 +93,14 @@ const Footer = props => {
                                             width="30px"
                                             h="30px"
                                             m="1"
-                                        ><img src="/sos twit.png" /></Box>
+                                        ><img src="/sos/sos twit.png" /></Box>
                                     </ChakraLink>
                                     <ChakraLink href="" isExternal>
                                         <Box
                                             width="30px"
                                             h="30px"
                                             m="1"
-                                        ><img src="/sos yutub.png" /></Box>
+                                        ><img src="/sos/sos yutub.png" /></Box>
                                     </ChakraLink>
 
 
