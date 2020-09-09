@@ -3,7 +3,7 @@ import React from 'react'
 
 
 
-    const Pengertian = () => {
+    const AboutTechno = () => {
  
         return(
 
@@ -35,9 +35,9 @@ import React from 'react'
             ]}
             justifyContent="center"
             >
-                <Heading as="h1" fontSize={["1.875rem", "2rem"]} letterSpacing={".1rem"}   fontFamily="heading" fontWeight="bold"> <Text color="#254D69"  fontFamily="heading">ABOUT US</Text ></Heading>
+                <Heading as="h1" fontSize={["1.875rem", "2rem"]} letterSpacing={".1rem"}   fontFamily="heading" fontWeight="bold"> <Text color="#254D69"  fontFamily="heading">What is Technoskill?</Text ></Heading>
                
-                <Text color="black" textAlign="justify" fontSize={["xs", "xl"]}   letterSpacing={".1rem"}   w="100%">Piptek IME FTUI is a division from IME FTUI which accommodates the scientific needs (competition, seminar, etc) and act as a catalyst for students of department electrical engineering, University of Indonesia</Text >
+                <Text color="black" textAlign="justify" fontSize={["xs", "xl"]}   letterSpacing={".1rem"}   w="100%">Technoskill is an event created by PIPTEK IME FTUI, Technoskill consist series of workshop, competition, and seminar for undergradute student in electrical engineering students department at University of Indonesia. This year, technoskill will bring data science to predict and analyze all data around the world. So, come join and become the next data scientist!</Text >
                 
         </Box>
             <Box 
@@ -48,7 +48,7 @@ import React from 'react'
                 "50%", // 992px upwards
             ]}
             >
-                <img src="/BPH.png"/>
+                <img src="/ardui.png"/>
             </Box>
         </Flex>
 
@@ -62,4 +62,4 @@ import React from 'react'
 
 
 
-export default Pengertian;
+export default AboutTechno;

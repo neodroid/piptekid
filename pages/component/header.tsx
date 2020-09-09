@@ -95,8 +95,8 @@ const Header = () => {
           align="right"
         >
           
-          <MenuItems><Link href="/">TECHNOSKILL</Link></MenuItems>
-          <MenuItems><Link href="/">PKM</Link></MenuItems>
+          <MenuItems><Link href="/technoskill">TECHNOSKILL</Link></MenuItems>
+          <MenuItems><Link href="/pkm">PKM</Link></MenuItems>
           <MenuItems><Link href="/">HOME</Link></MenuItems>
 
         </Flex>

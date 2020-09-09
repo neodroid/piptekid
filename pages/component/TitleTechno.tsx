@@ -3,7 +3,7 @@ import { Box, Heading, Flex, Text, Button, Link as ChakraLink, Link,Icon } from 
 import { motion } from 'framer-motion';
 
 
-const TitleHome = () => {
+const TitleTechno = () => {
 
     return (
 
@@ -32,7 +32,7 @@ const TitleHome = () => {
                     "75%", // 992px upwards
                 ]}
                 as="nav"
-                textAlign="center"
+                textAlign="left"
                 padding="1.5rem"
                 bg=""
                 color="white"
@@ -52,7 +52,7 @@ const TitleHome = () => {
                 },
             }}>
                 <Flex  align="center"
-            justify="center"><img width="100px" src="1 PIPTEK.png"/></Flex></motion.div>
+            ><img width="100px" src="1 PIPTEK.png"/></Flex></motion.div>
             <motion.div initial="hidden" animate="visible" variants={{
                 hidden: {
                     scale: .8,
@@ -147,8 +147,8 @@ const TitleHome = () => {
                         }
                     },
                 }}>
-                    <Link href="/technoskill">
-                <Button width="200px" mb="10" mt="5" color="black" rounded="full"> REGISTER</Button></Link> </motion.div>
+                <Button width="200px" mb="10" mt="5" color="#254D69" rounded="full" mx="2" variant="solid"> REGISTER</Button> 
+                <Button width="200px" mb="10" mt="5" color="white" rounded="full" bg="#254D69" mx="2" variant="solid" borderWidth="2px" borderColor="white"> GUIDEBOOK</Button></motion.div>
             </Box>
 
         </Flex>
@@ -156,7 +156,7 @@ const TitleHome = () => {
     );
 };
 
-export default TitleHome;
+export default TitleTechno;
 
 
 {/* <Icon ml="3" name="chevron-right" /> */}
