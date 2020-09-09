@@ -26,7 +26,8 @@ const HomeFix = () => {
                 bgAttachment="fixed"
                 color="black"
                 textAlign="center"
-
+                minH="500px"
+                
             >
                 <Header />
                 <TitleHome />
