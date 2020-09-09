@@ -22,8 +22,8 @@ const TitleTechno = () => {
                 mt={[
                     "0", // base
                     "0", // 480px upwards
-                    "5", // 768px upwards
-                    "5", // 992px upwards
+                    "20", // 768px upwards
+                    "20", // 992px upwards
                 ]}
                 width={[
                     "100%", // base
@@ -44,7 +44,8 @@ const TitleTechno = () => {
                 color="white"
                 
 
-            ><motion.div initial="hidden" animate="visible" variants={{
+            >
+            <motion.div initial="hidden" animate="visible" variants={{
                 hidden: {
                     scale: .8,
                     opacity: 0
@@ -64,26 +65,14 @@ const TitleTechno = () => {
                     "left", // 768px upwards
                     "left", // 992px upwards
                 ]}
-            ><img width="100px" src="1 PIPTEK.png"/></Flex></motion.div>
-            <motion.div initial="hidden" animate="visible" variants={{
-                hidden: {
-                    scale: .8,
-                    opacity: 0
-                },
-                visible: {
-                    scale: 1,
-                    opacity: 1,
-                    transition: {
-                        delay: 0.6
-                    }
-                },
-            }}>
+                flexDirection="row"
+            ><Box mx="5"></Box></Flex></motion.div>
              <Box
                         mb="10"
                         fontSize="xl"
                         color="white"
                         fontWeight="bold"
-                    >PIPTEK IME FTUI</Box></motion.div>
+                    ></Box>
 
                 <motion.div initial="hidden" animate="visible" variants={{
                     hidden: {
@@ -127,11 +116,44 @@ const TitleTechno = () => {
                 }}>
                     <Box
                     as="i"
+                    mb="10"
                         fontSize={"xl"}
                         color="white"
                     >Forecasting in the era of Data</Box>
          </motion.div>
+         
+         
          <motion.div initial="hidden" animate="visible" variants={{
+                hidden: {
+                    scale: .8,
+                    opacity: 0
+                },
+                visible: {
+                    scale: 1,
+                    opacity: 1,
+                    transition: {
+                        delay: 1.6
+                    }
+                },
+            }}>
+                  <Box
+                     mt="10"  
+                   
+                        fontSize={"xl"}
+                        color="white"
+                    >in collaboration with :</Box>
+                <Flex  align="center" mb="10"  
+                justify={[
+                    "center", // base
+                    "center", // 480px upwards
+                    "left", // 768px upwards
+                    "left", // 992px upwards
+                ]}
+                flexDirection="row"
+            ><Box mx="5"><img width="60px" src="ime.png"/></Box><Box mx="5" bg="white" rounded="full"><img width="75px" src="ieee.png"/></Box><Box mx="5"><img width="75px" src="exercise.png"/></Box></Flex></motion.div>
+         
+         
+          <motion.div initial="hidden" animate="visible" variants={{
                     hidden: {
                         scale: .8,
                         opacity: 0
@@ -140,7 +162,7 @@ const TitleTechno = () => {
                         scale: 1,
                         opacity: 1,
                         transition: {
-                            delay: 1.6
+                            delay: 1.8
                         }
                     },
                 }}>
@@ -165,7 +187,7 @@ const TitleTechno = () => {
                         scale: 1,
                         opacity: 1,
                         transition: {
-                            delay: 1.8
+                            delay: 2
                         }
                     },
                 }}>
@@ -181,7 +203,7 @@ const TitleTechno = () => {
                     "0", // base
                     "0", // 480px upwards
                     "10", // 768px upwards
-                    "10", // 992px upwards
+                    "20", // 992px upwards
                   ]}
                  mt="5" color="#254D69" rounded="full" mx="2" variant="solid"> REGISTER</Button></Link>
                 <Button 
@@ -195,7 +217,7 @@ const TitleTechno = () => {
                     "0", // base
                     "0", // 480px upwards
                     "10", // 768px upwards
-                    "10", // 992px upwards
+                    "20", // 992px upwards
                   ]}
                  mt="5" color="white" rounded="full" bg="#254D69" mx="2" variant="solid" borderWidth="2px" borderColor="white"> GUIDEBOOK</Button></motion.div>
             </Box>

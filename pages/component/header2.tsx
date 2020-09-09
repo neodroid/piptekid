@@ -45,13 +45,13 @@ const Header2 = () => {
         align="center"
         justify="space-between"
         wrap="wrap"
-        padding="1.5rem"
+        padding="1rem"
        
         color="white"
       >
         <Flex align="center" mr={5} justifyContent="center"
-        >
-        
+        ><img width="50px" src="1 PIPTEK.png"/>
+        PIPTEK IME 2020
 
         </Flex>
 

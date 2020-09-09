@@ -10,6 +10,7 @@ import Header2 from './component/header2'
 
 import HomeFix from './component/Home'
 import Pengertian from './component/Pengertian'
+import Timeline from './component/Timeline'
 
 // function makeSound(){
 //   var snare= new Audio("https://www.mboxdrive.com/Jingle%20PSAF.mp3")
@@ -31,7 +32,7 @@ export default function Technoskill() {
       <Header2/>
      <BannerTechno/>
      <AboutTechno/>
-      
+      <Timeline/>
 
       
     </div>
