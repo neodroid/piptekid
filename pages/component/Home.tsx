@@ -23,7 +23,7 @@ const HomeFix = () => {
                 bgImage="url('/bekron.png')"
                 bgPos="center"
                 bgSize="cover"
-                bgAttachment="fixed"
+                // bgAttachment="fixed"
                 color="black"
                 textAlign="center"
                 minH="500px"
