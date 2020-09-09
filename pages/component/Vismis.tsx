@@ -16,7 +16,7 @@ const Vismis = () => {
         bgImage="url('/vismis.png')"
         bgPos="center"
         bgSize="cover"
-       
+        bgAttachment="fixed"
         bg=""
         align="center"
         justify="center"

@@ -24,7 +24,7 @@ const BannerTechno = () => {
                 bgImage="url('/bekrontechno.png')"
                 bgPos="center"
                 bgSize="cover"
-               
+                bgAttachment="fixed"
                 color="black"
                 textAlign="center"
 

@@ -34,7 +34,7 @@ import { motion } from 'framer-motion';
             rounded="lg"
             color="black"
             textAlign="center"
-            
+            bgAttachment="fixed"
         >
            
     
