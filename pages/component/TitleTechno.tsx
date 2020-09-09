@@ -169,6 +169,7 @@ const TitleTechno = () => {
                         }
                     },
                 }}>
+                    <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdtheR8ZkD_SW6NXzelZRHSFjsHmYku2T9Xkcdm9pRpmGrO7g/viewform" isExternal>
                 <Button 
                 width={[
                     "75%", // base
@@ -182,7 +183,7 @@ const TitleTechno = () => {
                     "10", // 768px upwards
                     "10", // 992px upwards
                   ]}
-                 mt="5" color="#254D69" rounded="full" mx="2" variant="solid"> REGISTER</Button> 
+                 mt="5" color="#254D69" rounded="full" mx="2" variant="solid"> REGISTER</Button></Link>
                 <Button 
                 width={[
                     "75%", // base
