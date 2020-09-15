@@ -191,7 +191,7 @@ const TitleTechno = () => {
                         }
                     },
                 }}>
-                    <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdtheR8ZkD_SW6NXzelZRHSFjsHmYku2T9Xkcdm9pRpmGrO7g/viewform" isExternal>
+                    <Link href="https://forms.gle/Csn5YvmZ9EvyQD1b6" isExternal>
                 <Button 
                 width={[
                     "75%", // base
