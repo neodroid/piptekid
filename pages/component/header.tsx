@@ -1,17 +1,18 @@
 import React from "react";
 import { Box, Heading, Flex, Text, Button } from "@chakra-ui/core";
-import Link from 'next/link'
+import Link from "next/link";
 
 const MenuItems = ({ children }) => (
-  <Text mt={[
-    "5", // base
-    "5", // 480px upwards
-    "5", // 768px upwards
-    "0", // 992px upwards
-  ]}
-  textAlign="right"
-    mr={6} display="block"
-
+  <Text
+    mt={[
+      "5", // base
+      "5", // 480px upwards
+      "5", // 768px upwards
+      "0", // 992px upwards
+    ]}
+    textAlign="right"
+    mr={6}
+    display="block"
   >
     {children}
   </Text>
@@ -25,14 +26,13 @@ const Header = () => {
   return (
     <Flex
       w="100%"
-     
       align="center"
       justify="center"
-      top="0" left="0"
+      top="0"
+      left="0"
       overflow="hidden"
       zIndex={2}
       shadow=""
-
     >
       <Flex
         width={[
@@ -46,14 +46,9 @@ const Header = () => {
         justify="space-between"
         wrap="wrap"
         padding="1.5rem"
-       
         color="white"
       >
-        <Flex align="center" mr={5} justifyContent="center"
-        >
-        
-
-        </Flex>
+        <Flex align="center" mr={5} justifyContent="center"></Flex>
 
         <Box
           display={[
@@ -62,7 +57,8 @@ const Header = () => {
             "block", // 768px upwards
             "none", // 992px upwards
           ]}
-          onClick={handleToggle}>
+          onClick={handleToggle}
+        >
           <svg
             fill="white"
             width="20px"
@@ -87,20 +83,21 @@ const Header = () => {
             "full", // 768px upwards
             "auto", // 992px upwards
           ]}
-
-
           flexGrow={1}
           textAlign="justify"
           flexDirection="row-reverse"
           align="right"
         >
-          
-          <MenuItems><Link href="/technoskill">TECHNOSKILL</Link></MenuItems>
-          <MenuItems><Link href="/pkm">PKM</Link></MenuItems>
-          <MenuItems><Link href="/">HOME</Link></MenuItems>
-
+          <MenuItems>
+            <Link href="/technoskill">TECHNOSKILL</Link>
+          </MenuItems>
+          <MenuItems>
+            <Link href="/pkm">PKM</Link>
+          </MenuItems>
+          <MenuItems>
+            <Link href="/">HOME</Link>
+          </MenuItems>
         </Flex>
-
       </Flex>
     </Flex>
   );
