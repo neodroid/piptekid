@@ -96,7 +96,7 @@ const Header2 = () => {
             <Link href="/technoskill">TECHNOSKILL</Link>
           </MenuItems>
           <MenuItems>
-            <Link href="/pkmrotom">PKM & Rotom</Link>
+            <Link href="/pkmrotom">PKM & ROTOM</Link>
           </MenuItems>
           <MenuItems>
             <Link href="/">HOME</Link>
