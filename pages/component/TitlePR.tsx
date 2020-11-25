@@ -13,48 +13,38 @@ import { motion } from "framer-motion";
 const TitlePR = () => {
     return(
         <Flex w="100%" flexDirection={["column","column","column","row"]}>
-            <Flex width={["100%", "100%", "100%", "45%"]} align="center" justify={["center","center","center","right"]}>
-                <Box
-                    mt={[
-                        "10",
-                        "10",
-                        "10", 
-                        "10",
-                    ]}
-                    textAlign={[
-                        "center","center","center","center"
-                    ]}
-                    padding="1.5rem"
+            <Flex width={["100%", "100%", "100%", "45%"]} align="center" justify={["center","center","center","right"]} flexDirection="row-reverse">
+                <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={{
+                        hidden: {
+                        scale: 0.8,
+                        opacity: 0,
+                        },
+                        visible: {
+                        scale: 1,
+                        opacity: 1,
+                        transition: {
+                            delay: 1.4,
+                            },
+                        },
+                    }}>
+                    <Box
+                        mt={["10","10","10", "10",]}
+                        textAlign="center"
+                        padding="1.5rem"
                     >
-                    <motion.div
-                        initial="hidden"
-                        animate="visible"
-                        variants={{
-                            hidden: {
-                            scale: 0.8,
-                            opacity: 0,
-                            },
-                            visible: {
-                            scale: 1,
-                            opacity: 1,
-                            transition: {
-                                delay: 1.4,
-                                },
-                            },
-                        }}>
-                            <Box mb="10" fontSize="x1" color="white" fontWeight="bold"></Box>
-                            <Heading>
-                                <Box fontSize={["2.3rem","2.3rem","2.3rem","2.7rem"]}
-                                letterSpacing={".1rem"}
-                                my="5"
-                                color="#123f5e"
-                                fontFamily="heading">PKM SERVICE <br></br>
-                                & <br></br> ROTOM
-                                </Box>
-                            </Heading>
-                            <Text></Text>
-                    </motion.div>
-                </Box>
+                        <Box mb="10" fontSize="x1" color="white" fontWeight="bold"></Box>
+                        <Text fontSize={["2.3rem","2.3rem","2.3rem","2.7rem"]}
+                            letterSpacing={".1rem"}
+                            my="5"
+                            color="#123f5e"
+                            fontFamily="heading">PKM SERVICE <br />
+                            & <br /> ROTOM
+                        </Text>
+                    </Box>
+                </motion.div>
             </Flex>
             <Flex width={["100%", "100%", "100%", "53%"]} align="center" justify="center">
                 <motion.div
@@ -74,15 +64,8 @@ const TitlePR = () => {
                             },
                         }}>
                     <Box
-                        mt={[
-                            "0",
-                            "0",
-                            "0", 
-                            "10",
-                        ]}
-                        textAlign={[
-                            "center","center","center","center"
-                        ]}
+                        mt={["0","0","0", "10",]}
+                        textAlign="center"
                         padding="1.5rem"
                     >
                         <Box mb={["0","0","0","10"]} fontSize="x1" color="white" fontWeight="bold"></Box>
@@ -93,7 +76,7 @@ const TitlePR = () => {
                             mb={["10","10","10","0"]}
                         >
                         Need a friend to study and make a project together? <br></br> Join us by push the button below.
-                    </Text>
+                        </Text>
                     <motion.div
                         initial="hidden"
                         animate="visible"
@@ -117,7 +100,7 @@ const TitlePR = () => {
                         JOIN
                         </Button>
                     </Link>{" "}
-                </motion.div>
+                    </motion.div>
                     </Box>
                 </motion.div>
             </Flex>

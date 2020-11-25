@@ -67,7 +67,8 @@ const AboutPR = () => {
                         letterSpacing={".1rem"}
                         w="100%"
                     >
-                        Made training and DTE contingent networking for all kind of the competition in OIM FTUI.
+                        Made training and DTE contingent networking for all kind of the competition in OIM FTUI. 
+                        ROTOM is held to be able to prepare DTE FTUI students who want to participate in OIM FTUI.
                     </Text>
                     <Text p="3" color="black" fontSize="x1" letterSpacing={".1rem"} fontWeight="bold" textAlign={["center","center","center","left"]}>
                         <Text color="#123f5e">Date :</Text> 11 December 2020 - 12 December 2020

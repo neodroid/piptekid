@@ -13,12 +13,9 @@ import TitlePR from "./TitlePR"
 
 const BannerPR = () => {
     return(
-        <Flex w="100%" bg="" bgImage="url('/pkmrotombg.png')" bgPos="center" bgSize="cover" pt="10" minH={[
-            "0",
-            "0",
-            "500px", 
-            "600px", 
-        ]}  boxShadow="md">
+        <Flex w="100%" 
+        zIndex={3}
+        bg="" bgImage="url('/pkmrotombg.png')" bgPos="center" bgSize="cover" pt="10" minH={["0", "0", "500px", "650px", ]}>
             <TitlePR />
         </Flex>
     );
