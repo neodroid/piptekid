@@ -94,7 +94,7 @@ const TitlePR = () => {
                             },
                         }}
                     >
-                    <Link href="/pkmrotom">
+                    <Link href="https://forms.gle/xYrVPBshDU5f2N6k8">
                         <Button width="200px" mb="10" mt="3" color="white" rounded="full" bg="#123f5e" boxShadow="xl" fontSize="1.2rem">
                         {" "}
                         JOIN
