@@ -7,10 +7,12 @@ import {
   Button,
   Link as ChakraLink,
   Link, 
+  useToast
 } from "@chakra-ui/core";
 import { motion } from "framer-motion";
 
 const TitlePR = () => {
+    const toast = useToast()
     return(
         <Flex w="100%" flexDirection={["column","column","column","row"]}>
             <Flex width={["100%", "100%", "100%", "45%"]} align="center" justify={["center","center","center","right"]} flexDirection="row-reverse">
@@ -95,7 +97,25 @@ const TitlePR = () => {
                         }}
                     >
                     <Link href="https://forms.gle/xYrVPBshDU5f2N6k8">
-                        <Button width="200px" mb="10" mt="3" color="white" rounded="full" bg="#123f5e" boxShadow="xl" fontSize="1.2rem">
+                        <Button
+                        width="200px" 
+                        mb="10" 
+                        mt="3" 
+                        color="white" 
+                        rounded="full" 
+                        bg="#123f5e" 
+                        boxShadow="xl" 
+                        fontSize="1.2rem"
+                        onClick={() =>
+                            toast({
+                              title: "Fill the form.",
+                              description: "Thank you for joining us.",
+                              status: "success",
+                              duration: 1200,
+                              isClosable: true,
+                            })
+                          }
+                        >
                         {" "}
                         JOIN
                         </Button>

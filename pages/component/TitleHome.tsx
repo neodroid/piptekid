@@ -115,7 +115,7 @@ const TitleHome = () => {
             fontFamily="heading"
             color="white"
           >
-            TECHNOSKILL 2.0
+            WELCOME TO
           </Box>
         </motion.div>
         <motion.div
@@ -136,7 +136,7 @@ const TitleHome = () => {
           }}
         >
           <Box as="i" fontSize={"xl"} color="white">
-            Forecasting in the era of Data
+            PIPTEK IME 2020 WEBSITE
           </Box>
         </motion.div>
         <motion.div
@@ -157,7 +157,7 @@ const TitleHome = () => {
           }}
         >
           <Box mt="20" fontSize="xl" color="white" fontWeight="bold">
-            WORKSHOP - SEMINAR - COMPETITION
+            Click the button below to find out what program is running on PIPTEK IME!
           </Box>
         </motion.div>
         <motion.div
@@ -177,10 +177,16 @@ const TitleHome = () => {
             },
           }}
         >
-          <Link href="/technoskill">
-            <Button width="200px" mb="10" mt="5" color="black" rounded="full">
+          <Link href="/pkmrotom">
+            <Button 
+            width="200px" 
+            mb="10" 
+            mt="5" 
+            color="black" 
+            rounded="full"
+            >
               {" "}
-              REGISTER
+              PROGRAM
             </Button>
           </Link>{" "}
         </motion.div>

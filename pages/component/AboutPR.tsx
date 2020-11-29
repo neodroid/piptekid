@@ -2,7 +2,7 @@ import React from "react";
 import {
     Heading,
     Flex,
-    Text
+    Text, Badge, Divider
 } from "@chakra-ui/core";
 import { motion } from "framer-motion";
 
@@ -37,10 +37,12 @@ const AboutPR = () => {
                         each type of PKM (Program Kreativitas Mahasiswa) was also held to assist students in determining their knowledge of PKM.
                     </Text>
                     <Text p="3" color="black" fontSize="x1" letterSpacing={".1rem"} fontWeight="bold">
-                        <Text color="#123f5e">Date :</Text> 5 December 2020 at 13.00 WIB
+                        <Text color="#123f5e">Date :</Text> 
+                        <Badge ml="1" fontSize="0.8em">5 December 2020 at 13.00 WIB</Badge>
                     </Text>
                 </Flex>
             </Flex>
+            <Divider orientation="horizontal" />
             <Flex pt="5" justify="center" flexDirection={["column","column","column","row-reverse"]}
                 m="10">
                 <Flex width={["100%","100%","100%","48%",]} justify="center">
@@ -71,7 +73,8 @@ const AboutPR = () => {
                         ROTOM is held to be able to prepare DTE FTUI students who want to participate in OIM FTUI.
                     </Text>
                     <Text p="3" color="black" fontSize="x1" letterSpacing={".1rem"} fontWeight="bold" textAlign={["center","center","center","left"]}>
-                        <Text color="#123f5e">Date :</Text> 11 December 2020 - 12 December 2020
+                        <Text color="#123f5e">Date :</Text>
+                        <Badge ml="1" fontSize="0.8em">11 December 2020 - 12 December 2020</Badge>
                     </Text>
                 </Flex>
             </Flex>
