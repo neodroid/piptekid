@@ -5,7 +5,7 @@ import Header2 from "./component/header2";
 import BannerPR from "./component/BannerPR";
 import AboutPR from "./component/AboutPR"
 
-export default function Technoskill() {
+export default function Pkmrotom() {
     return (
       <div>
         <Head>

@@ -8,10 +8,12 @@ import {
   Link as ChakraLink,
   Link,
   Icon,
+  useToast
 } from "@chakra-ui/core";
 import { motion } from "framer-motion";
 
 const TitleHome = () => {
+  const toast = useToast()
   return (
     <Flex
       w="100%"
@@ -177,13 +179,22 @@ const TitleHome = () => {
             },
           }}
         >
-          <Link href="/pkmrotom">
+          <Link href="">
             <Button 
             width="200px" 
             mb="10" 
             mt="5" 
             color="black" 
             rounded="full"
+            onClick={() =>
+              toast({
+                title: "Sorry :(",
+                description: "There is no program running in PIPTEK IME FTUI 2020, See you in 2021!",
+                status: "error",
+                duration: 2000,
+                isClosable: true,
+              })
+            }
             >
               {" "}
               PROGRAM
