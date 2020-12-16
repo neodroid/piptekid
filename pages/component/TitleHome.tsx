@@ -179,7 +179,7 @@ const TitleHome = () => {
             },
           }}
         >
-          <Link href="">
+          <Link>
             <Button 
             width="200px" 
             mb="10" 
@@ -189,9 +189,9 @@ const TitleHome = () => {
             onClick={() =>
               toast({
                 title: "Sorry :(",
-                description: "There is no program running in PIPTEK IME FTUI 2020, See you in 2021!",
+                description: "There is no program running on PIPTEK IME FTUI 2020, See you in 2021!",
                 status: "error",
-                duration: 2000,
+                duration: 2500,
                 isClosable: true,
               })
             }
