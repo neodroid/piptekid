@@ -2,8 +2,8 @@ import { Flex } from "@chakra-ui/core";
 
 import Head from "next/head";
 import React from "react";
-import AboutTechno from "./component/AboutTechno";
-import BannerTechno from "./component/BannerTechno";
+import AboutTechno from "./component/TechnoskillComponents/AboutTechno";
+import BannerTechno from "./component/TechnoskillComponents/BannerTechno";
 import Header from "./component/header";
 
 import HomeFix from "./component/Home";

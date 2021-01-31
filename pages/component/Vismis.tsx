@@ -20,7 +20,7 @@ const Vismis = () => {
       justify="center"
     >
       <Flex 
-      backgroundColor="rgba(6, 0, 73, 0.7)"
+      backgroundColor="rgba(6, 0, 73, 0.8)"
       padding="15px"
       align="center"
       justify="center"
@@ -107,7 +107,7 @@ const Vismis = () => {
                   mt="10px"
                   mb="5"
                 >
-                  1. Making PIPTEK as a vessel for interaction to encourage the
+                  - Making PIPTEK as a vessel for interaction to encourage the
                   Department of Electrical Engineering UI students to innovate in the
                   scientific field
                 </Text>
@@ -117,7 +117,7 @@ const Vismis = () => {
                   color="white"
                   my="10px"
                 >
-                  2. Collaborating with PIPTEK stakeholders in maximizing scientific
+                  - Collaborating with PIPTEK stakeholders in maximizing scientific
                   environment in the Department of Electrical Engineering UI
                 </Text>
                 <Text
@@ -126,7 +126,7 @@ const Vismis = () => {
                   letterSpacing={".1rem"}
                   color="white"
                 >
-                  3. Increase achievement and appreciation to foster the spirit of
+                  - Increase achievement and appreciation to foster the spirit of
                   innovation for the Department of Electrical Engineering UI Students
                 </Text>
                 </Flex>

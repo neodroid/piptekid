@@ -131,134 +131,143 @@ const Header = () => {
       </Flex>
 
       <Flex
-        display={[
-          show ? "block" : "none", // base
-          show ? "block" : "none", // 480px upwards
-          show ? "block" : "none", // 768px upwards
-          "flex", // 992px upwards
-        ]}
-        width={[
-          "full", // base
-          "full", // 480px upwards
-          "full", // 768px upwards
-          "auto", // 992px upwards
-        ]}
-        textAlign="center"
-        align="right"
-        alignSelf="center"
-        alignItems="center"
-      >
-        <MenuItemses>
-        <Menu>
-            <MenuButton
-            as={Button}
-            padding="30px 20px"
-              transition="all 0.2s linear"
-              border="none"
-              backgroundColor="transparent"
-              _hover={{ outline:"none"}}
-              _focus={{ outline:"none" }}
-              _active={{ outline:"none" }}
-            >
-          <Link href="/">HOME</Link></MenuButton>
-          </Menu>
-        </MenuItemses>
-        <MenuItemses>
-        <Menu>
-            <MenuButton
-            as={Button}
-            padding="30px 20px"
-              transition="all 0.2s linear"
-              border="none"
-              backgroundColor="transparent"
-              _hover={{ outline:"none"}}
-              _focus={{ outline:"none" }}
-              _active={{ outline:"none" }}
-            >
-            <Link href="/pkm">PKM</Link></MenuButton>
-          </Menu>
-        </MenuItemses>
-        <MenuItemses>
-        <Menu>
-            <MenuButton
-            as={Button}
-            padding="30px 20px"
-              transition="all 0.2s linear"
-              border="none"
-              backgroundColor="transparent"
-              _hover={{ outline:"none"}}
-              _focus={{ outline:"none" }}
-              _active={{ outline:"none" }}
-            >PROGRAM KERJA</MenuButton>
-            <MenuList 
-            backgroundColor="white"
-            position={["static","static","static","absolute"]}
-            color="#060049"
-            zIndex={5}
-            overflow="auto"
-            width={["100%","100%","100%","fit-content"]}
-            >
-              <MenuItem as="h1">
-                <Link href="/pkmservice">PKM SERVICE</Link>
-              </MenuItem>
-              <MenuItem as="h1">
-                <Link href="/rotom">ROTOM</Link>
-              </MenuItem>
-              <MenuItem as="h1">
-              <Link href="/technoskill">TECHNOSKILL</Link>
-              </MenuItem>
-            </MenuList>
-          </Menu>
-        </MenuItemses>
-        <MenuItemses>
+          display={[
+            show ? "block" : "none", // base
+            show ? "block" : "none", // 480px upwards
+            show ? "block" : "none", // 768px upwards
+            "flex", // 992px upwards
+          ]}
+          width={[
+            "full", // base
+            "full", // 480px upwards
+            "full", // 768px upwards
+            "auto", // 992px upwards
+          ]}
+          textAlign="center"
+          align="right"
+          alignSelf="center"
+          alignItems="center"
+        >
+          <MenuItemses>
           <Menu>
-            <MenuButton
+          <Link href="/">
+              <MenuButton
               as={Button}
               padding="30px 20px"
-              transition="all 0.2s linear"
-              border="none"
-              backgroundColor="transparent"
-              _hover={{ outline:"none"}}
-              _focus={{ outline:"none"}}
-              _active={{ outline:"none"}}
-            >KLUB ILMIAH</MenuButton>
-            <MenuList 
-            backgroundColor="white"
-            position={["static","static","static","absolute"]}
-            color="#060049"
-            zIndex={5}
-            overflow="auto"
-            width={["100%","100%","100%","fit-content"]}
-            >
-              <MenuItem as="h1">
-                <Link href="/exercise">EXERCISE</Link>
-              </MenuItem>
-              <MenuItem as="h1">
-                <Link href="/ieee">IEEE</Link>
-              </MenuItem>
-              <MenuItem as="h1">
-              <Link href="/asbe">ASBE</Link>
-              </MenuItem>
-            </MenuList>
-          </Menu>
-        </MenuItemses>
-        <MenuItemses>
-        <Menu>
-            <MenuButton
+                transition="all 0.2s linear"
+                border="none"
+                backgroundColor="transparent"
+                _hover={{ outline:"none"}}
+                _focus={{ outline:"none" }}
+                _active={{ outline:"none" }}
+              >
+              HOME</MenuButton></Link>
+            </Menu>
+          </MenuItemses>
+          <MenuItemses>
+          <Menu>
+          <Link href="/pkm">
+              <MenuButton
               as={Button}
               padding="30px 20px"
-              transition="all 0.2s linear"
-              border="none"
-              backgroundColor="transparent"
-              _hover={{ outline:"none"}}
-              _focus={{ outline:"none" }}
-              _active={{ outline:"none" }}
-            >
-          <Link href="/aboutus">ABOUT US</Link>
-          </MenuButton>
-          </Menu>
-        </MenuItemses>
-      </Flex>
+                transition="all 0.2s linear"
+                border="none"
+                backgroundColor="transparent"
+                _hover={{ outline:"none"}}
+                _focus={{ outline:"none" }}
+                _active={{ outline:"none" }}
+              >
+              PKM</MenuButton></Link>
+            </Menu>
+          </MenuItemses>
+          <MenuItemses>
+          <Menu>
+              <MenuButton
+              as={Button}
+              padding="30px 20px"
+                transition="all 0.2s linear"
+                border="none"
+                backgroundColor="transparent"
+                _hover={{ outline:"none"}}
+                _focus={{ outline:"none" }}
+                _active={{ outline:"none" }}
+              >PROGRAM KERJA</MenuButton>
+              <MenuList 
+              backgroundColor="white"
+              position={["static","static","static","absolute"]}
+              color="#060049"
+              zIndex={5}
+              overflow="auto"
+              width={["100%","100%","100%","fit-content"]}
+              >
+                <Link href="/pkmservice">
+                <MenuItem as="h1">PKM SERVICE</MenuItem>
+                </Link>
+                <Link href="/rotom">
+                <MenuItem as="h1">ROTOM</MenuItem>
+                </Link>
+                <Link href="/technoskill">
+                <MenuItem as="h1">TECHNOSKILL</MenuItem>
+                </Link>
+                <Link href="/echa">
+                <MenuItem as="h1">ECHA</MenuItem>
+                </Link>
+                <Link href="/mki">
+                <MenuItem as="h1">MKI</MenuItem>
+                </Link>
+              </MenuList>
+            </Menu>
+          </MenuItemses>
+          <MenuItemses>
+            <Menu>
+              <MenuButton
+                as={Button}
+                padding="30px 20px"
+                transition="all 0.2s linear"
+                border="none"
+                backgroundColor="transparent"
+                _hover={{ outline:"none"}}
+                _focus={{ outline:"none"}}
+                _active={{ outline:"none"}}
+              >KLUB ILMIAH</MenuButton>
+              <MenuList 
+              backgroundColor="white"
+              position={["static","static","static","absolute"]}
+              color="#060049"
+              zIndex={5}
+              overflow="auto"
+              width={["100%","100%","100%","fit-content"]}
+              >
+                <Link href="/exercise">
+                <MenuItem as="h1">EXERCISE</MenuItem>
+                </Link>
+                <Link href="/ieee">
+                <MenuItem as="h1">IEEE</MenuItem>
+                </Link>
+                <Link href="/asbe">
+                <MenuItem as="h1">ASBE</MenuItem>
+                </Link>
+              </MenuList>
+            </Menu>
+          </MenuItemses>
+          <MenuItemses>
+          <Menu>
+          <Link href="/aboutus">
+              <MenuButton
+                as={Button}
+                padding="30px 20px"
+                transition="all 0.2s linear"
+                border="none"
+                backgroundColor="transparent"
+                _hover={{ outline:"none"}}
+                _focus={{ outline:"none" }}
+                _active={{ outline:"none" }}
+              >
+            ABOUT US
+            </MenuButton></Link>
+            </Menu>
+          </MenuItemses>
+        </Flex>
     </Flex>
   </Flex>
     :
@@ -355,6 +364,7 @@ const Header = () => {
         >
           <MenuItemses>
           <Menu>
+          <Link href="/">
               <MenuButton
               as={Button}
               padding="30px 20px"
@@ -365,11 +375,12 @@ const Header = () => {
                 _focus={{ outline:"none" }}
                 _active={{ outline:"none" }}
               >
-            <Link href="/">HOME</Link></MenuButton>
+              HOME</MenuButton></Link>
             </Menu>
           </MenuItemses>
           <MenuItemses>
           <Menu>
+          <Link href="/pkm">
               <MenuButton
               as={Button}
               padding="30px 20px"
@@ -380,7 +391,7 @@ const Header = () => {
                 _focus={{ outline:"none" }}
                 _active={{ outline:"none" }}
               >
-              <Link href="/pkm">PKM</Link></MenuButton>
+              PKM</MenuButton></Link>
             </Menu>
           </MenuItemses>
           <MenuItemses>
@@ -403,15 +414,21 @@ const Header = () => {
               overflow="auto"
               width={["100%","100%","100%","fit-content"]}
               >
-                <MenuItem as="h1">
-                  <Link href="/pkmservice">PKM SERVICE</Link>
-                </MenuItem>
-                <MenuItem as="h1">
-                  <Link href="/rotom">ROTOM</Link>
-                </MenuItem>
-                <MenuItem as="h1">
-                <Link href="/technoskill">TECHNOSKILL</Link>
-                </MenuItem>
+                <Link href="/pkmservice">
+                <MenuItem as="h1">PKM SERVICE</MenuItem>
+                </Link>
+                <Link href="/rotom">
+                <MenuItem as="h1">ROTOM</MenuItem>
+                </Link>
+                <Link href="/technoskill">
+                <MenuItem as="h1">TECHNOSKILL</MenuItem>
+                </Link>
+                <Link href="/echa">
+                <MenuItem as="h1">ECHA</MenuItem>
+                </Link>
+                <Link href="/mki">
+                <MenuItem as="h1">MKI</MenuItem>
+                </Link>
               </MenuList>
             </Menu>
           </MenuItemses>
@@ -435,20 +452,21 @@ const Header = () => {
               overflow="auto"
               width={["100%","100%","100%","fit-content"]}
               >
-                <MenuItem as="h1">
-                  <Link href="/exercise">EXERCISE</Link>
-                </MenuItem>
-                <MenuItem as="h1">
-                  <Link href="/ieee">IEEE</Link>
-                </MenuItem>
-                <MenuItem as="h1">
-                <Link href="/asbe">ASBE</Link>
-                </MenuItem>
+                <Link href="/exercise">
+                <MenuItem as="h1">EXERCISE</MenuItem>
+                </Link>
+                <Link href="/ieee">
+                <MenuItem as="h1">IEEE</MenuItem>
+                </Link>
+                <Link href="/asbe">
+                <MenuItem as="h1">ASBE</MenuItem>
+                </Link>
               </MenuList>
             </Menu>
           </MenuItemses>
           <MenuItemses>
           <Menu>
+          <Link href="/aboutus">
               <MenuButton
                 as={Button}
                 padding="30px 20px"
@@ -459,8 +477,8 @@ const Header = () => {
                 _focus={{ outline:"none" }}
                 _active={{ outline:"none" }}
               >
-            <Link href="/aboutus">ABOUT US</Link>
-            </MenuButton>
+            ABOUT US
+            </MenuButton></Link>
             </Menu>
           </MenuItemses>
         </Flex>

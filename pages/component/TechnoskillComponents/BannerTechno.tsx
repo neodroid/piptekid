@@ -1,15 +1,11 @@
 import { Flex, Heading, Box, Button, Icon, Text } from "@chakra-ui/core";
-import Link from "next/link";
 import React from "react";
-import { motion } from "framer-motion";
-import TitleHome from "./TitleHome";
-import Header from "./header";
-import HomeBan from "./HomeBanner";
 import TitleTechno from "./TitleTechno";
+import Header from "../header"
 
 const BannerTechno = () => {
   return (
-    <Flex w="100%" flexDirection="column" pt="10" bg="">
+    <Flex w="100%" flexDirection="column" bg="">
       <Box
         zIndex={3}
         bg=""
@@ -20,6 +16,7 @@ const BannerTechno = () => {
         color="black"
         textAlign="center"
       >
+        <Header/>
         <TitleTechno />
         {/* <HomeBan /> */}
       </Box>
