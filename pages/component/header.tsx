@@ -55,6 +55,213 @@ const Header = () => {
   }, []);
 
   return (
+    <>
+    {show || scrollNav ?
+    <Flex
+    w="100%"
+    align="center"
+    justify="center"
+    top="0"
+    left="0"
+    zIndex={4}
+    shadow=""
+    pos="fixed"
+    as="nav"
+    color = "#060049"
+    
+    backgroundColor={[
+      show || scrollNav ? "white":"transparent",
+      show || scrollNav ? "white":"transparent",
+      show || scrollNav ? "white":"transparent",
+      scrollNav ? "white":"transparent",
+    ]}
+    boxShadow = {[
+      show || scrollNav ? "0px 4px 20px rgba(0, 0, 0, 0.15);":"transparent",
+      show || scrollNav ? "0px 4px 20px rgba(0, 0, 0, 0.15);":"transparent",
+      show || scrollNav ? "0px 4px 20px rgba(0, 0, 0, 0.15);":"transparent",
+      scrollNav ? "0px 4px 20px rgba(0, 0, 0, 0.15);":"transparent",
+    ]}
+    transition="0.5s all linear"
+  >
+    <Flex
+      width={["100%","100%","100%","90%"]}
+      justify="space-between"
+      wrap="wrap"
+      padding="2rem"
+    >
+      {scrollNav || show ? 
+      <Flex align="center" mr={5} justifyContent="center">
+        <Image width={["30px","30px","30px","50px"]} src="piptek.png"/>
+        <Box
+            fontSize={["16px","16px","16px","20px"]}
+            fontFamily="heading"
+            fontWeight="bold"
+            mt="0"
+            paddingX={["15px","15px","15px","30px"]}
+          >
+            PIPTEK IME FTUI 2021
+          </Box>
+      </Flex>
+      :
+      <Flex align="center" mr={2} justifyContent="center"></Flex>
+    }
+
+      <Flex
+        display={[
+          "block", // base
+          "block", // 480px upwards
+          "block", // 768px upwards
+          "none", // 992px upwards
+        ]}
+        onClick={handleToggle}
+        cursor="pointer"
+        alignItems="center"
+        padding={["10px","10px","10px","30px 0"]}
+        backgroundColor="rgba(255,255,255,0.5)"
+      >
+        <svg
+          fill="black"
+          width="20px"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>Menus</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </Flex>
+
+      <Flex
+        display={[
+          show ? "block" : "none", // base
+          show ? "block" : "none", // 480px upwards
+          show ? "block" : "none", // 768px upwards
+          "flex", // 992px upwards
+        ]}
+        width={[
+          "full", // base
+          "full", // 480px upwards
+          "full", // 768px upwards
+          "auto", // 992px upwards
+        ]}
+        textAlign="center"
+        align="right"
+        alignSelf="center"
+        alignItems="center"
+      >
+        <MenuItemses>
+        <Menu>
+            <MenuButton
+            as={Button}
+            padding="30px 20px"
+              transition="all 0.2s linear"
+              border="none"
+              backgroundColor="transparent"
+              _hover={{ outline:"none"}}
+              _focus={{ outline:"none" }}
+              _active={{ outline:"none" }}
+            >
+          <Link href="/">HOME</Link></MenuButton>
+          </Menu>
+        </MenuItemses>
+        <MenuItemses>
+        <Menu>
+            <MenuButton
+            as={Button}
+            padding="30px 20px"
+              transition="all 0.2s linear"
+              border="none"
+              backgroundColor="transparent"
+              _hover={{ outline:"none"}}
+              _focus={{ outline:"none" }}
+              _active={{ outline:"none" }}
+            >
+            <Link href="/pkm">PKM</Link></MenuButton>
+          </Menu>
+        </MenuItemses>
+        <MenuItemses>
+        <Menu>
+            <MenuButton
+            as={Button}
+            padding="30px 20px"
+              transition="all 0.2s linear"
+              border="none"
+              backgroundColor="transparent"
+              _hover={{ outline:"none"}}
+              _focus={{ outline:"none" }}
+              _active={{ outline:"none" }}
+            >PROGRAM KERJA</MenuButton>
+            <MenuList 
+            backgroundColor="white"
+            position={["static","static","static","absolute"]}
+            color="#060049"
+            zIndex={5}
+            overflow="auto"
+            width={["100%","100%","100%","fit-content"]}
+            >
+              <MenuItem as="h1">
+                <Link href="/pkmservice">PKM SERVICE</Link>
+              </MenuItem>
+              <MenuItem as="h1">
+                <Link href="/rotom">ROTOM</Link>
+              </MenuItem>
+              <MenuItem as="h1">
+              <Link href="/technoskill">TECHNOSKILL</Link>
+              </MenuItem>
+            </MenuList>
+          </Menu>
+        </MenuItemses>
+        <MenuItemses>
+          <Menu>
+            <MenuButton
+              as={Button}
+              padding="30px 20px"
+              transition="all 0.2s linear"
+              border="none"
+              backgroundColor="transparent"
+              _hover={{ outline:"none"}}
+              _focus={{ outline:"none"}}
+              _active={{ outline:"none"}}
+            >KLUB ILMIAH</MenuButton>
+            <MenuList 
+            backgroundColor="white"
+            position={["static","static","static","absolute"]}
+            color="#060049"
+            zIndex={5}
+            overflow="auto"
+            width={["100%","100%","100%","fit-content"]}
+            >
+              <MenuItem as="h1">
+                <Link href="/exercise">EXERCISE</Link>
+              </MenuItem>
+              <MenuItem as="h1">
+                <Link href="/ieee">IEEE</Link>
+              </MenuItem>
+              <MenuItem as="h1">
+              <Link href="/asbe">ASBE</Link>
+              </MenuItem>
+            </MenuList>
+          </Menu>
+        </MenuItemses>
+        <MenuItemses>
+        <Menu>
+            <MenuButton
+              as={Button}
+              padding="30px 20px"
+              transition="all 0.2s linear"
+              border="none"
+              backgroundColor="transparent"
+              _hover={{ outline:"none"}}
+              _focus={{ outline:"none" }}
+              _active={{ outline:"none" }}
+            >
+          <Link href="/aboutus">ABOUT US</Link>
+          </MenuButton>
+          </Menu>
+        </MenuItemses>
+      </Flex>
+    </Flex>
+  </Flex>
+    :
     <Flex
       w="100%"
       align="center"
@@ -65,17 +272,13 @@ const Header = () => {
       shadow=""
       pos="fixed"
       as="nav"
+      color = "#fff"
+      
       backgroundColor={[
         show || scrollNav ? "white":"transparent",
         show || scrollNav ? "white":"transparent",
         show || scrollNav ? "white":"transparent",
         scrollNav ? "white":"transparent",
-      ]}
-      color = {[
-        show || scrollNav ? "#060049": "#fff",
-        show || scrollNav ? "#060049": "#fff",
-        show || scrollNav ? "#060049": "#fff",
-        scrollNav ? "#060049": "#fff",
       ]}
       boxShadow = {[
         show || scrollNav ? "0px 4px 20px rgba(0, 0, 0, 0.15);":"transparent",
@@ -145,7 +348,7 @@ const Header = () => {
             "full", // 768px upwards
             "auto", // 992px upwards
           ]}
-          textAlign="justify"
+          textAlign="center"
           align="right"
           alignSelf="center"
           alignItems="center"
@@ -263,6 +466,8 @@ const Header = () => {
         </Flex>
       </Flex>
     </Flex>
+    }
+    </>
   );
 };
 
