@@ -1,27 +1,58 @@
-import React from "react";
-import { Box, Heading, Flex, Text, Button } from "@chakra-ui/core";
+import React,{useEffect,useState} from "react";
+import { 
+  Box, 
+  Flex, 
+  Button,  
+  Image,
+  Menu,
+  MenuButton,
+  MenuList,
+  Text,
+  MenuItem,
+  Portal
+} from "@chakra-ui/core";
 import Link from "next/link";
 
-const MenuItems = ({ children }) => (
-  <Text
+const MenuItemses = ({ children }) => (
+  <Button
     mt={[
       "5", // base
       "5", // 480px upwards
       "5", // 768px upwards
       "0", // 992px upwards
     ]}
-    textAlign="right"
-    mr={6}
-    display="block"
+    mx="5px"
+    height="30px"
+    padding={["10px","10px","10px","30px 0"]}
+    _hover={{ 
+      transform: "scale(1.03)" ,
+      borderBottom:"1px solid black"
+    }}
+    textDecoration="none"
+    backgroundColor="none"
+    borderRadius="0"
+    display="flex"
+    width={["100%","100%","100%","fit-content"]}
   >
     {children}
-  </Text>
+  </Button>
 );
 
 // Note: This code could be better, so I'd recommend you to understand how I solved and you could write yours better :)
 const Header = () => {
-  const [show, setShow] = React.useState(false);
+  const [show, setShow] = useState(false);
+  const [scrollNav, setScrollnav] = useState(false);
   const handleToggle = () => setShow(!show);
+  const changeNav = () => {
+    if (window.scrollY > 3) {
+      setScrollnav(true);
+    } else {
+      setScrollnav(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
 
   return (
     <Flex
@@ -30,27 +61,54 @@ const Header = () => {
       justify="center"
       top="0"
       left="0"
-      overflow="hidden"
-      zIndex={2}
+      zIndex={4}
       shadow=""
+      pos="fixed"
+      as="nav"
+      backgroundColor={[
+        show || scrollNav ? "white":"transparent",
+        show || scrollNav ? "white":"transparent",
+        show || scrollNav ? "white":"transparent",
+        scrollNav ? "white":"transparent",
+      ]}
+      color = {[
+        show || scrollNav ? "#060049": "#fff",
+        show || scrollNav ? "#060049": "#fff",
+        show || scrollNav ? "#060049": "#fff",
+        scrollNav ? "#060049": "#fff",
+      ]}
+      boxShadow = {[
+        show || scrollNav ? "0px 4px 20px rgba(0, 0, 0, 0.15);":"transparent",
+        show || scrollNav ? "0px 4px 20px rgba(0, 0, 0, 0.15);":"transparent",
+        show || scrollNav ? "0px 4px 20px rgba(0, 0, 0, 0.15);":"transparent",
+        scrollNav ? "0px 4px 20px rgba(0, 0, 0, 0.15);":"transparent",
+      ]}
+      transition="0.5s all linear"
     >
       <Flex
-        width={[
-          "100%", // base
-          "100%", // 480px upwards
-          "100%", // 768px upwards
-          "75%", // 992px upwards
-        ]}
-        as="nav"
-        align="center"
+        width={["100%","100%","100%","90%"]}
         justify="space-between"
         wrap="wrap"
-        padding="1.5rem"
-        color="white"
+        padding="2rem"
       >
-        <Flex align="center" mr={5} justifyContent="center"></Flex>
+        {scrollNav || show ? 
+        <Flex align="center" mr={5} justifyContent="center">
+          <Image width={["30px","30px","30px","50px"]} src="piptek.png"/>
+          <Box
+              fontSize={["16px","16px","16px","20px"]}
+              fontFamily="heading"
+              fontWeight="bold"
+              mt="0"
+              paddingX={["15px","15px","15px","30px"]}
+            >
+              PIPTEK IME FTUI 2021
+            </Box>
+        </Flex>
+        :
+        <Flex align="center" mr={2} justifyContent="center"></Flex>
+      }
 
-        <Box
+        <Flex
           display={[
             "block", // base
             "block", // 480px upwards
@@ -58,17 +116,21 @@ const Header = () => {
             "none", // 992px upwards
           ]}
           onClick={handleToggle}
+          cursor="pointer"
+          alignItems="center"
+          padding={["10px","10px","10px","30px 0"]}
+          backgroundColor="rgba(255,255,255,0.5)"
         >
           <svg
-            fill="white"
+            fill="black"
             width="20px"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <title>Menu</title>
+            <title>Menus</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
-        </Box>
+        </Flex>
 
         <Flex
           display={[
@@ -83,20 +145,121 @@ const Header = () => {
             "full", // 768px upwards
             "auto", // 992px upwards
           ]}
-          flexGrow={1}
           textAlign="justify"
-          flexDirection="row-reverse"
           align="right"
+          alignSelf="center"
+          alignItems="center"
         >
-          <MenuItems>
-            <Link href="/technoskill">TECHNOSKILL</Link>
-          </MenuItems>
-          <MenuItems>
-            <Link href="/pkmrotom">PKM & ROTOM</Link>
-          </MenuItems>
-          <MenuItems>
-            <Link href="/">HOME</Link>
-          </MenuItems>
+          <MenuItemses>
+          <Menu>
+              <MenuButton
+              as={Button}
+              padding="30px 20px"
+                transition="all 0.2s linear"
+                border="none"
+                backgroundColor="transparent"
+                _hover={{ outline:"none"}}
+                _focus={{ outline:"none" }}
+                _active={{ outline:"none" }}
+              >
+            <Link href="/">HOME</Link></MenuButton>
+            </Menu>
+          </MenuItemses>
+          <MenuItemses>
+          <Menu>
+              <MenuButton
+              as={Button}
+              padding="30px 20px"
+                transition="all 0.2s linear"
+                border="none"
+                backgroundColor="transparent"
+                _hover={{ outline:"none"}}
+                _focus={{ outline:"none" }}
+                _active={{ outline:"none" }}
+              >
+              <Link href="/pkm">PKM</Link></MenuButton>
+            </Menu>
+          </MenuItemses>
+          <MenuItemses>
+          <Menu>
+              <MenuButton
+              as={Button}
+              padding="30px 20px"
+                transition="all 0.2s linear"
+                border="none"
+                backgroundColor="transparent"
+                _hover={{ outline:"none"}}
+                _focus={{ outline:"none" }}
+                _active={{ outline:"none" }}
+              >PROGRAM KERJA</MenuButton>
+              <MenuList 
+              backgroundColor="white"
+              position={["static","static","static","absolute"]}
+              color="#060049"
+              zIndex={5}
+              overflow="auto"
+              width={["100%","100%","100%","fit-content"]}
+              >
+                <MenuItem as="h1">
+                  <Link href="/pkmservice">PKM SERVICE</Link>
+                </MenuItem>
+                <MenuItem as="h1">
+                  <Link href="/rotom">ROTOM</Link>
+                </MenuItem>
+                <MenuItem as="h1">
+                <Link href="/technoskill">TECHNOSKILL</Link>
+                </MenuItem>
+              </MenuList>
+            </Menu>
+          </MenuItemses>
+          <MenuItemses>
+            <Menu>
+              <MenuButton
+                as={Button}
+                padding="30px 20px"
+                transition="all 0.2s linear"
+                border="none"
+                backgroundColor="transparent"
+                _hover={{ outline:"none"}}
+                _focus={{ outline:"none"}}
+                _active={{ outline:"none"}}
+              >KLUB ILMIAH</MenuButton>
+              <MenuList 
+              backgroundColor="white"
+              position={["static","static","static","absolute"]}
+              color="#060049"
+              zIndex={5}
+              overflow="auto"
+              width={["100%","100%","100%","fit-content"]}
+              >
+                <MenuItem as="h1">
+                  <Link href="/exercise">EXERCISE</Link>
+                </MenuItem>
+                <MenuItem as="h1">
+                  <Link href="/ieee">IEEE</Link>
+                </MenuItem>
+                <MenuItem as="h1">
+                <Link href="/asbe">ASBE</Link>
+                </MenuItem>
+              </MenuList>
+            </Menu>
+          </MenuItemses>
+          <MenuItemses>
+          <Menu>
+              <MenuButton
+                as={Button}
+                padding="30px 20px"
+                transition="all 0.2s linear"
+                border="none"
+                backgroundColor="transparent"
+                _hover={{ outline:"none"}}
+                _focus={{ outline:"none" }}
+                _active={{ outline:"none" }}
+              >
+            <Link href="/aboutus">ABOUT US</Link>
+            </MenuButton>
+            </Menu>
+          </MenuItemses>
         </Flex>
       </Flex>
     </Flex>

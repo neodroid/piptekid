@@ -3,13 +3,19 @@ import React from "react";
 
 const Pengertian = () => {
   return (
-    <Flex justifyContent="center" alignItems="center" w="100%" bg="white">
+    <>
+    <Flex 
+    justifyContent="center" 
+    alignItems="center" 
+    w="100%" 
+    bg="white"
+    padding="60px 0">
       <Flex
         width={[
           "100%", // base
           "100%", // 480px upwards
           "100%", // 768px upwards
-          "1060px", // 992px upwards
+          "1160px", // 992px upwards
         ]}
         as="nav"
         align="center"
@@ -21,7 +27,7 @@ const Pengertian = () => {
         flexDirection="row"
       >
         <Box
-          m="5"
+          m={["2","2","2","5"]}
           maxW={[
             "100%", // base
             "100%", // 480px upwards
@@ -36,24 +42,35 @@ const Pengertian = () => {
             letterSpacing={".1rem"}
             fontFamily="heading"
             fontWeight="bold"
+            marginBottom="20px"
           >
             {" "}
-            <Text color="#254D69" fontFamily="heading">
-              ABOUT US
+            <Text 
+            color="#060049" 
+            fontFamily="heading"
+            font-size= "48px"
+            line-height= "56px"
+            ml={["0","0","0","-40px"]}
+            textAlign={["center","center","center","left"]}
+            >
+              About Us
             </Text>
           </Heading>
 
           <Text
             color="black"
-            textAlign="justify"
-            fontSize={["xs", "xl"]}
+            textAlign={["center","center","center","left"]}
+            font-weight= "200"
+            fontSize={["15px", "20px"]}
             letterSpacing={".1rem"}
             w="100%"
+            marginBottom={["15px", "15px", "15px","0"]}
+            lineHeight= {["22px", "22px", "22px","37px"]}
           >
-            Piptek IME FTUI is a division from IME FTUI which accommodates the
-            scientific needs (competition, seminar, etc) and act as a catalyst
-            for students of department electrical engineering, University of
-            Indonesia
+            Piptek IME FTUI is a division from IME FTUI which 
+            facilitator and catalyst for the interests, talents, 
+            and aspirations of students of the Department of Electrical Engineering 
+            in the scientific field.
           </Text>
         </Box>
         <Box
@@ -63,11 +80,18 @@ const Pengertian = () => {
             "100%", // 768px upwards
             "50%", // 992px upwards
           ]}
+          m="2"
+          marginBottom={["15px", "15px", "15px","0"]}
         >
-          <img src="/BPH.png" />
+          <video src="/PIPTEK.mp4" controls 
+          style={{outline: "none", 
+          border: "none", 
+          borderRadius:"20px",
+          }}/>
         </Box>
       </Flex>
     </Flex>
+    </>
   );
 };
 

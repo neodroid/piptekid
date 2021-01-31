@@ -5,7 +5,6 @@ import React from "react";
 import AboutTechno from "./component/AboutTechno";
 import BannerTechno from "./component/BannerTechno";
 import Header from "./component/header";
-import Header2 from "./component/header2";
 
 import HomeFix from "./component/Home";
 import Pengertian from "./component/Pengertian";
@@ -23,10 +22,9 @@ export default function Technoskill() {
     <div>
       <Head>
         <title>TECHNOSKILL-PIPTEK IME FTUI</title>
-        <link rel="icon" href="/1 PIPTEK.png" />
+        <link rel="icon" href="/piptek.png" />
       </Head>
       {/* <Header/> */}
-      <Header2 />
       <BannerTechno />
       <AboutTechno />
       <Timeline />

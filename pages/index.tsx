@@ -13,7 +13,7 @@ export default function Home() {
     <div>
       <Head>
         <title>PIPTEK IME FTUI</title>
-        <link rel="icon" href="/1 PIPTEK.png" />
+        <link rel="icon" href="/piptek.png" />
       </Head>
       {/* <Header/> */}
       <HomeFix />

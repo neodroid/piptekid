@@ -17,7 +17,6 @@ const TitleHome = () => {
   return (
     <Flex
       w="100%"
-      bg=""
       align="center"
       justify="center"
       mb={[
@@ -26,6 +25,8 @@ const TitleHome = () => {
         "20", // 768px upwards
         "20", // 992px upwards
       ]}
+      height="fit-content"
+      mt="20px;"
     >
       <Box
         mt={[
@@ -63,8 +64,10 @@ const TitleHome = () => {
             },
           }}
         >
-          <Flex align="center" justify="center">
-            <img width="100px" src="1 PIPTEK.png" />
+          <Flex align="center" justify="center" mt="10">
+            <img width="119px" src="ime.png" />
+            <Box padding="10px">
+            <img width="119px" src="piptek.png" /></Box>
           </Flex>
         </motion.div>
         <motion.div
@@ -84,7 +87,13 @@ const TitleHome = () => {
             },
           }}
         >
-          <Box mb="10" fontSize="xl" color="white" fontWeight="bold">
+          <Box 
+          mt="2" 
+          color="white" 
+          fontSize="24px"
+          fontFamily="thin"
+          fontWeight="100"
+          lineHeight="28px">
             PIPTEK IME FTUI
           </Box>
         </motion.div>
@@ -113,11 +122,12 @@ const TitleHome = () => {
               "3rem", // 768px upwards
               "4.5rem", // 992px upwards
             ]}
-            fontWeight="bold"
+            fontWeight="normal"
             fontFamily="heading"
             color="white"
+            padding="10"
           >
-            WELCOME TO
+            Welcome to Our Website
           </Box>
         </motion.div>
         <motion.div
@@ -137,8 +147,8 @@ const TitleHome = () => {
             },
           }}
         >
-          <Box as="i" fontSize={"xl"} color="white">
-            PIPTEK IME 2020 WEBSITE
+          <Box fontSize="24px" color="white" fontFamily="thin">
+          Click the BUTTON below to find out our newliest program
           </Box>
         </motion.div>
         <motion.div
@@ -158,9 +168,6 @@ const TitleHome = () => {
             },
           }}
         >
-          <Box mt="20" fontSize="xl" color="white" fontWeight="bold">
-            Click the button below to find out what program is running on PIPTEK IME!
-          </Box>
         </motion.div>
         <motion.div
           initial="hidden"
@@ -179,25 +186,30 @@ const TitleHome = () => {
             },
           }}
         >
-          <Link>
-            <Button 
-            width="200px" 
-            mb="10" 
+          <Link style={{textDecoration:"none"}} href="/">
+            <Button
+            as="a"
+            backgroundColor="rgba(30, 113, 131,0.8)"
+            width="270px" 
             mt="5" 
-            color="black" 
-            rounded="full"
+            color="white" 
+            borderRadius="15px"
+            transition="0.5s all ease"
+            _hover={{ 
+              transform: "scale(1.2)",
+            }}
             onClick={() =>
               toast({
-                title: "Sorry :(",
-                description: "There is no program running on PIPTEK IME FTUI 2020, See you in 2021!",
-                status: "error",
+                title: "Hello",
+                description: "Wait until IME FTUI 2021 reforming !",
+                status: "success",
                 duration: 2500,
                 isClosable: true,
               })
             }
             >
               {" "}
-              PROGRAM
+              Click Me!
             </Button>
           </Link>{" "}
         </motion.div>

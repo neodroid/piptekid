@@ -28,10 +28,18 @@ const Footer = (props) => {
           padding="1.5rem"
           bg="#333333"
           color="#2F80ED"
-          position="absolut"
+          flexDirection={[
+            "column", // base
+            "column", // 480px upwards
+            "column", // 768px upwards
+            "row", // 992px upwards
+          ]}
           {...props}
         >
-          <Box mr={5} bg="">
+          <Box mr={5} bg=""
+          display={[
+            "none","none","none","block"
+          ]}>
             <Flex align="center" mr={5}>
               <Heading as="h1" size="lg" letterSpacing={"-.1rem"}>
                 <Box width="85px">
@@ -47,26 +55,30 @@ const Footer = (props) => {
                 fontFamily="default"
               >
                 {" "}
-                <Text>IME</Text>FTUI 2020
+                <Text>IME</Text>FTUI 2021
               </Heading>
             </Flex>
           </Box>
 
           <Box
-            mr={5}
+            mr={[0,0,0,5]}
             bg=""
-            textAlign="right"
+            textAlign={["center","center","center","right"]}
             maxW={[
               "100%", // base
               "100%", // 480px upwards
-              "40%", // 768px upwards
+              "100%", // 768px upwards
               "75%", // 992px upwards
             ]}
           >
-            <Flex align="center" mr={5}>
+            <Flex align="center" mr={[0,0,0,5]}
+            textAlign={["center","center","center","right"]}>
               <Text as="nav" my={8} fontFamily="default">
-                <Flex as="nav" fontWeight="bold" flexDirection="row-reverse">
-                  <ChakraLink href="https://www.instagram.com/" isExternal>
+                <Flex 
+                fontWeight="bold" 
+                flexDirection={["row","row","row","row-reverse"]} 
+                justifyContent={["center","center","center","right"]}>
+                  <ChakraLink href="https://www.instagram.com/piptekimeftui/" isExternal>
                     <Box width="30px" h="30px" m="1">
                       <img src="/sos/sos ig.png" />
                     </Box>
@@ -78,12 +90,7 @@ const Footer = (props) => {
                     </Box>
                   </ChakraLink>
 
-                  <ChakraLink href="" isExternal>
-                    <Box width="30px" h="30px" m="1">
-                      <img src="/sos/sos twit.png" />
-                    </Box>
-                  </ChakraLink>
-                  <ChakraLink href="" isExternal>
+                  <ChakraLink href="https://www.youtube.com/channel/UC6fC58wiDUMAYytdEshrw2Q" isExternal>
                     <Box width="30px" h="30px" m="1">
                       <img src="/sos/sos yutub.png" />
                     </Box>
@@ -92,22 +99,14 @@ const Footer = (props) => {
                 <Heading
                   as="h1"
                   size="xs"
-                  ml="5"
+                  ml={["0","0","0","5"]}
                   letterSpacing={".1rem"}
                   color="white"
-                  fontFamily="default"
+                  fontFamily="thin"
+                  fontWeight="500"
+                  textAlign={["center","center","center","right"]}
                 >
-                  &copy; 2020 Piptek.id | All Right Reserved
-                </Heading>
-                <Heading
-                  as="h1"
-                  size="xs"
-                  ml="5"
-                  letterSpacing={".1rem"}
-                  color="white"
-                  fontFamily="default"
-                >
-                  Powered by NewTab.id
+                  &copy; 2021 PIPTEK IME FTUI <br/> All Right Reserved
                 </Heading>
               </Text>
             </Flex>

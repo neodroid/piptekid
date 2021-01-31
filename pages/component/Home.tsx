@@ -8,21 +8,23 @@ import HomeBan from "./HomeBanner";
 
 const HomeFix = () => {
   return (
-    <Flex w="100%" flexDirection="column" bg="">
+    <Flex w="100% !important" flexDirection="column" bg="">
       <Box
         zIndex={3}
-        bg=""
-        bgImage="url('/bekron.png')"
+        bgImage="url('/bekron.jpg')"
         bgPos="center"
         bgSize="cover"
         // bgAttachment="fixed"
         color="black"
         textAlign="center"
-        minH="500px"
-      >
+        minHeight="400px"
+      ><Box 
+      backgroundColor="rgba(6, 0, 73,0.45)"
+      padding="15px"
+      zIndex={4}>
         <Header />
         <TitleHome />
-        {/* <HomeBan /> */}
+        </Box>
       </Box>
     </Flex>
   );
