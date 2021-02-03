@@ -127,7 +127,7 @@ const TitleHome = () => {
             color="white"
             padding="10"
           >
-            Welcome to Our Website
+            SELAMAT DATANG
           </Box>
         </motion.div>
         <motion.div
@@ -148,7 +148,7 @@ const TitleHome = () => {
           }}
         >
           <Box fontSize="24px" color="white" fontFamily="thin">
-          Click the BUTTON below to find out our newliest program
+          Tekan Tombol di bawah untuk mengetahui program yang sedang dijalankan
           </Box>
         </motion.div>
         <motion.div
@@ -186,7 +186,7 @@ const TitleHome = () => {
             },
           }}
         >
-          <Link style={{textDecoration:"none"}} href="/">
+          <Link style={{textDecoration:"none"}}>
             <Button
             as="a"
             backgroundColor="rgba(30, 113, 131,0.8)"
@@ -209,7 +209,7 @@ const TitleHome = () => {
             }
             >
               {" "}
-              Click Me!
+              TEKAN!
             </Button>
           </Link>{" "}
         </motion.div>

@@ -14,9 +14,28 @@ import { motion } from "framer-motion";
 const TitlePR = () => {
     return(
         <Flex w="100%" flexDirection="column">
+            <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={{
+                    hidden: {
+                    scale: 0.8,
+                    opacity: 0,
+                    },
+                    visible: {
+                    scale: 1,
+                    opacity: 1,
+                    transition: {
+                        delay: 1.2,
+                    },
+                    },
+                }}
+                >
             <Flex align="center" justify="center" mx="auto" mt={["0","0","0","-50px"]} mb="20px">
                 <Image width={["300px","300px","300px","500px"]} src="pkm.jpg"/>
             </Flex>
+                </motion.div>
+
             <Box
                 bgImage="url('/pkmbaner.jpg')"
                 bgPos="center"
@@ -29,6 +48,23 @@ const TitlePR = () => {
                 h="100%"
                 alignItems="center"
                 >
+                    <motion.div
+                        initial="hidden"
+                        animate="visible"
+                        variants={{
+                            hidden: {
+                            scale: 0.8,
+                            opacity: 0,
+                            },
+                            visible: {
+                            scale: 1,
+                            opacity: 1,
+                            transition: {
+                                delay: 1.4,
+                            },
+                            },
+                        }}
+                        >
                     <Text 
                     color="white"
                     fontWeight= "300"
@@ -49,6 +85,7 @@ const TitlePR = () => {
                     Program Kreativitas Mahasiswa tahun 2001 demi memperluas 
                     cakupan dan mengurangi batasan bagi mahasiswa dalam berkreasi.
                     </Text>
+                    </motion.div>
                 </Flex>
             </Box>
         </Flex>

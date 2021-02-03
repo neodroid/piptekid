@@ -7,7 +7,7 @@ export default function Pkmservice() {
     return (
       <div>
         <Head>
-          <title>PKM SERVICe | PIPTEK IME FTUI</title>
+          <title>PKM SERVICE | PIPTEK IME FTUI</title>
           <link rel="icon" href="/piptek.png" />
         </Head>
         <Header/>

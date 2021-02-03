@@ -5,170 +5,258 @@ import {
   Flex,
   Text,
   Button,
-  Link as ChakraLink,
   Link, 
-  Image,Grid
+  Image,
+  Grid
 } from "@chakra-ui/core";
 import { motion } from "framer-motion";
 
 const TitleAbout = () => {
     return(
         <Flex w="100%" flexDirection="column">
+          <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 0.8,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 1.2,
+              },
+            },
+          }}
+        >
           <Box>
             <Text 
             as="h1"
             color= "#060049"
             fontWeight= "bold"
-            fontSize= {["38px","42px","48px","56px"]}
+            fontSize= {["38px","42px","48px","60px"]}
             lineHeight= "56px"
             margin="0 auto"
             fontFamily="heading"
             textAlign="center"
-            mb="30px"
-            > MEET THE TEAM!</Text>
-            <Box 
+            mb="40px"
+            >ANGGOTA KAMI!</Text>
+          </Box>
+            </motion.div>
+            <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {
+                scale: 0.8,
+                opacity: 0,
+              },
+              visible: {
+                scale: 1,
+                opacity: 1,
+                transition: {
+                  delay: 1.4,
+                },
+              },
+            }}
+          >
+          <Box>
+            <Flex 
             padding="10px 50px" 
-            m="20px" 
-            backgroundColor="#060049" 
-            color="white" 
-            w="fit-content"
-            borderRadius="8px"
+            my="20px" 
+            background="linear-gradient(90deg, #090076 0%, rgba(81, 77, 128, 0.547297) 51.04%, rgba(255, 255, 255, 0) 100%)" 
+            color="black" 
+            w="100%"
             fontWeight= "bold"
-            >BADAN PENGURUS HARIAN</Box>
+            fontStyle= "italic"
+            flexDirection="row-reverse"
+            fontSize={["15px","25px","25px","30px"]}
+            lineHeight="56px"
+            >BADAN PENGURUS HARIAN</Flex>
             </Box>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {
+                scale: 0.8,
+                opacity: 0,
+              },
+              visible: {
+                scale: 1,
+                opacity: 1,
+                transition: {
+                  delay: 1.8,
+                },
+              },
+            }}
+          >
             <Grid 
              templateColumns={["repeat(1, 1fr)","repeat(1, 1fr)","repeat(2, 1fr)","repeat(3, 1fr)"]} 
              gap={10} 
              width="80%"
-             margin="20px"
              alignItems="center"
              justifyContent="center"
              m="0 auto"
             >
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
+              <Box>
+                <Link href="https://www.instagram.com/arkanayudhistira/" isExternal 
+                _hover={{
+                  textDecoration:"none",
+                  transform: "scale(1.04)"
+                  }}>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
-                    <Box>
-                      <Image 
-                      src="ruz.png"
-                       width="192px" 
-                       borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >KEPALA BIDANG</Box>
-                       <Text
-                       fontWeight="bold"
-                       fontSize="20px"
-                       textAlign="center">M Fairuz Mummtaz</Text>
-                    </Box>
-                  </Flex>
-              </Box>
-
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
-                  <Flex flexDirection="column" py="50px" px="15px" alignItems="center">
-                    <Box>
                       <Image 
                       src="kan.png"
                        width="192px" 
                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >WAKIL KEPALA BIDANG 1</Box>
                        <Text
-                       fontWeight="bold"
+                       fontStyle= "italic"
                        fontSize="20px"
+                       fontWeight="300"
+                       padding="10px"
                        textAlign="center">M Arkana Yudhistira</Text>
-                    </Box>
+                       <Box
+                       fontStyle= "italic"
+                       borderRadius="10px 0 10px 0"
+                       fontWeight="bold"
+                       fontFamily="heading"
+                       textAlign="center"
+                       fontSize="22px"
+                       >Wakil Kepala Bidang</Box>
                   </Flex>
+                </Link>
               </Box>
 
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
-                  <Flex flexDirection="column" py="50px" px="15px" alignItems="center">
-                    <Box>
+              <Box>
+              <Link href="https://www.instagram.com/fairuzmummtaz/" isExternal
+              _hover={{
+                textDecoration:"none",
+                transform: "scale(1.04)"
+                }}>
+                  <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
+                      <Image 
+                      src="ruz.png"
+                       width="192px" 
+                       borderRadius="full"/>
+                       <Text
+                       fontStyle= "italic"
+                       fontSize="20px"
+                       fontWeight="300"
+                       padding="10px"
+                       textAlign="center">M Fairuz Mummtaz</Text>
+                       <Box
+                       fontStyle= "italic"
+                       borderRadius="10px 0 10px 0"
+                       fontWeight="bold"
+                       fontFamily="heading"
+                       textAlign="center"
+                       fontSize="22px"
+                       >Kepala Bidang</Box>
+                  </Flex>
+                </Link>
+              </Box>
+
+              <Box>
+                <Link href="https://www.instagram.com/ryhnmanda/" isExternal
+                _hover={{
+                  textDecoration:"none",
+                  transform: "scale(1.04)"
+                  }}>
+                  <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
                       <Image 
                       src="man.png"
                        width="192px" 
                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >WAKIL KEPALA BIDANG 2</Box>
                        <Text
-                       fontWeight="bold"
+                       fontStyle= "italic"
                        fontSize="20px"
+                       fontWeight="300"
+                       padding="10px"
                        textAlign="center">Rayhan Rizky Akbar A</Text>
-                    </Box>
-                  </Flex>
-              </Box>
-
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
-                  <Flex flexDirection="column" py="50px" px="15px" alignItems="center">
-                    <Box>
-                      <Image 
-                      src="oi.png"
-                       width="192px" 
-                       borderRadius="full"/>
                        <Box
+                       fontStyle= "italic"
                        borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >STAF AHLI</Box>
-                       <Text
                        fontWeight="bold"
-                       fontSize="20px"
-                       textAlign="center">Alifya Ananda K</Text>
-                    </Box>
+                       fontFamily="heading"
+                       textAlign="center"
+                       fontSize="22px"
+                       >Wakil Kepala Bidang</Box>
                   </Flex>
+                </Link>  
               </Box>
 
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
-                  <Flex flexDirection="column" py="50px" px="15px" alignItems="center">
-                    <Box>
+            </Grid>
+            </motion.div>
+            <Grid 
+             templateColumns={["repeat(1, 1fr)","repeat(1, 1fr)","repeat(2, 1fr)","repeat(2, 1fr)"]} 
+             gap={10} 
+             width={["80%","80%","80%","60%"]}
+             alignItems="center"
+             justifyContent="center"
+             m="0 auto"
+            >
+
+              <Box>
+                <Link href="https://www.instagram.com/" isExternal
+                _hover={{
+                  textDecoration:"none",
+                  transform: "scale(1.04)"
+                  }}>
+                  <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
                       <Image 
                       src="tor.png"
                        width="192px" 
                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >STAF AHLI</Box>
                        <Text
-                       fontWeight="bold"
+                       fontStyle= "italic"
                        fontSize="20px"
+                       fontWeight="300"
+                       padding="10px"
+                       textAlign="center">Thariq Hadyan</Text>
+                       <Box
+                       fontStyle= "italic"
+                       borderRadius="10px 0 10px 0"
+                       fontWeight="bold"
+                       fontFamily="heading"
                        textAlign="center"
-                       >Thariq Hadyan</Text>
-                    </Box>
+                       fontSize="22px"
+                       >Staf Ahli</Box>
                   </Flex>
+                </Link>
+              </Box>
+
+              <Box>
+              <Link href="https://www.instagram.com/alifyandk/" isExternal
+              _hover={{
+                textDecoration:"none",
+                transform: "scale(1.04)"
+                }}>
+                  <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
+                      <Image 
+                      src="oi.png"
+                       width="192px" 
+                       borderRadius="full"/>
+                       <Text
+                       fontStyle= "italic"
+                       fontSize="20px"
+                       fontWeight="300"
+                       padding="10px"
+                       textAlign="center">Alifya Ananda K</Text>
+                       <Box
+                       fontStyle= "italic"
+                       borderRadius="10px 0 10px 0"
+                       fontWeight="bold"
+                       fontFamily="heading"
+                       textAlign="center"
+                       fontSize="22px"
+                       >Staf Ahli</Box>
+                  </Flex>
+                </Link>
               </Box>
 
             </Grid>

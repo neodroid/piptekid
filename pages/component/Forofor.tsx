@@ -7,7 +7,7 @@ const Forofor = () => {
   return (
     <Box
     w="100%"
-    h="100%"
+    h="350px"
     m="0 auto"
     mt="80px">
         <Text
@@ -19,7 +19,7 @@ const Forofor = () => {
         fontFamily="heading"
         textAlign="center"
         >
-            MAINTANANCE
+            COMING SOON
         </Text>
     </Box>
   );

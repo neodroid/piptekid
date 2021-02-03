@@ -21,7 +21,7 @@ const ContentP = () => {
             py="30px"
             pl="50px"
             >
-                Poster PKM :
+                Poster PKM (dalam PIMNAS):
             </Text>
             <Box
                 bgImage="url('/posterpkm.jpg')"
@@ -66,7 +66,7 @@ const ContentP = () => {
                                 color="white"
                                 background= "linear-gradient(357.39deg, #000000 2.63%, rgba(0, 0, 0, 0.9) 23%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0) 90.58%)"
                                 >
-                                    PKM-P
+                                    PKM-P (2021 menjadi PKM-R)
                                 </Flex>
                         </Box>
 
@@ -92,7 +92,7 @@ const ContentP = () => {
                                 color="white"
                                 background= "linear-gradient(357.39deg, #000000 2.63%, rgba(0, 0, 0, 0.9) 23%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0) 90.58%)"
                                 >
-                                    PKM-T
+                                    PKM-T (2021 menjadi PKM-PI)
                                 </Flex>
                         </Box>
 
@@ -118,7 +118,7 @@ const ContentP = () => {
                                 color="white"
                                 background= "linear-gradient(357.39deg, #000000 2.63%, rgba(0, 0, 0, 0.9) 23%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0) 90.58%)"
                                 >
-                                    PKM-M
+                                    PKM-M (2021 menjadi PKM-PM)
                                 </Flex>
                         </Box>
                     </Grid>
@@ -128,7 +128,7 @@ const ContentP = () => {
                         color="white"
                         as="i"
                         fontSize= "18px"
-                        lineHeight= "20px">Sumber: PKM Center Universitas Indonesia</Text>
+                        lineHeight= "20px">Sumber: PKM Center Universitas Indonesia & Pedoman PKM 2021</Text>
                     </Flex>
 
                 </Box>

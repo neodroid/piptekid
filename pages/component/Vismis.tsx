@@ -64,7 +64,7 @@ const Vismis = () => {
               fontWeight="bold"
               mt={["5","5","5","0"]}
             >
-              VISION
+              VISI
             </Box></Flex>
 
             <Flex flexBasis="70%">
@@ -74,9 +74,10 @@ const Vismis = () => {
               color="white"
               mb="5"
             >
-              Creating a PIPTEK IME FTUI that is synergistic in accommodating 
-              the aspirations of DTE student in scientific so as to create
-              a climate innovating superior and useful.
+              Mewujudkan PIPTEK IME FTUI yang 
+              sinergis dalam mewadahi aspirasi warga DTE 
+              dalam keilmiahan sehingga terciptanya iklim 
+              berinovasi yang unggul dan bermanfaat.
             </Text></Flex>
           </Flex>
 
@@ -95,7 +96,7 @@ const Vismis = () => {
                 fontWeight="bold"
                 mt="5"
               >
-                MISSION
+                MISI
               </Box>
               </Flex>
 
@@ -107,9 +108,9 @@ const Vismis = () => {
                   mt="10px"
                   mb="5"
                 >
-                  - Making PIPTEK as a vessel for interaction to encourage the
-                  Department of Electrical Engineering UI students to innovate in the
-                  scientific field
+                  - Menjadikan PIPTEK sebagai 
+                  wadah interaksi untuk memicu warga 
+                  DTE dalam berinovasi di bidang keilmiahan.
                 </Text>
                 <Text
                   fontSize={["15px", "20px"]}
@@ -117,8 +118,8 @@ const Vismis = () => {
                   color="white"
                   my="10px"
                 >
-                  - Collaborating with PIPTEK stakeholders in maximizing scientific
-                  environment in the Department of Electrical Engineering UI
+                  - Bekerja sama dengan stakeholders PIPTEK 
+                  dalam menuansakan keilmiahan di DTE.
                 </Text>
                 <Text
                   my="10px"
@@ -126,8 +127,9 @@ const Vismis = () => {
                   letterSpacing={".1rem"}
                   color="white"
                 >
-                  - Increase achievement and appreciation to foster the spirit of
-                  innovation for the Department of Electrical Engineering UI Students
+                  - Meningkatkan prestasi serta 
+                  apresiasi untuk menumbuhkan 
+                  jiwa semangat berkarya warga DTE
                 </Text>
                 </Flex>
               </Flex>

@@ -53,7 +53,7 @@ const Pengertian = () => {
             ml={["0","0","0","-40px"]}
             textAlign={["center","center","center","left"]}
             >
-              About Us
+              TENTANG KAMI
             </Text>
           </Heading>
 
@@ -67,10 +67,10 @@ const Pengertian = () => {
             marginBottom={["15px", "15px", "15px","0"]}
             lineHeight= {["22px", "22px", "22px","37px"]}
           >
-            Piptek IME FTUI is a division from IME FTUI which 
-            facilitator and catalyst for the interests, talents, 
-            and aspirations of students of the Department of Electrical Engineering 
-            in the scientific field.
+            Piptek IME FTUI merupakan bidang yang berperan 
+            sebagai <b>fasilitator</b> dan <b>katalisator</b> minat, 
+            bakat, serta aspirasi warga Departemen Teknik 
+            Elektro di <b>bidang keilmiahan.</b>
           </Text>
         </Box>
         <Box

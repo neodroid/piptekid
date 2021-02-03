@@ -153,6 +153,7 @@ const Header = () => {
           <Link href="/">
               <MenuButton
               as={Button}
+              width={["100%","100%","100%","fit-content"]}
               padding="30px 20px"
                 transition="all 0.2s linear"
                 border="none"
@@ -169,6 +170,7 @@ const Header = () => {
           <Link href="/pkm">
               <MenuButton
               as={Button}
+              width={["100%","100%","100%","fit-content"]}
               padding="30px 20px"
                 transition="all 0.2s linear"
                 border="none"
@@ -184,19 +186,21 @@ const Header = () => {
           <Menu>
               <MenuButton
               as={Button}
+              width={["100%","100%","100%","fit-content"]}
               padding="30px 20px"
                 transition="all 0.2s linear"
                 border="none"
                 backgroundColor="transparent"
                 _hover={{ outline:"none"}}
-                _focus={{ outline:"none" }}
-                _active={{ outline:"none" }}
+                _focus={{ outline:"none"}}
+                _active={{ outline:"none"}}
               >PROGRAM KERJA</MenuButton>
               <MenuList 
               backgroundColor="white"
               position={["static","static","static","absolute"]}
               color="#060049"
               zIndex={5}
+              pt={["5rem","5rem","5rem","0"]}
               overflow="auto"
               width={["100%","100%","100%","fit-content"]}
               >
@@ -222,6 +226,7 @@ const Header = () => {
             <Menu>
               <MenuButton
                 as={Button}
+                width={["100%","100%","100%","fit-content"]}
                 padding="30px 20px"
                 transition="all 0.2s linear"
                 border="none"
@@ -235,6 +240,7 @@ const Header = () => {
               position={["static","static","static","absolute"]}
               color="#060049"
               zIndex={5}
+              pt={["5rem","5rem","5rem","0"]}
               overflow="auto"
               width={["100%","100%","100%","fit-content"]}
               >
@@ -252,9 +258,10 @@ const Header = () => {
           </MenuItemses>
           <MenuItemses>
           <Menu>
-          <Link href="/aboutus">
+          <Link href="/tim">
               <MenuButton
                 as={Button}
+                width={["100%","100%","100%","fit-content"]}
                 padding="30px 20px"
                 transition="all 0.2s linear"
                 border="none"
@@ -263,7 +270,7 @@ const Header = () => {
                 _focus={{ outline:"none" }}
                 _active={{ outline:"none" }}
               >
-            ABOUT US
+            TIM
             </MenuButton></Link>
             </Menu>
           </MenuItemses>
@@ -367,6 +374,7 @@ const Header = () => {
           <Link href="/">
               <MenuButton
               as={Button}
+              width={["100%","100%","100%","fit-content"]}
               padding="30px 20px"
                 transition="all 0.2s linear"
                 border="none"
@@ -383,6 +391,7 @@ const Header = () => {
           <Link href="/pkm">
               <MenuButton
               as={Button}
+              width={["100%","100%","100%","fit-content"]}
               padding="30px 20px"
                 transition="all 0.2s linear"
                 border="none"
@@ -398,6 +407,7 @@ const Header = () => {
           <Menu>
               <MenuButton
               as={Button}
+              width={["100%","100%","100%","fit-content"]}
               padding="30px 20px"
                 transition="all 0.2s linear"
                 border="none"
@@ -411,6 +421,7 @@ const Header = () => {
               position={["static","static","static","absolute"]}
               color="#060049"
               zIndex={5}
+              pt={["5rem","5rem","5rem","0"]}
               overflow="auto"
               width={["100%","100%","100%","fit-content"]}
               >
@@ -436,6 +447,7 @@ const Header = () => {
             <Menu>
               <MenuButton
                 as={Button}
+                width={["100%","100%","100%","fit-content"]}
                 padding="30px 20px"
                 transition="all 0.2s linear"
                 border="none"
@@ -449,6 +461,7 @@ const Header = () => {
               position={["static","static","static","absolute"]}
               color="#060049"
               zIndex={5}
+              pt={["5rem","5rem","5rem","0"]}
               overflow="auto"
               width={["100%","100%","100%","fit-content"]}
               >
@@ -466,9 +479,10 @@ const Header = () => {
           </MenuItemses>
           <MenuItemses>
           <Menu>
-          <Link href="/aboutus">
+          <Link href="/tim">
               <MenuButton
                 as={Button}
+                width={["100%","100%","100%","fit-content"]}
                 padding="30px 20px"
                 transition="all 0.2s linear"
                 border="none"
@@ -477,7 +491,7 @@ const Header = () => {
                 _focus={{ outline:"none" }}
                 _active={{ outline:"none" }}
               >
-            ABOUT US
+            TIM
             </MenuButton></Link>
             </Menu>
           </MenuItemses>

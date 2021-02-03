@@ -15,15 +15,18 @@ const TitleAbout = () => {
     return(
         <Flex w="100%" flexDirection="column">
           <Box>
-            <Box 
+            <Flex 
             padding="10px 50px" 
-            m="50px 20px" 
-            backgroundColor="#060049" 
-            color="white" 
-            w="fit-content"
-            borderRadius="8px"
+            my="20px" 
+            background="linear-gradient(90deg, #090076 0%, rgba(81, 77, 128, 0.547297) 51.04%, rgba(255, 255, 255, 0) 100%)" 
+            color="black" 
+            w="100%"
             fontWeight= "bold"
-            >BADAN PENGURUS</Box>
+            fontStyle= "italic"
+            flexDirection="row-reverse"
+            fontSize={["15px","25px","25px","30px"]}
+            lineHeight="56px"
+            >BADAN PENGURUS</Flex>
             </Box>
             <Grid 
              templateColumns={["repeat(1, 1fr)","repeat(1, 1fr)","repeat(2, 1fr)","repeat(3, 1fr)"]} 
@@ -34,455 +37,352 @@ const TitleAbout = () => {
              justifyContent="center"
              m="0 auto"
             >
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
+
+              <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
-                    <Box>
-                       <Image 
-                        src="user.png"
-                        width="192px" 
-                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >STAF</Box>
+                      <Image 
+                      src="user.png"
+                       width="192px" 
+                       borderRadius="full"/>
                        <Text
-                       fontWeight="bold"
+                       fontStyle= "italic"
                        fontSize="20px"
-                       textAlign="center">Comming Soon</Text>
-                    </Box>
+                       fontWeight="300"
+                       padding="10px"
+                       textAlign="center">Akan Datang</Text>
+                       <Box
+                       fontStyle= "italic"
+                       borderRadius="10px 0 10px 0"
+                       fontWeight="bold"
+                       fontFamily="heading"
+                       textAlign="center"
+                       fontSize="22px"
+                       >Staf</Box>
                   </Flex>
               </Box>
 
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
+              <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
-                    <Box>
-                       <Image 
-                        src="user.png"
-                        width="192px" 
-                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >STAF</Box>
+                      <Image 
+                      src="user.png"
+                       width="192px" 
+                       borderRadius="full"/>
                        <Text
-                       fontWeight="bold"
+                       fontStyle= "italic"
                        fontSize="20px"
-                       textAlign="center">Comming Soon</Text>
-                    </Box>
+                       fontWeight="300"
+                       padding="10px"
+                       textAlign="center">Akan Datang</Text>
+                       <Box
+                       fontStyle= "italic"
+                       borderRadius="10px 0 10px 0"
+                       fontWeight="bold"
+                       fontFamily="heading"
+                       textAlign="center"
+                       fontSize="22px"
+                       >Staf</Box>
                   </Flex>
               </Box>
 
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
+              <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
-                    <Box>
-                       <Image 
-                        src="user.png"
-                        width="192px" 
-                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >STAF</Box>
+                      <Image 
+                      src="user.png"
+                       width="192px" 
+                       borderRadius="full"/>
                        <Text
-                       fontWeight="bold"
+                       fontStyle= "italic"
                        fontSize="20px"
-                       textAlign="center">Comming Soon</Text>
-                    </Box>
+                       fontWeight="300"
+                       padding="10px"
+                       textAlign="center">Akan Datang</Text>
+                       <Box
+                       fontStyle= "italic"
+                       borderRadius="10px 0 10px 0"
+                       fontWeight="bold"
+                       fontFamily="heading"
+                       textAlign="center"
+                       fontSize="22px"
+                       >Staf</Box>
                   </Flex>
               </Box>
 
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
+              <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
-                    <Box>
-                       <Image 
-                        src="user.png"
-                        width="192px" 
-                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >STAF</Box>
+                      <Image 
+                      src="user.png"
+                       width="192px" 
+                       borderRadius="full"/>
                        <Text
-                       fontWeight="bold"
+                       fontStyle= "italic"
                        fontSize="20px"
-                       textAlign="center">Comming Soon</Text>
-                    </Box>
+                       fontWeight="300"
+                       padding="10px"
+                       textAlign="center">Akan Datang</Text>
+                       <Box
+                       fontStyle= "italic"
+                       borderRadius="10px 0 10px 0"
+                       fontWeight="bold"
+                       fontFamily="heading"
+                       textAlign="center"
+                       fontSize="22px"
+                       >Staf</Box>
                   </Flex>
               </Box>
 
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
+              <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
-                    <Box>
-                       <Image 
-                        src="user.png"
-                        width="192px" 
-                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >STAF</Box>
+                      <Image 
+                      src="user.png"
+                       width="192px" 
+                       borderRadius="full"/>
                        <Text
-                       fontWeight="bold"
+                       fontStyle= "italic"
                        fontSize="20px"
-                       textAlign="center">Comming Soon</Text>
-                    </Box>
+                       fontWeight="300"
+                       padding="10px"
+                       textAlign="center">Akan Datang</Text>
+                       <Box
+                       fontStyle= "italic"
+                       borderRadius="10px 0 10px 0"
+                       fontWeight="bold"
+                       fontFamily="heading"
+                       textAlign="center"
+                       fontSize="22px"
+                       >Staf</Box>
                   </Flex>
               </Box>
 
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
+              <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
-                    <Box>
-                       <Image 
-                        src="user.png"
-                        width="192px" 
-                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >STAF</Box>
+                      <Image 
+                      src="user.png"
+                       width="192px" 
+                       borderRadius="full"/>
                        <Text
-                       fontWeight="bold"
+                       fontStyle= "italic"
                        fontSize="20px"
-                       textAlign="center">Comming Soon</Text>
-                    </Box>
+                       fontWeight="300"
+                       padding="10px"
+                       textAlign="center">Akan Datang</Text>
+                       <Box
+                       fontStyle= "italic"
+                       borderRadius="10px 0 10px 0"
+                       fontWeight="bold"
+                       fontFamily="heading"
+                       textAlign="center"
+                       fontSize="22px"
+                       >Staf</Box>
                   </Flex>
               </Box>
 
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
+              <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
-                    <Box>
-                       <Image 
-                        src="user.png"
-                        width="192px" 
-                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >STAF</Box>
+                      <Image 
+                      src="user.png"
+                       width="192px" 
+                       borderRadius="full"/>
                        <Text
-                       fontWeight="bold"
+                       fontStyle= "italic"
                        fontSize="20px"
-                       textAlign="center">Comming Soon</Text>
-                    </Box>
+                       fontWeight="300"
+                       padding="10px"
+                       textAlign="center">Akan Datang</Text>
+                       <Box
+                       fontStyle= "italic"
+                       borderRadius="10px 0 10px 0"
+                       fontWeight="bold"
+                       fontFamily="heading"
+                       textAlign="center"
+                       fontSize="22px"
+                       >Staf</Box>
                   </Flex>
               </Box>
 
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
+              <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
-                    <Box>
-                       <Image 
-                        src="user.png"
-                        width="192px" 
-                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >STAF</Box>
+                      <Image 
+                      src="user.png"
+                       width="192px" 
+                       borderRadius="full"/>
                        <Text
-                       fontWeight="bold"
+                       fontStyle= "italic"
                        fontSize="20px"
-                       textAlign="center">Comming Soon</Text>
-                    </Box>
+                       fontWeight="300"
+                       padding="10px"
+                       textAlign="center">Akan Datang</Text>
+                       <Box
+                       fontStyle= "italic"
+                       borderRadius="10px 0 10px 0"
+                       fontWeight="bold"
+                       fontFamily="heading"
+                       textAlign="center"
+                       fontSize="22px"
+                       >Staf</Box>
                   </Flex>
               </Box>
 
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
+              <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
-                    <Box>
-                       <Image 
-                        src="user.png"
-                        width="192px" 
-                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >STAF</Box>
+                      <Image 
+                      src="user.png"
+                       width="192px" 
+                       borderRadius="full"/>
                        <Text
-                       fontWeight="bold"
+                       fontStyle= "italic"
                        fontSize="20px"
-                       textAlign="center">Comming Soon</Text>
-                    </Box>
+                       fontWeight="300"
+                       padding="10px"
+                       textAlign="center">Akan Datang</Text>
+                       <Box
+                       fontStyle= "italic"
+                       borderRadius="10px 0 10px 0"
+                       fontWeight="bold"
+                       fontFamily="heading"
+                       textAlign="center"
+                       fontSize="22px"
+                       >Staf</Box>
                   </Flex>
               </Box>
 
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
+              <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
-                    <Box>
-                       <Image 
-                        src="user.png"
-                        width="192px" 
-                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >STAF</Box>
+                      <Image 
+                      src="user.png"
+                       width="192px" 
+                       borderRadius="full"/>
                        <Text
-                       fontWeight="bold"
+                       fontStyle= "italic"
                        fontSize="20px"
-                       textAlign="center">Comming Soon</Text>
-                    </Box>
+                       fontWeight="300"
+                       padding="10px"
+                       textAlign="center">Akan Datang</Text>
+                       <Box
+                       fontStyle= "italic"
+                       borderRadius="10px 0 10px 0"
+                       fontWeight="bold"
+                       fontFamily="heading"
+                       textAlign="center"
+                       fontSize="22px"
+                       >Staf</Box>
                   </Flex>
               </Box>
 
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
+              <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
-                    <Box>
-                       <Image 
-                        src="user.png"
-                        width="192px" 
-                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >STAF</Box>
+                      <Image 
+                      src="user.png"
+                       width="192px" 
+                       borderRadius="full"/>
                        <Text
-                       fontWeight="bold"
+                       fontStyle= "italic"
                        fontSize="20px"
-                       textAlign="center">Comming Soon</Text>
-                    </Box>
+                       fontWeight="300"
+                       padding="10px"
+                       textAlign="center">Akan Datang</Text>
+                       <Box
+                       fontStyle= "italic"
+                       borderRadius="10px 0 10px 0"
+                       fontWeight="bold"
+                       fontFamily="heading"
+                       textAlign="center"
+                       fontSize="22px"
+                       >Staf</Box>
                   </Flex>
               </Box>
 
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
+              <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
-                    <Box>
-                       <Image 
-                        src="user.png"
-                        width="192px" 
-                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >STAF</Box>
+                      <Image 
+                      src="user.png"
+                       width="192px" 
+                       borderRadius="full"/>
                        <Text
-                       fontWeight="bold"
+                       fontStyle= "italic"
                        fontSize="20px"
-                       textAlign="center">Comming Soon</Text>
-                    </Box>
+                       fontWeight="300"
+                       padding="10px"
+                       textAlign="center">Akan Datang</Text>
+                       <Box
+                       fontStyle= "italic"
+                       borderRadius="10px 0 10px 0"
+                       fontWeight="bold"
+                       fontFamily="heading"
+                       textAlign="center"
+                       fontSize="22px"
+                       >Staf</Box>
                   </Flex>
               </Box>
 
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
+              <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
-                    <Box>
-                       <Image 
-                        src="user.png"
-                        width="192px" 
-                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >STAF</Box>
+                      <Image 
+                      src="user.png"
+                       width="192px" 
+                       borderRadius="full"/>
                        <Text
-                       fontWeight="bold"
+                       fontStyle= "italic"
                        fontSize="20px"
-                       textAlign="center">Comming Soon</Text>
-                    </Box>
+                       fontWeight="300"
+                       padding="10px"
+                       textAlign="center">Akan Datang</Text>
+                       <Box
+                       fontStyle= "italic"
+                       borderRadius="10px 0 10px 0"
+                       fontWeight="bold"
+                       fontFamily="heading"
+                       textAlign="center"
+                       fontSize="22px"
+                       >Staf</Box>
                   </Flex>
               </Box>
 
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
+              <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
-                    <Box>
-                       <Image 
-                        src="user.png"
-                        width="192px" 
-                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >STAF</Box>
+                      <Image 
+                      src="user.png"
+                       width="192px" 
+                       borderRadius="full"/>
                        <Text
-                       fontWeight="bold"
+                       fontStyle= "italic"
                        fontSize="20px"
-                       textAlign="center">Comming Soon</Text>
-                    </Box>
+                       fontWeight="300"
+                       padding="10px"
+                       textAlign="center">Akan Datang</Text>
+                       <Box
+                       fontStyle= "italic"
+                       borderRadius="10px 0 10px 0"
+                       fontWeight="bold"
+                       fontFamily="heading"
+                       textAlign="center"
+                       fontSize="22px"
+                       >Staf</Box>
                   </Flex>
               </Box>
 
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
+              <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
-                    <Box>
-                       <Image 
-                        src="user.png"
-                        width="192px" 
-                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >STAF</Box>
+                      <Image 
+                      src="user.png"
+                       width="192px" 
+                       borderRadius="full"/>
                        <Text
-                       fontWeight="bold"
+                       fontStyle= "italic"
                        fontSize="20px"
-                       textAlign="center">Comming Soon</Text>
-                    </Box>
+                       fontWeight="300"
+                       padding="10px"
+                       textAlign="center">Akan Datang</Text>
+                       <Box
+                       fontStyle= "italic"
+                       borderRadius="10px 0 10px 0"
+                       fontWeight="bold"
+                       fontFamily="heading"
+                       textAlign="center"
+                       fontSize="22px"
+                       >Staf</Box>
                   </Flex>
               </Box>
 
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
-                  <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
-                    <Box>
-                       <Image 
-                        src="user.png"
-                        width="192px" 
-                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >STAF</Box>
-                       <Text
-                       fontWeight="bold"
-                       fontSize="20px"
-                       textAlign="center">Comming Soon</Text>
-                    </Box>
-                  </Flex>
-              </Box>
-
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
-                  <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
-                    <Box>
-                       <Image 
-                        src="user.png"
-                        width="192px" 
-                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >STAF</Box>
-                       <Text
-                       fontWeight="bold"
-                       fontSize="20px"
-                       textAlign="center">Comming Soon</Text>
-                    </Box>
-                  </Flex>
-              </Box>
-
-              <Box
-              boxShadow="5px 20px 20px rgba(0, 0, 0, 0.15)"
-              borderRadius="20px">
-                  <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
-                    <Box>
-                       <Image 
-                        src="user.png"
-                        width="192px" 
-                        borderRadius="full"/>
-                       <Box
-                       borderRadius="10px 0 10px 0"
-                       padding="10px"
-                       color="white"
-                       my="20px"
-                       backgroundColor="#001C47"
-                       textAlign="center"
-                       >STAF</Box>
-                       <Text
-                       fontWeight="bold"
-                       fontSize="20px"
-                       textAlign="center">Comming Soon</Text>
-                    </Box>
-                  </Flex>
-              </Box>
             </Grid>
         </Flex>
     );
