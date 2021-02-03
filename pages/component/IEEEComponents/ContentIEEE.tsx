@@ -130,8 +130,14 @@ const ContentIEEE = () => {
         bgPos="center"
         bgSize="cover"
         minHeight="400px"
-        overflow="hidden"
-        />
+        overflow="hidden">
+            <Box
+                backgroundColor="rgba(6, 0, 73,0.3)"
+                padding="15px"
+                height="100%"
+                minHeight="400px"
+                />
+        </Box>
         </>
     );
 };

@@ -430,7 +430,7 @@ const AboutPR = () => {
                         </Text>
                         <Text
                         fontWeight= "200"
-                        fontSize= "24px"
+                        fontSize= "18px"
                         lineHeight= "37px"
                         >
                         Bertujuan untuk memotivasi partisipasi mahasiswa dalam mengelola imajinasi, persepsi dan nalarnya, memikirkan tatakelola yang futuristik namun konstruktif sebagai upaya pencapaian tujuan SDGs di Indonesia ataupun solusi keprihatinan bangsa Indonesia.
@@ -506,7 +506,7 @@ const AboutPR = () => {
                         </Text>
                         <Text
                         fontWeight= "200"
-                        fontSize= "24px"
+                        fontSize= "18px"
                         lineHeight= "37px"
                         >
                         Bertujuan untuk memberi pengalaman mahasiswa menghasilkan karya tulis ilmiah. Merupakan program penulisan artikel ilmiah yang bersumber dari hasil kegiatan akademik lainnya dalam bidang pendidikan, penelitian atau pengabdian kepada masyarakat (misalnya studi kasus, praktik lapang, KKN, PKM, magang).
@@ -582,7 +582,7 @@ const AboutPR = () => {
                         </Text>
                         <Text
                         fontWeight= "200"
-                        fontSize= "24px"
+                        fontSize= "18px"
                         lineHeight= "37px"
                         >
                         Bertujuan untuk menumbuhkan pemahaman dan keterampilan mahasiswa dalam menghasilkan komoditas unik serta merintis kewirausahaan yang berorientasi pada profit. Namun, dalam hal ini lebih mengutamakan keunikan dan kemanfaatan komoditas usaha (ada muatan intelektual) daripada profit. Pelaku utama adalah mahasiswa, sementara pihak lainnya hanya sebagai faktor pendukung.
