@@ -87,7 +87,7 @@ const TitleIEEE = () => {
                     fontFamily="thin"
                     textAlign={["center","justify"]}
                     >
-                    IEEE Student Branch Universitas Indonesia merupakan Branch pertama dari IEEE yang ada di Indonesia. Suatu kebanggaan bagi mahasiswa elektro UI untuk menjadi pioneer organisasi berkelas internasional ini. IEEE sendiri adalah suatu organisasi non-profit yang pertama kali didirikan di New York (US) pada 16 maret 1896. Tujuan dibentuknya IEEE adalah untuk menampung minat dan bakat mahasiswa dalam bidang keilmiahan serta pendidikan dalam mencapai kemajuan ilmu teknik elektro, dan teknik komputer.
+                    IEEE Student Branch Universitas Indonesia merupakan Branch pertama dari IEEE yang ada di Indonesia. Suatu kebanggaan bagi mahasiswa elektro UI untuk menjadi pioneer organisasi berkelas internasional ini. IEEE sendiri adalah suatu organisasi non-profit yang pertama kali didirikan di New York (US) pada 16 maret 1896. Tujuan dibentuknya IEEE adalah untuk menampung minat dan bakat mahasiswa dalam bidang keilmiahan serta pendidikan dalam mencapai kemajuan ilmu teknik elektro, teknik komputer, dan teknik biomedik.
                     </Text>
                     </motion.div>
                 </Flex>

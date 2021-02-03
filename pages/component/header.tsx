@@ -199,8 +199,8 @@ const Header = () => {
               backgroundColor="white"
               position={["static","static","static","absolute"]}
               color="#060049"
-              zIndex={5}
-              pt={["5rem","5rem","5rem","0"]}
+              zIndex={7}
+              pt={["5.5rem","5.5rem","5.5rem","0"]}
               overflow="auto"
               width={["100%","100%","100%","fit-content"]}
               >
@@ -240,7 +240,7 @@ const Header = () => {
               position={["static","static","static","absolute"]}
               color="#060049"
               zIndex={5}
-              pt={["5rem","5rem","5rem","0"]}
+              pt={["5.5rem","5.5rem","5.5rem","0"]}
               overflow="auto"
               width={["100%","100%","100%","fit-content"]}
               >
@@ -420,8 +420,8 @@ const Header = () => {
               backgroundColor="white"
               position={["static","static","static","absolute"]}
               color="#060049"
-              zIndex={5}
-              pt={["5rem","5rem","5rem","0"]}
+              zIndex={7}
+              pt={["5.5rem","5.5rem","5.5rem","0"]}
               overflow="auto"
               width={["100%","100%","100%","fit-content"]}
               >
@@ -461,7 +461,7 @@ const Header = () => {
               position={["static","static","static","absolute"]}
               color="#060049"
               zIndex={5}
-              pt={["5rem","5rem","5rem","0"]}
+              pt={["5.5rem","5.5rem","5.5rem","0"]}
               overflow="auto"
               width={["100%","100%","100%","fit-content"]}
               >
