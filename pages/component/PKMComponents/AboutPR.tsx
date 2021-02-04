@@ -50,7 +50,7 @@ const AboutPR = () => {
                         </Text>
                         <Text
                         fontWeight= "200"
-                        fontSize= "18px"
+                        fontSize= "20px"
                         lineHeight= "37px"
                         >
                         Meliputi penelitian yang mengungkap hubungan sebab-akibat, aksi-reaksi, rancang bangun, perilaku sosial, ekonomi, pendidikan, kesehatan atau budaya dalam desain eksperimental maupun deskriptif. Dikelompokkan menjadi Eksakta dan Sosial Humaniora
@@ -126,7 +126,7 @@ const AboutPR = () => {
                         </Text>
                         <Text
                         fontWeight= "200"
-                        fontSize= "18px"
+                        fontSize= "20px"
                         lineHeight= "37px"
                         >
                         Bertujuan untuk membuka wawasan iptek mahasiswa terhadap persoalan yang dihadapi dunia usaha (usaha mikro sampai perusahaan besar) atau masyarakat yang berorientasi pada profit. Solusi iptek yang diimplementasikan harus merupakan respon persoalan prioritas yang disampaikan calon mitra.
@@ -202,7 +202,7 @@ const AboutPR = () => {
                         </Text>
                         <Text
                         fontWeight= "200"
-                        fontSize= "18px"
+                        fontSize= "20px"
                         lineHeight= "37px"
                         >
                         Bertujuan membentuk kemampuan mahasiswa mengkreasikan sesuatu yang baru dan fungsional atas dasar karsa dan nalarnya. Karya cipta tersebut bisa saja belum memberikan kemanfaatan langsung bagi pihak lain. PKM-KC tidak meniru produk eksisting baik di dalam maupun luar negeri, kecuali memodifikasi prinsip dan/atau fungsinya.
@@ -278,7 +278,7 @@ const AboutPR = () => {
                         </Text>
                         <Text
                         fontWeight= "200"
-                        fontSize= "18px"
+                        fontSize= "20px"
                         lineHeight= "37px"
                         >
                         Bertujuan untuk menumbuhkan empati mahasiswa kepada persoalan yang dihadapi masyarakat melalui penerapan iptek kampus yang menjadi solusi tepat bagi persoalan atau kebutuhan masyarakat yang tidak berorientasi pada profit. Direkomendasikan merupakan respon persoalan yang disampaikan masyarakat dan bukan inisiatif mahasiswa.
@@ -354,7 +354,7 @@ const AboutPR = () => {
                         </Text>
                         <Text
                         fontWeight= "200"
-                        fontSize= "18px"
+                        fontSize= "20px"
                         lineHeight= "37px"
                         >
                         Bertujuan untuk meningkatkan daya imajinasi mahasiswa dalam merespon tantangan jaman, umumnya berupa konsep perubahan dan/atau pengembangan dari berbagai aspek berbangsa, bersifat futuristik, jangka panjang, tetapi berpotensi untuk direalisasikan.
@@ -430,7 +430,7 @@ const AboutPR = () => {
                         </Text>
                         <Text
                         fontWeight= "200"
-                        fontSize= "18px"
+                        fontSize= "20px"
                         lineHeight= "37px"
                         >
                         Bertujuan untuk memotivasi partisipasi mahasiswa dalam mengelola imajinasi, persepsi dan nalarnya, memikirkan tatakelola yang futuristik namun konstruktif sebagai upaya pencapaian tujuan SDGs di Indonesia ataupun solusi keprihatinan bangsa Indonesia.
@@ -506,7 +506,7 @@ const AboutPR = () => {
                         </Text>
                         <Text
                         fontWeight= "200"
-                        fontSize= "18px"
+                        fontSize= "20px"
                         lineHeight= "37px"
                         >
                         Bertujuan untuk memberi pengalaman mahasiswa menghasilkan karya tulis ilmiah. Merupakan program penulisan artikel ilmiah yang bersumber dari hasil kegiatan akademik lainnya dalam bidang pendidikan, penelitian atau pengabdian kepada masyarakat (misalnya studi kasus, praktik lapang, KKN, PKM, magang).
@@ -582,7 +582,7 @@ const AboutPR = () => {
                         </Text>
                         <Text
                         fontWeight= "200"
-                        fontSize= "18px"
+                        fontSize= "20px"
                         lineHeight= "37px"
                         >
                         Bertujuan untuk menumbuhkan pemahaman dan keterampilan mahasiswa dalam menghasilkan komoditas unik serta merintis kewirausahaan yang berorientasi pada profit. Namun, dalam hal ini lebih mengutamakan keunikan dan kemanfaatan komoditas usaha (ada muatan intelektual) daripada profit. Pelaku utama adalah mahasiswa, sementara pihak lainnya hanya sebagai faktor pendukung.

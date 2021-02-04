@@ -94,7 +94,7 @@ const TitleHome = () => {
           fontFamily="thin"
           fontWeight="100"
           lineHeight="28px">
-            PIPTEK IME FTUI
+            PIPTEK IME FTUI 2021
           </Box>
         </motion.div>
 
@@ -186,7 +186,7 @@ const TitleHome = () => {
             },
           }}
         >
-          <Link style={{textDecoration:"none"}}>
+          <Link style={{textDecoration:"none"}} href="/rotom">
             <Button
             as="a"
             backgroundColor="rgba(30, 113, 131,0.8)"

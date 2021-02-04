@@ -14,27 +14,41 @@ import { motion } from "framer-motion";
 const TitleAbout = () => {
     return(
         <Flex w="100%" flexDirection="column">
-          <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={{
-            hidden: {
-              scale: 0.8,
-              opacity: 0,
-            },
-            visible: {
-              scale: 1,
-              opacity: 1,
-              transition: {
-                delay: 1.2,
-              },
-            },
-          }}
-        >
-          <Box>
+          <Box
+          bgImage="url('/tim.jpg')"
+          bgPos="center"
+          bgSize="cover"
+          minHeight="564px"
+          >
+          <Flex 
+            backgroundColor="rgba(6, 0, 73,0.7)"
+            w="100%"
+            minHeight="564px"
+            h="100%"
+            justifyContent="center"
+            alignItems="center"
+            flexDirection="column"
+            padding="15px">
+              <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: {
+                  scale: 0.8,
+                  opacity: 0,
+                },
+                visible: {
+                  scale: 1,
+                  opacity: 1,
+                  transition: {
+                    delay: 1.2,
+                  },
+                },
+              }}
+            >
             <Text 
             as="h1"
-            color= "#060049"
+            color= "white"
             fontWeight= "bold"
             fontSize= {["38px","42px","48px","60px"]}
             lineHeight= "56px"
@@ -42,9 +56,21 @@ const TitleAbout = () => {
             fontFamily="heading"
             textAlign="center"
             mb="40px"
-            >ANGGOTA KAMI!</Text>
-          </Box>
+            >PIPTEK</Text>
+            <Text 
+            as="h1"
+            color= "white"
+            fontWeight= "bold"
+            fontSize= {["28px","32px","38px","50px"]}
+            lineHeight= "56px"
+            margin="0 auto"
+            fontFamily="thin"
+            textAlign="center"
+            fontStyle="italic"
+            >IME FTUI 2021</Text>
             </motion.div>
+          </Flex>
+        </Box>
             <motion.div
             initial="hidden"
             animate="visible"
@@ -65,7 +91,6 @@ const TitleAbout = () => {
           <Box>
             <Flex 
             padding="10px 50px" 
-            my="20px" 
             background="linear-gradient(90deg, #090076 0%, rgba(81, 77, 128, 0.547297) 51.04%, rgba(255, 255, 255, 0) 100%)" 
             color="black" 
             w="100%"
