@@ -80,19 +80,19 @@ const Footer = (props) => {
                 justifyContent={["center","center","center","right"]}>
                   <ChakraLink href="https://www.instagram.com/piptekimeftui/" isExternal>
                     <Box width="30px" h="30px" m="1">
-                      <img src="/sos/sos ig.png" />
+                      <img src="sos ig.png" />
                     </Box>
                   </ChakraLink>
 
                   <ChakraLink href="" isExternal>
                     <Box width="30px" h="30px" m="1">
-                      <img src="/sos/sos line.png" />
+                      <img src="sos line.png" />
                     </Box>
                   </ChakraLink>
 
                   <ChakraLink href="https://www.youtube.com/channel/UC6fC58wiDUMAYytdEshrw2Q" isExternal>
                     <Box width="30px" h="30px" m="1">
-                      <img src="/sos/sos yutub.png" />
+                      <img src="sos yutub.png" />
                     </Box>
                   </ChakraLink>
                 </Flex>
@@ -106,7 +106,7 @@ const Footer = (props) => {
                   fontWeight="500"
                   textAlign={["center","center","center","right"]}
                 >
-                  &copy; 2021 PIPTEK IME FTUI <br/> All Right Reserved
+                  &copy; 2021 PIPTEK IME FTUI <br/> All Right Reserved <br/> Designed by Shafa Tasya & PIPTEK IME FTUI
                 </Heading>
               </Text>
             </Flex>

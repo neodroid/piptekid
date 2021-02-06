@@ -8,7 +8,7 @@ export default function Ieee() {
       <div>
         <Head>
           <title>IEEE | PIPTEK IME FTUI</title>
-          <link rel="icon" href="/piptek.png" />
+          <link rel="icon" href="/sos/piptek.png" />
         </Head>
         <BannerIEEE/>
         <ContentIEEE/>

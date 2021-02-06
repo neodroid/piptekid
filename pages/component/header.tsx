@@ -91,7 +91,7 @@ const Header = () => {
     >
       {scrollNav || show ? 
       <Flex align="center" mr={5} justifyContent="center">
-        <Image width={["30px","30px","30px","50px"]} src="piptek.png"/>
+        <Image width={["30px","30px","30px","50px"]} src="/sos/piptek.png"/>
         <Box
             fontSize={["16px","16px","16px","20px"]}
             fontFamily="heading"
@@ -312,7 +312,7 @@ const Header = () => {
       >
         {scrollNav || show ? 
         <Flex align="center" mr={5} justifyContent="center">
-          <Image width={["30px","30px","30px","50px"]} src="piptek.png"/>
+          <Image width={["30px","30px","30px","50px"]} src="/sos/piptek.png"/>
           <Box
               fontSize={["16px","16px","16px","20px"]}
               fontFamily="heading"

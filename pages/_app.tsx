@@ -50,6 +50,7 @@ function App({ Component, pageProps, router }) {
         }
         `}
       />
+      <Header/>
       <motion.div
         key={router.route}
         initial="pageInitial"

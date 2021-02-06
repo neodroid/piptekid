@@ -8,7 +8,7 @@ export default function Exercise() {
       <div>
         <Head>
           <title>EXERCISE | PIPTEK IME FTUI</title>
-          <link rel="icon" href="/piptek.png" />
+          <link rel="icon" href="/sos/piptek.png" />
         </Head>
         <BannerExercise/>
         <ContentExercise/>

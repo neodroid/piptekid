@@ -49,7 +49,7 @@ const AboutPR = () => {
                             PKM Penelitian (PKM - P) [2021 menjadi PKM Riset (PKM - R)]
                         </Text>
                         <Text
-                        fontWeight= "200"
+                        fontWeight= "500"
                         fontSize= "20px"
                         lineHeight= "37px"
                         >
@@ -62,7 +62,7 @@ const AboutPR = () => {
                         borderRadius= "31px"
                         textAlign="left">
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -70,7 +70,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Jumlah Anggota</b>: 3-5 Mahasiswa
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -78,7 +78,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Luaran yang diharapkan</b>: Lap. Kemajuan, Lap. Akhir, Artikel Ilmiah, dan/atau Produk Program
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -86,7 +86,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Pendanaan</b>: Rp5-10 Juta
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -125,7 +125,7 @@ const AboutPR = () => {
                             PKM Penerapan Teknologi (PKM - T) [2021 menjadi PKM Penerapan Iptek (PKM - PI)]
                         </Text>
                         <Text
-                        fontWeight= "200"
+                        fontWeight= "500"
                         fontSize= "20px"
                         lineHeight= "37px"
                         >
@@ -138,7 +138,7 @@ const AboutPR = () => {
                         borderRadius= "31px"
                         textAlign="left">
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -146,7 +146,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Jumlah Anggota</b>: 3-5 Mahasiswa
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -154,7 +154,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Luaran yang diharapkan</b>: Lap. Kemajuan, Lap. Akhir, dan/atau Produk Program
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -162,7 +162,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Pendanaan</b>: Rp5-10 Juta
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -201,7 +201,7 @@ const AboutPR = () => {
                             PKM Karsa Cipta (PKM - KC)
                         </Text>
                         <Text
-                        fontWeight= "200"
+                        fontWeight= "500"
                         fontSize= "20px"
                         lineHeight= "37px"
                         >
@@ -214,7 +214,7 @@ const AboutPR = () => {
                         borderRadius= "31px"
                         textAlign="left">
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -222,7 +222,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Jumlah Anggota</b>: 3-5 Mahasiswa
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -230,7 +230,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Luaran yang diharapkan</b>: Lap. Kemajuan, Lap Akhir, Prototipe atau Produk Fungsional
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -238,7 +238,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Pendanaan</b>: Rp5-10 Juta
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -277,7 +277,7 @@ const AboutPR = () => {
                             PKM Pengabdian Masyarakat (PKM - M) [2021 menjadi PKM-PM]
                         </Text>
                         <Text
-                        fontWeight= "200"
+                        fontWeight= "500"
                         fontSize= "20px"
                         lineHeight= "37px"
                         >
@@ -290,7 +290,7 @@ const AboutPR = () => {
                         borderRadius= "31px"
                         textAlign="left">
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -298,7 +298,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Jumlah Anggota</b>: 3-5 Mahasiswa
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -306,7 +306,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Luaran yang diharapkan</b>: Lap. Kemajuan, Lap. Akhir, dan/atau Produk Program
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -314,7 +314,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Pendanaan</b>: Rp5-10 Juta
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -353,7 +353,7 @@ const AboutPR = () => {
                             PKM Gagasan Tertulis (PKM - GT)
                         </Text>
                         <Text
-                        fontWeight= "200"
+                        fontWeight= "500"
                         fontSize= "20px"
                         lineHeight= "37px"
                         >
@@ -366,7 +366,7 @@ const AboutPR = () => {
                         borderRadius= "31px"
                         textAlign="left">
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -374,7 +374,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Jumlah Anggota</b>: 3-5 Mahasiswa
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -382,7 +382,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Luaran yang diharapkan</b>: Artikel Ilmiah memuat konsep perubahan atau pengembangan
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -390,7 +390,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Pendanaan</b>: Intensif Rp3 Juta
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -429,7 +429,7 @@ const AboutPR = () => {
                         PKM Gagasan Futuristik Konstruktif (PKM - GFK)
                         </Text>
                         <Text
-                        fontWeight= "200"
+                        fontWeight= "500"
                         fontSize= "20px"
                         lineHeight= "37px"
                         >
@@ -442,7 +442,7 @@ const AboutPR = () => {
                         borderRadius= "31px"
                         textAlign="left">
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -450,7 +450,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Jumlah Anggota</b>: 3-5 Mahasiswa
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -458,7 +458,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Luaran yang diharapkan</b>: Lap. Kemajuan, Lap. Akhir, Video yang diunggah ke YOUTUBE
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -466,7 +466,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Pendanaan</b>: Rp5-10 Juta
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -505,7 +505,7 @@ const AboutPR = () => {
                         PKM Artikel Ilmiah (PKM - AI)
                         </Text>
                         <Text
-                        fontWeight= "200"
+                        fontWeight= "500"
                         fontSize= "20px"
                         lineHeight= "37px"
                         >
@@ -518,7 +518,7 @@ const AboutPR = () => {
                         borderRadius= "31px"
                         textAlign="left">
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -526,7 +526,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Jumlah Anggota</b>: 3-5 Mahasiswa
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -534,7 +534,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Luaran yang diharapkan</b>: Artikel Ilmiah
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -542,7 +542,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Pendanaan</b>: Intensif Rp3 Juta
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -581,7 +581,7 @@ const AboutPR = () => {
                         PKM Kewirausahaan (PKM - K)
                         </Text>
                         <Text
-                        fontWeight= "200"
+                        fontWeight= "500"
                         fontSize= "20px"
                         lineHeight= "37px"
                         >
@@ -594,7 +594,7 @@ const AboutPR = () => {
                         borderRadius= "31px"
                         textAlign="left">
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -602,7 +602,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Jumlah Anggota</b>: 3-5 Mahasiswa
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -610,7 +610,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Luaran yang diharapkan</b>: Lap. Kemajuan, Lap. Akhir, Produk Usaha
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"
@@ -618,7 +618,7 @@ const AboutPR = () => {
                                 <b style={{fontWeight:"bold"}}>Pendanaan</b>: Rp5-10 Juta
                             </Text>
                             <Text
-                            fontWeight= "200"
+                            fontWeight= "500"
                             fontSize= "18px"
                             lineHeight= "28px"
                             padding="12px 0"

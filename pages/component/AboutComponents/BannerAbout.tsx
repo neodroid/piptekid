@@ -15,7 +15,6 @@ import Header from "../header"
 const BannerAbout = () => {
     return(
         <>
-        <Header/>
         <Flex w="100%">
             <TitleAbout />
         </Flex>

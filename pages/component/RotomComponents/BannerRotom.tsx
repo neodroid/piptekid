@@ -7,6 +7,7 @@ import {
   Link,
 } from "@chakra-ui/core";
 import { motion } from "framer-motion";
+import { NONAME } from "dns";
 
 const BannerRotom = () => {
   return (
@@ -125,7 +126,7 @@ const BannerRotom = () => {
                         </Button>
                     </Link>
 
-                    <Link style={{textDecoration:"none"}}>
+                    <Link style={{textDecoration:"none"}} href="https://forms.gle/PE4Lh7h6BsuBXv6t7" isExternal>
                         <Button
                         background="rgba(196, 196, 196,0.2)"
                         fontWeight= "bold"

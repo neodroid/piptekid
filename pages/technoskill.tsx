@@ -22,7 +22,7 @@ export default function Technoskill() {
     <div>
       <Head>
         <title>TECHNOSKILL | PIPTEK IME FTUI</title>
-        <link rel="icon" href="/piptek.png" />
+        <link rel="icon" href="/sos/piptek.png" />
       </Head>
       {/* <Header/> */}
       <BannerTechno />

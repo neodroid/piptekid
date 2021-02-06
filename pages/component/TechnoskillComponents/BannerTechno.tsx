@@ -16,7 +16,6 @@ const BannerTechno = () => {
         color="black"
         textAlign="center"
       >
-        <Header/>
         <TitleTechno />
         {/* <HomeBan /> */}
       </Box>

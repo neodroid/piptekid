@@ -67,7 +67,7 @@ const TitleHome = () => {
           <Flex align="center" justify="center" mt="10">
             <img width="119px" src="ime.png" />
             <Box padding="10px">
-            <img width="119px" src="piptek.png" /></Box>
+            <img width="119px" src="/sos/piptek.png" /></Box>
           </Flex>
         </motion.div>
         <motion.div
@@ -200,8 +200,8 @@ const TitleHome = () => {
             }}
             onClick={() =>
               toast({
-                title: "Hello",
-                description: "Wait until IME FTUI 2021 reforming !",
+                title: "ROTOM",
+                description: "DTE Road To OIM",
                 status: "success",
                 duration: 2500,
                 isClosable: true,

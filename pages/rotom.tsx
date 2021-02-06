@@ -9,9 +9,8 @@ export default function Rotom() {
       <div>
         <Head>
           <title>ROTOM | PIPTEK IME FTUI</title>
-          <link rel="icon" href="/piptek.png" />
+          <link rel="icon" href="/sos/piptek.png" />
         </Head>
-        <Header/>
         <BannerRotom/>
         <ContentRotom/>
       </div>

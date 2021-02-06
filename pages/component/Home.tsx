@@ -22,7 +22,6 @@ const HomeFix = () => {
       backgroundColor="rgba(6, 0, 73,0.45)"
       padding="15px"
       zIndex={4}>
-        <Header />
         <TitleHome />
         </Box>
       </Box>
