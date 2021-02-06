@@ -11,6 +11,7 @@ export default function Rotom() {
           <title>ROTOM | PIPTEK IME FTUI</title>
           <link rel="icon" href="/sos/piptek.png" />
         </Head>
+        <Header/>
         <BannerRotom/>
         <ContentRotom/>
       </div>

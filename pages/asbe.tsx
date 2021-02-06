@@ -1,7 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import BannerASBE from "./component/ASBEComponents/BannerASBE";
-import ContentASBE from "./component/ASBEComponents/ContentASBE"
+import ContentASBE from "./component/ASBEComponents/ContentASBE";
+import Header from "./component/header";
 
 export default function Asbe() {
     return (
@@ -10,6 +11,7 @@ export default function Asbe() {
           <title>ASBE | PIPTEK IME FTUI</title>
           <link rel="icon" href="/sos/piptek.png" />
         </Head>
+        <Header/>
         <BannerASBE/>
         <ContentASBE/>
       </div>

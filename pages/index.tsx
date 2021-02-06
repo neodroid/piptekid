@@ -15,7 +15,7 @@ export default function Home() {
         <title>PIPTEK IME FTUI</title>
         <link rel="icon" href="/sos/piptek.png" />
       </Head>
-      {/* <Header/> */}
+      <Header/>
       <HomeFix />
       <Pengertian />
       <Vismis />

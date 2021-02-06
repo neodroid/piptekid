@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import BannerAbout from "./component/AboutComponents/BannerAbout";
 import BPAbout from "./component/AboutComponents/BPAbout";
+import Header from "./component/header"
 
 export default function Tim() {
     return (
@@ -10,6 +11,7 @@ export default function Tim() {
           <title>TIM | PIPTEK IME FTUI</title>
           <link rel="icon" href="/sos/piptek.png" />
         </Head>
+        <Header/>
         <BannerAbout />
         <BPAbout/>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

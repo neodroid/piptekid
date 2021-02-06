@@ -3,7 +3,8 @@ import { Flex } from "@chakra-ui/core";
 import Head from "next/head";
 import BannerPR from "./component/PKMComponents/BannerPR";
 import AboutPR from "./component/PKMComponents/AboutPR";
-import ContentP from "./component/PKMComponents/ContentP"
+import ContentP from "./component/PKMComponents/ContentP";
+import Header from "./component/header";
 
 export default function Pkmrotom() {
     return (
@@ -12,6 +13,7 @@ export default function Pkmrotom() {
           <title>PKM | PIPTEK IME FTUI</title>
           <link rel="icon" href="/sos/piptek.png" />
         </Head>
+        <Header/>
         <BannerPR />
         <AboutPR />
         <ContentP/>

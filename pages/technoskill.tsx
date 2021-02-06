@@ -24,7 +24,7 @@ export default function Technoskill() {
         <title>TECHNOSKILL | PIPTEK IME FTUI</title>
         <link rel="icon" href="/sos/piptek.png" />
       </Head>
-      {/* <Header/> */}
+      <Header/>
       <BannerTechno />
       <AboutTechno />
       <Timeline />
