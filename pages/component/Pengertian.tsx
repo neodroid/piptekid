@@ -67,7 +67,7 @@ const Pengertian = () => {
             marginBottom={["15px", "15px", "15px","0"]}
             lineHeight= {["22px", "22px", "22px","37px"]}
           >
-            Piptek IME FTUI merupakan bidang yang berperan 
+            PIPTEK IME FTUI merupakan bidang yang berperan 
             sebagai <b>fasilitator</b> dan <b>katalisator</b> minat, 
             bakat, serta aspirasi warga Departemen Teknik 
             Elektro di <b>bidang keilmiahan.</b>

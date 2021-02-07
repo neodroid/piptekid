@@ -46,12 +46,12 @@ const ContentRotom = () => {
         flexDirection="row-reverse"
         fontSize={["25px","25px","25px","30px"]}
         lineHeight="56px"
-        >TIMELINE
+        >TIMELINE OIM FTUI
     </Flex>
     <Box
     w="100%"
     overflowX="scroll">
-        <Image src="timelineoim.jpg" minWidth="1310px"/>
+        <Image src="timelineoim.png" minWidth="1310px"/>
     </Box>
     <Flex 
         padding="10px 50px" 
