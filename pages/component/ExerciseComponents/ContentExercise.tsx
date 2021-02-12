@@ -79,9 +79,13 @@ const ContentExercise = () => {
                 textAlign="justify"
                 mb="60px"
                 >
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. tetur adipiscing elit. Iaculis et lectus tellus mi varius commodo nulla. Suspendisse accumsan, dui morbi vitae augue risus lectus. Velit magna id nunc, aliquam suscipit lorem. Habitant felis commodo viverra faucibus nec.<br/>
-                    1. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. tetur adipiscing elit. Iaculis et lectus tellus mi varius commodo nulla.<br/>
-                    2. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. tetur adipiscing elit. Iaculis et lectus tellus mi varius commodo nulla.<br/>
+                    Jika kamu tertarik dengan proyek dengan pihak eksternal, perancangan pelatihan, dan lain sebagainya. Inilah saat yang tepat untuk bergabung dengan Exercise!<br/>
+                    1. E-Competition<br/>
+                    2. E-Kongkow<br/>
+                    3. E-News<br/>
+                    4. Training<br/>
+                    5. Pengerjaan Proyek<br/>
+                    6. Workplace QC<br/>
                 </Text>
 
             <Flex 
@@ -104,7 +108,7 @@ const ContentExercise = () => {
                     lineHeight= "28px"
                     padding="12px 0"
                     >
-                    Pencapaian Exercise
+                    Projek Exercise
                     </Text>
                     </Flex>
                     </Flex>
@@ -115,9 +119,12 @@ const ContentExercise = () => {
                 textAlign="justify"
                 mb="60px"
                 >
-                    Pada tahun 2012, Exercise pernah menyelesaikan satu proyek dari alumni berupa auto-manual controller motor induksi untuk kepentingan industri. Pada tahun 2013, Exercise dapat dikatakan ‘mati suri’, meskipun terdapat juga proyek atas nama Exercise.<br/>
-                    1. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. tetur adipiscing elit. Iaculis et lectus tellus mi varius commodo nulla.<br/>
-                    2. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. tetur adipiscing elit. Iaculis et lectus tellus mi varius commodo nulla. 
+                    Berikut adalah projek yang pernah dilakukan oleh Exercise<br/>
+                    1. Fintech Automation System<br/>
+                    2. Electric Bike & Solar Charging Station <br/>
+                    3. Microwave Imaging System <br/>
+                    4. Portable Electric Suitcase <br/>
+                    5. Coding Management On Medical Device
                 </Text>
                 
         </Box>
