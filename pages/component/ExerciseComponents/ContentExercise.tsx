@@ -120,7 +120,7 @@ const ContentExercise = () => {
                 mb="60px"
                 >
                     Berikut adalah projek yang pernah dilakukan oleh Exercise<br/>
-                    1. Fintech Automation System<br/>
+                    1. Fintech Automation System <br/>
                     2. Electric Bike & Solar Charging Station <br/>
                     3. Microwave Imaging System <br/>
                     4. Portable Electric Suitcase <br/>
