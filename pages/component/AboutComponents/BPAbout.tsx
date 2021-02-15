@@ -41,15 +41,16 @@ const TitleAbout = () => {
               <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
                       <Image 
-                      src="user.png"
-                       width="192px" 
-                       borderRadius="full"/>
+                      src="afiya.png"
+                       width="192px"
+                       height="192px" 
+                       borderRadius="100%"/>
                        <Text
                        fontStyle= "italic"
                        fontSize="20px"
-                       fontWeight="300"
+                       fontWeight="400"
                        padding="10px"
-                       textAlign="center">Akan Datang</Text>
+                       textAlign="center">Afiya Maritza</Text>
                        <Box
                        fontStyle= "italic"
                        borderRadius="10px 0 10px 0"
@@ -64,15 +65,16 @@ const TitleAbout = () => {
               <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
                       <Image 
-                      src="user.png"
-                       width="192px" 
-                       borderRadius="full"/>
+                      src="risky.png"
+                       width="192px"
+                       height="192px" 
+                       borderRadius="100%"/>
                        <Text
                        fontStyle= "italic"
                        fontSize="20px"
-                       fontWeight="300"
+                       fontWeight="400"
                        padding="10px"
-                       textAlign="center">Akan Datang</Text>
+                       textAlign="center">Ahmad Risky Zachary</Text>
                        <Box
                        fontStyle= "italic"
                        borderRadius="10px 0 10px 0"
@@ -87,15 +89,16 @@ const TitleAbout = () => {
               <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
                       <Image 
-                      src="user.png"
-                       width="192px" 
-                       borderRadius="full"/>
+                      src="baihaqi.png"
+                       width="192px"
+                       height="192px" 
+                       borderRadius="100%"/>
                        <Text
                        fontStyle= "italic"
                        fontSize="20px"
-                       fontWeight="300"
+                       fontWeight="400"
                        padding="10px"
-                       textAlign="center">Akan Datang</Text>
+                       textAlign="center">Baihaqi Hamiz</Text>
                        <Box
                        fontStyle= "italic"
                        borderRadius="10px 0 10px 0"
@@ -110,15 +113,16 @@ const TitleAbout = () => {
               <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
                       <Image 
-                      src="user.png"
-                       width="192px" 
-                       borderRadius="full"/>
+                      src="brandon.png"
+                       width="192px"
+                       height="192px" 
+                       borderRadius="100%"/>
                        <Text
                        fontStyle= "italic"
                        fontSize="20px"
-                       fontWeight="300"
+                       fontWeight="400"
                        padding="10px"
-                       textAlign="center">Akan Datang</Text>
+                       textAlign="center">Brandon Matthew</Text>
                        <Box
                        fontStyle= "italic"
                        borderRadius="10px 0 10px 0"
@@ -133,15 +137,16 @@ const TitleAbout = () => {
               <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
                       <Image 
-                      src="user.png"
-                       width="192px" 
-                       borderRadius="full"/>
+                      src="kirana.jpg"
+                       width="192px"
+                       height="192px" 
+                       borderRadius="100%"/>
                        <Text
                        fontStyle= "italic"
                        fontSize="20px"
-                       fontWeight="300"
+                       fontWeight="400"
                        padding="10px"
-                       textAlign="center">Akan Datang</Text>
+                       textAlign="center">Kirana Rashifa Zahra</Text>
                        <Box
                        fontStyle= "italic"
                        borderRadius="10px 0 10px 0"
@@ -156,15 +161,16 @@ const TitleAbout = () => {
               <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
                       <Image 
-                      src="user.png"
-                       width="192px" 
-                       borderRadius="full"/>
+                      src="akmal.png"
+                       width="192px"
+                       height="192px" 
+                       borderRadius="100%"/>
                        <Text
                        fontStyle= "italic"
                        fontSize="20px"
-                       fontWeight="300"
+                       fontWeight="400"
                        padding="10px"
-                       textAlign="center">Akan Datang</Text>
+                       textAlign="center">Muhammad Akmal Zuhdi</Text>
                        <Box
                        fontStyle= "italic"
                        borderRadius="10px 0 10px 0"
@@ -179,15 +185,16 @@ const TitleAbout = () => {
               <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
                       <Image 
-                      src="user.png"
-                       width="192px" 
-                       borderRadius="full"/>
+                      src="haitsam.png"
+                       width="192px"
+                       height="192px" 
+                       borderRadius="100%"/>
                        <Text
                        fontStyle= "italic"
                        fontSize="20px"
-                       fontWeight="300"
+                       fontWeight="400"
                        padding="10px"
-                       textAlign="center">Akan Datang</Text>
+                       textAlign="center">Muhammad Haitsam Sidqy</Text>
                        <Box
                        fontStyle= "italic"
                        borderRadius="10px 0 10px 0"
@@ -202,15 +209,16 @@ const TitleAbout = () => {
               <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
                       <Image 
-                      src="user.png"
-                       width="192px" 
-                       borderRadius="full"/>
+                      src="rafli.png"
+                       width="192px"
+                       height="192px" 
+                       borderRadius="100%"/>
                        <Text
                        fontStyle= "italic"
                        fontSize="20px"
-                       fontWeight="300"
+                       fontWeight="400"
                        padding="10px"
-                       textAlign="center">Akan Datang</Text>
+                       textAlign="center">Muhammad Rafli Nurhidayat</Text>
                        <Box
                        fontStyle= "italic"
                        borderRadius="10px 0 10px 0"
@@ -225,15 +233,16 @@ const TitleAbout = () => {
               <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
                       <Image 
-                      src="user.png"
-                       width="192px" 
-                       borderRadius="full"/>
+                      src="noah.png"
+                       width="192px"
+                       height="192px" 
+                       borderRadius="100%"/>
                        <Text
                        fontStyle= "italic"
                        fontSize="20px"
-                       fontWeight="300"
+                       fontWeight="400"
                        padding="10px"
-                       textAlign="center">Akan Datang</Text>
+                       textAlign="center">Noah Syanahan</Text>
                        <Box
                        fontStyle= "italic"
                        borderRadius="10px 0 10px 0"
@@ -248,15 +257,16 @@ const TitleAbout = () => {
               <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
                       <Image 
-                      src="user.png"
-                       width="192px" 
-                       borderRadius="full"/>
+                      src="annas.png"
+                       width="192px"
+                       height="192px" 
+                       borderRadius="100%"/>
                        <Text
                        fontStyle= "italic"
                        fontSize="20px"
-                       fontWeight="300"
+                       fontWeight="400"
                        padding="10px"
-                       textAlign="center">Akan Datang</Text>
+                       textAlign="center">Rifqi Annas Albasyahri</Text>
                        <Box
                        fontStyle= "italic"
                        borderRadius="10px 0 10px 0"
@@ -271,15 +281,16 @@ const TitleAbout = () => {
               <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
                       <Image 
-                      src="user.png"
-                       width="192px" 
-                       borderRadius="full"/>
+                      src="robert.png"
+                       width="192px"
+                       height="192px" 
+                       borderRadius="100%"/>
                        <Text
                        fontStyle= "italic"
                        fontSize="20px"
-                       fontWeight="300"
+                       fontWeight="400"
                        padding="10px"
-                       textAlign="center">Akan Datang</Text>
+                       textAlign="center">Robert Theodore</Text>
                        <Box
                        fontStyle= "italic"
                        borderRadius="10px 0 10px 0"
@@ -294,15 +305,16 @@ const TitleAbout = () => {
               <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
                       <Image 
-                      src="user.png"
-                       width="192px" 
-                       borderRadius="full"/>
+                      src="salma.jpg"
+                       width="192px"
+                       height="192px" 
+                       borderRadius="100%"/>
                        <Text
                        fontStyle= "italic"
                        fontSize="20px"
-                       fontWeight="300"
+                       fontWeight="400"
                        padding="10px"
-                       textAlign="center">Akan Datang</Text>
+                       textAlign="center">Salma Dewi Taufiqoh</Text>
                        <Box
                        fontStyle= "italic"
                        borderRadius="10px 0 10px 0"
@@ -317,15 +329,16 @@ const TitleAbout = () => {
               <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
                       <Image 
-                      src="user.png"
-                       width="192px" 
-                       borderRadius="full"/>
+                      src="theo.jpg"
+                       width="192px"
+                       height="192px" 
+                       borderRadius="100%"/>
                        <Text
                        fontStyle= "italic"
                        fontSize="20px"
-                       fontWeight="300"
+                       fontWeight="400"
                        padding="10px"
-                       textAlign="center">Akan Datang</Text>
+                       textAlign="center">Theonaldo Vincentius Androdi</Text>
                        <Box
                        fontStyle= "italic"
                        borderRadius="10px 0 10px 0"
@@ -340,15 +353,16 @@ const TitleAbout = () => {
               <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
                       <Image 
-                      src="user.png"
-                       width="192px" 
-                       borderRadius="full"/>
+                      src="thorik.png"
+                       width="192px"
+                       height="192px" 
+                       borderRadius="100%"/>
                        <Text
                        fontStyle= "italic"
                        fontSize="20px"
-                       fontWeight="300"
+                       fontWeight="400"
                        padding="10px"
-                       textAlign="center">Akan Datang</Text>
+                       textAlign="center">Thoriksyah Putra</Text>
                        <Box
                        fontStyle= "italic"
                        borderRadius="10px 0 10px 0"
@@ -363,15 +377,16 @@ const TitleAbout = () => {
               <Box>
                   <Flex flexDirection="column" py="50px" px="15px" alignItems="center" w="100%">
                       <Image 
-                      src="user.png"
-                       width="192px" 
-                       borderRadius="full"/>
+                      src="tebe.png"
+                       width="192px"
+                       height="192px" 
+                       borderRadius="100%"/>
                        <Text
                        fontStyle= "italic"
                        fontSize="20px"
-                       fontWeight="300"
+                       fontWeight="400"
                        padding="10px"
-                       textAlign="center">Akan Datang</Text>
+                       textAlign="center">Tubagus Dylan</Text>
                        <Box
                        fontStyle= "italic"
                        borderRadius="10px 0 10px 0"

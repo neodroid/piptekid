@@ -142,7 +142,7 @@ const TitleAbout = () => {
                        <Text
                        fontStyle= "italic"
                        fontSize="20px"
-                       fontWeight="300"
+                       fontWeight="400"
                        padding="10px"
                        textAlign="center">M Arkana Yudhistira</Text>
                        <Box
@@ -171,7 +171,7 @@ const TitleAbout = () => {
                        <Text
                        fontStyle= "italic"
                        fontSize="20px"
-                       fontWeight="300"
+                       fontWeight="400"
                        padding="10px"
                        textAlign="center">M Fairuz Mummtaz</Text>
                        <Box
@@ -200,7 +200,7 @@ const TitleAbout = () => {
                        <Text
                        fontStyle= "italic"
                        fontSize="20px"
-                       fontWeight="300"
+                       fontWeight="400"
                        padding="10px"
                        textAlign="center">Rayhan Rizky Akbar A</Text>
                        <Box
@@ -240,7 +240,7 @@ const TitleAbout = () => {
                        <Text
                        fontStyle= "italic"
                        fontSize="20px"
-                       fontWeight="300"
+                       fontWeight="400"
                        padding="10px"
                        textAlign="center">Thariq Hadyan</Text>
                        <Box
@@ -269,7 +269,7 @@ const TitleAbout = () => {
                        <Text
                        fontStyle= "italic"
                        fontSize="20px"
-                       fontWeight="300"
+                       fontWeight="400"
                        padding="10px"
                        textAlign="center">Alifya Ananda K</Text>
                        <Box
