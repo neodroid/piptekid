@@ -9,7 +9,8 @@ export default function Tim() {
       <div>
         <Head>
           <title>TIM | PIPTEK IME FTUI</title>
-          <link rel="icon" href="favicon.ico" />
+          <link rel="apple-touch-icon" href="/sos/piptek.png" />
+          <link rel="icon" href="/sos/piptek.png" />
         </Head>
         <Header/>
         <BannerAbout />

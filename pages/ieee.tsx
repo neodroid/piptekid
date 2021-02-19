@@ -9,6 +9,7 @@ export default function Ieee() {
       <div>
         <Head>
           <title>IEEE | PIPTEK IME FTUI</title>
+          <link rel="apple-touch-icon" href="/sos/piptek.png" />
           <link rel="icon" href="/sos/piptek.png" />
         </Head>
         <Header/>

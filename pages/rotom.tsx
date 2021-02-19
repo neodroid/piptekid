@@ -9,6 +9,7 @@ export default function Rotom() {
       <div>
         <Head>
           <title>ROTOM | PIPTEK IME FTUI</title>
+          <link rel="apple-touch-icon" href="/sos/piptek.png" />
           <link rel="icon" href="/sos/piptek.png" />
         </Head>
         <Header/>

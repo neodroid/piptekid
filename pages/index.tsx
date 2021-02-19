@@ -13,7 +13,8 @@ export default function Home() {
     <div>
       <Head>
         <title>PIPTEK IME FTUI</title>
-        <link rel="icon" href="favicon.ico" />
+        <link rel="apple-touch-icon" href="/sos/piptek.png" />
+          <link rel="icon" href="/sos/piptek.png" />
       </Head>
       <Header/>
       <HomeFix />

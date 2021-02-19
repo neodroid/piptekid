@@ -11,6 +11,7 @@ export default function Pkmrotom() {
       <div>
         <Head>
           <title>PKM | PIPTEK IME FTUI</title>
+          <link rel="apple-touch-icon" href="/sos/piptek.png" />
           <link rel="icon" href="/sos/piptek.png" />
         </Head>
         <Header/>
