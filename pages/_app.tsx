@@ -4,6 +4,7 @@ import { ThemeProvider, CSSReset } from "@chakra-ui/core";
 import Header from "./component/header";
 import Footer from "./component/footer";
 import { Global, css } from "@emotion/core";
+import Head from "next/head";
 import theme from "../theme";
 import { motion } from "framer-motion";
 
@@ -11,6 +12,11 @@ const breakpoints = ["480px", "768px", "1125px", "1440px"];
 
 function App({ Component, pageProps, router }) {
   return (
+    <>
+    <Head>
+      <link rel="apple-touch-icon" href="/sos/piptek.png" />
+      <link rel="icon" href="/sos/piptek.png" />
+    </Head>
     <ThemeProvider theme={theme}>
       <CSSReset />
 
@@ -67,6 +73,7 @@ function App({ Component, pageProps, router }) {
       </motion.div>
       <Footer />
     </ThemeProvider>
+    </>
   );
 }
 
