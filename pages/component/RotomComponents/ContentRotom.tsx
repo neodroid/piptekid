@@ -51,7 +51,7 @@ const ContentRotom = () => {
     <Box
     w="100%"
     overflowX="scroll">
-        <Image src="timelineoim.png" minWidth="1310px"/>
+        <Image src="timelineoim.jpg" minWidth="1310px"/>
     </Box>
     <Flex 
         padding="10px 50px" 
