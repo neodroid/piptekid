@@ -106,9 +106,9 @@ const BannerRotom = () => {
                   width="85%"
                   m="130px auto 10px"
                   textAlign="center"
-                  flexDirection={["column","column","row","row"]}
+                  flexDirection={["column","column","column","row"]}
                   alignSelf="center">
-                    <Link style={{textDecoration:"none"}}>
+                    <Link style={{textDecoration:"none"}} href="https://drive.google.com/drive/u/3/folders/1OUolgTXeXs49Q8ZK6TjcQoi98T_gii3f" isExternal>
                         <Button
                         background="rgba(196, 196, 196,0.2)"
                           fontWeight= "bold"
@@ -118,11 +118,29 @@ const BannerRotom = () => {
                           borderRadius="34px"
                           color="white"
                           m="20px"
-                          w={["fit-content","fit-content","250px","350px"]}
+                          w={["230px","230px","250px","350px"]}
                           _hover={{ 
                             transform: "scale(1.05)",
                           }}>
-                            Guidebook
+                            Booklet
+                        </Button>
+                    </Link>
+
+                    <Link style={{textDecoration:"none"}} href="https://forms.gle/aofiLfH46nch7y3t6" isExternal>
+                        <Button
+                        background="rgba(196, 196, 196,0.2)"
+                          fontWeight= "bold"
+                          fontSize= "30px"
+                          textAlign="center"
+                          padding="25px"
+                          borderRadius="34px"
+                          color="white"
+                          w={["230px","230px","250px","350px"]}
+                          m="20px"
+                          _hover={{ 
+                            transform: "scale(1.05)",
+                          }}>
+                            Submission
                         </Button>
                     </Link>
 

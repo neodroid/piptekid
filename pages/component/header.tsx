@@ -12,6 +12,7 @@ import {
   Portal
 } from "@chakra-ui/core";
 import Link from "next/link";
+import {motion} from "framer-motion";
 
 const MenuItemses = ({ children }) => (
   <Button
@@ -44,7 +45,7 @@ const Header = () => {
   const [scrollNav, setScrollnav] = useState(false);
   const handleToggle = () => setShow(!show);
   const changeNav = () => {
-    if (window.scrollY > 3) {
+    if (window.scrollY > 20) {
       setScrollnav(true);
     } else {
       setScrollnav(false);
@@ -148,6 +149,7 @@ const Header = () => {
           alignSelf="center"
           alignItems="center"
         >
+        
           <MenuItemses>
           <Menu>
           <Link href="/">
@@ -165,6 +167,7 @@ const Header = () => {
               HOME</MenuButton></Link>
             </Menu>
           </MenuItemses>
+         
           <MenuItemses>
           <Menu>
           <Link href="/pkm">
@@ -182,6 +185,7 @@ const Header = () => {
               PKM</MenuButton></Link>
             </Menu>
           </MenuItemses>
+  
           <MenuItemses>
           <Menu>
               <MenuButton
@@ -222,6 +226,7 @@ const Header = () => {
               </MenuList>
             </Menu>
           </MenuItemses>
+
           <MenuItemses>
             <Menu>
               <MenuButton
@@ -256,6 +261,7 @@ const Header = () => {
               </MenuList>
             </Menu>
           </MenuItemses>
+         
           <MenuItemses>
           <Menu>
           <Link href="/tim">
@@ -369,6 +375,23 @@ const Header = () => {
           alignSelf="center"
           alignItems="center"
         >
+          <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 0.8,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 1,
+              },
+            },
+          }}
+        >
           <MenuItemses>
           <Menu>
           <Link href="/">
@@ -386,6 +409,25 @@ const Header = () => {
               HOME</MenuButton></Link>
             </Menu>
           </MenuItemses>
+          </motion.div>
+
+          <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 0.8,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 1.2,
+              },
+            },
+          }}
+        >
           <MenuItemses>
           <Menu>
           <Link href="/pkm">
@@ -403,6 +445,25 @@ const Header = () => {
               PKM</MenuButton></Link>
             </Menu>
           </MenuItemses>
+          </motion.div>
+
+          <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 0.8,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 1.4,
+              },
+            },
+          }}
+        >
           <MenuItemses>
           <Menu>
               <MenuButton
@@ -443,6 +504,25 @@ const Header = () => {
               </MenuList>
             </Menu>
           </MenuItemses>
+          </motion.div>
+
+          <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 0.8,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 1.6,
+              },
+            },
+          }}
+        >
           <MenuItemses>
             <Menu>
               <MenuButton
@@ -477,6 +557,25 @@ const Header = () => {
               </MenuList>
             </Menu>
           </MenuItemses>
+          </motion.div>
+
+          <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 0.8,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 1.8,
+              },
+            },
+          }}
+        >
           <MenuItemses>
           <Menu>
           <Link href="/tim">
@@ -495,6 +594,7 @@ const Header = () => {
             </MenuButton></Link>
             </Menu>
           </MenuItemses>
+          </motion.div>
         </Flex>
       </Flex>
     </Flex>
