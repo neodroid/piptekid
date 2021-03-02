@@ -85,6 +85,12 @@ const BannerRotom = () => {
                         </Text>
                         </motion.div>
                     </Box>
+                <Flex
+                  width="85%"
+                  m="130px auto 10px"
+                  textAlign="center"
+                  flexDirection={["column","column","column","row"]}
+                  alignSelf="center">
                     <motion.div
                         initial="hidden"
                         animate="visible"
@@ -102,12 +108,6 @@ const BannerRotom = () => {
                           },
                         }}
                       >
-                <Flex
-                  width="85%"
-                  m="130px auto 10px"
-                  textAlign="center"
-                  flexDirection={["column","column","column","row"]}
-                  alignSelf="center">
                     <Link style={{textDecoration:"none"}} href="https://drive.google.com/drive/u/3/folders/1OUolgTXeXs49Q8ZK6TjcQoi98T_gii3f" isExternal>
                         <Button
                         background="rgba(196, 196, 196,0.2)"
@@ -118,6 +118,7 @@ const BannerRotom = () => {
                           borderRadius="34px"
                           color="white"
                           m="20px"
+                          outline="none"
                           w={["230px","230px","250px","350px"]}
                           _hover={{ 
                             transform: "scale(1.05)",
@@ -125,7 +126,25 @@ const BannerRotom = () => {
                             Booklet
                         </Button>
                     </Link>
+                    </motion.div>
 
+                    <motion.div
+                        initial="hidden"
+                        animate="visible"
+                        variants={{
+                          hidden: {
+                            scale: 0.8,
+                            opacity: 0,
+                          },
+                          visible: {
+                            scale: 1,
+                            opacity: 1,
+                            transition: {
+                              delay: 1.8,
+                            },
+                          },
+                        }}
+                      >
                     <Link style={{textDecoration:"none"}} href="https://forms.gle/aofiLfH46nch7y3t6" isExternal>
                         <Button
                         background="rgba(196, 196, 196,0.2)"
@@ -135,6 +154,7 @@ const BannerRotom = () => {
                           padding="25px"
                           borderRadius="34px"
                           color="white"
+                          outline="none"
                           w={["230px","230px","250px","350px"]}
                           m="20px"
                           _hover={{ 
@@ -143,26 +163,8 @@ const BannerRotom = () => {
                             Submission
                         </Button>
                     </Link>
-
-                    <Link style={{textDecoration:"none"}} href="https://forms.gle/PE4Lh7h6BsuBXv6t7" isExternal>
-                        <Button
-                        background="rgba(196, 196, 196,0.2)"
-                        fontWeight= "bold"
-                        w={["230px","230px","250px","350px"]}
-                        fontSize= "30px"
-                        textAlign="center"
-                        padding="25px"
-                        borderRadius="34px"
-                        color="white"
-                        m="20px"
-                        _hover={{ 
-                            transform: "scale(1.05)",
-                        }}>
-                            Registration
-                        </Button>
-                    </Link>
+                    </motion.div>
                 </Flex>
-                </motion.div>
           </Flex>
         </Box>
     </>
