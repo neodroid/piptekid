@@ -186,7 +186,7 @@ const TitleHome = () => {
             },
           }}
         >
-          <Link style={{textDecoration:"none"}} href="/rotom">
+          <Link style={{textDecoration:"none"}} href="/technoskill">
             <Button
             as="a"
             backgroundColor="rgba(30, 113, 131,0.8)"

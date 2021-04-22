@@ -5,10 +5,8 @@ import React from "react";
 import AboutTechno from "./component/TechnoskillComponents/AboutTechno";
 import BannerTechno from "./component/TechnoskillComponents/BannerTechno";
 import Header from "./component/header";
-
-import HomeFix from "./component/Home";
-import Pengertian from "./component/Pengertian";
-import Timeline from "./component/Timeline";
+import Timeline from "./component/TechnoskillComponents/Timeline";
+import ContainerTechno from "./component/TechnoskillComponents/ContainerTechno";
 
 // function makeSound(){
 //   var snare= new Audio("https://www.mboxdrive.com/Jingle%20PSAF.mp3")
@@ -28,6 +26,7 @@ export default function Technoskill() {
       <Header/>
       <BannerTechno />
       <AboutTechno />
+      <ContainerTechno/>
       <Timeline />
     </div>
   );

@@ -5,29 +5,16 @@ const AboutTechno = () => {
   return (
     <Flex justifyContent="center" alignItems="center" w="100%" bg="white">
       <Flex
-        width={[
-          "100%", // base
-          "100%", // 480px upwards
-          "100%", // 768px upwards
-          "1060px", // 992px upwards
-        ]}
-        as="nav"
+        width="80%"
         align="center"
         justify="space-between"
         wrap="wrap"
-        padding="1.5rem"
         bg="white"
         color="#2F80ED"
-        flexDirection="row"
+        my="10"
       >
         <Box
-          m="5"
-          maxW={[
-            "100%", // base
-            "100%", // 480px upwards
-            "100%", // 768px upwards
-            "40%", // 992px upwards
-          ]}
+          maxW="100%"
           justifyContent="center"
         >
           <Heading
@@ -36,37 +23,29 @@ const AboutTechno = () => {
             letterSpacing={".1rem"}
             fontFamily="heading"
             fontWeight="bold"
+            mb="10px"
           >
             {" "}
             <Text color="#254D69" fontFamily="heading">
-              What is Technoskill?
+              APA ITU TECHNOSKILL?
             </Text>
           </Heading>
 
           <Text
             color="black"
             textAlign="justify"
-            fontSize={["xs", "xl"]}
+            fontSize="xl"
             letterSpacing={".1rem"}
             w="100%"
           >
-            Technoskill is an event created by PIPTEK IME FTUI, Technoskill
-            consist series of workshop, competition, and seminar for
-            undergradute student in electrical engineering students department
-            at University of Indonesia. This year, technoskill will bring data
-            science to predict and analyze all data around the world. So, come
-            join and become the next data scientist!
+            Technoskill merupakan sebuah acara yang dibuat 
+            oleh PIPTEK IME FTUI dimana acara tersebut berupa 
+            pelatihan untuk meningkatkan hardskill dan wawasan 
+            ke-IPTEK-an. Technoskill tahun ini akan membawa tema 
+            <em> Basic Phyton</em> and <em>Machine Learning </em> 
+            untuk memberikan keahlian yang dibutuhkan agar dapat 
+            menunjang masa perkuliahan dan masa kerjanya nanti.
           </Text>
-        </Box>
-        <Box
-          width={[
-            "100%", // base
-            "100%", // 480px upwards
-            "100%", // 768px upwards
-            "50%", // 992px upwards
-          ]}
-        >
-          <img src="/ardui.png" />
         </Box>
       </Flex>
     </Flex>
