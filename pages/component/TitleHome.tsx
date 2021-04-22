@@ -200,8 +200,8 @@ const TitleHome = () => {
             }}
             onClick={() =>
               toast({
-                title: "ROTOM",
-                description: "DTE Road To OIM",
+                title: "TECHNOSKILL 1.0",
+                description: "Pewadahan terkait kehandalan di bidang teknologi!",
                 status: "success",
                 duration: 2500,
                 isClosable: true,

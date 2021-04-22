@@ -63,7 +63,7 @@ const ContainerTechno = () => {
       justifyContent="center"
       m="0 auto"
     ><Text>
-      Technoskill 1.0 kali akan membawakan tema <b><em>Basic Phyton and Machine Learning </em></b> 
+      Technoskill 1.0 kali ini akan membawakan tema <b><em>Basic Phyton and Machine Learning </em></b> 
       dimana para peserta akan diberikan pengetahuan terkait bahasa 
       pemrograman Phyton dan sedikit pengetahuan dasar terkait penggunaan 
       <em> Machine Learning</em> menggunakan bahasa Phyton. Pelaksanaan Technoskill 
