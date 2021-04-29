@@ -83,7 +83,7 @@ const BannerTechno = () => {
                           },
                         }}
                       >
-                    <Link style={{textDecoration:"none"}}>
+                    <Link style={{textDecoration:"none"}} href="https://drive.google.com/drive/folders/1JacYr2lU_M00S1JOE1TEUnaSsZWLMHcM?usp=sharing" isExternal>
                         <Button
                         background="rgba(196, 196, 196,0.2)"
                           fontWeight= "bold"
@@ -98,14 +98,6 @@ const BannerTechno = () => {
                           _hover={{ 
                             transform: "scale(1.05)",
                           }}
-                          onClick={() =>
-                            toast({
-                              title: "GUIDEBOOK",
-                              description: "Akan datang",
-                              status: "success",
-                              duration: 2500,
-                              isClosable: true,
-                            })}
                           >
                             Guidebook
                         </Button>

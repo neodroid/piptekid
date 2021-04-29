@@ -565,7 +565,7 @@ const AboutPR = () => {
                 margin="0px auto 4px"
                 >
                     <Flex flexBasis="20%" alignItems="center" justifyContent="center" pb={["50px","50px","50px","0"]}>
-                        <Image width="120px" src="pkmai.png"/>
+                        <Image width="120px" src="pkmk.png"/>
                     </Flex>
                     <Flex 
                     flexBasis="80%" 
