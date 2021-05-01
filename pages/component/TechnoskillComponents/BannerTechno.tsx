@@ -121,7 +121,7 @@ const BannerTechno = () => {
                           },
                         }}
                       >
-                    <Link style={{textDecoration:"none"}}>
+                    <Link style={{textDecoration:"none"}} href="https://www.kaggle.com/t/df69ff54095b49cfadcd464cbb157c30" isExternal>
                         <Button
                         background="rgba(196, 196, 196,0.2)"
                           fontWeight= "bold"
@@ -136,14 +136,6 @@ const BannerTechno = () => {
                           _hover={{ 
                             transform: "scale(1.05)",
                           }}
-                          onClick={() =>
-                            toast({
-                              title: "SUBMISSION",
-                              description: "Dibuka setelah workshop technoskill!",
-                              status: "success",
-                              duration: 2500,
-                              isClosable: true,
-                            })}
                           >
                             Submission
                         </Button>
