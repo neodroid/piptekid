@@ -10,9 +10,64 @@ import {
   Image,
   useToast,
 } from "@chakra-ui/core";
-import { FramerTreeLayoutContext, motion } from "framer-motion";
+import {
+  Carousel,
+  CarouselItem,
+  CarouselControl,
+  CarouselIndicators,
+} from "reactstrap";
+
+const items = [
+  {
+    src: "/slider1.png",
+    altText: "Slide 1",
+    key: "1",
+  },
+  {
+    src: "/slider2.png",
+    altText: "Slide 2",
+    key: "2",
+  },
+  {
+    src: "/slider3.png",
+    altText: "Slide 3",
+    key: "3",
+  },
+];
 
 const ContainerTechno = () => {
+  const [activeIndex, setActiveIndex] = React.useState(0);
+  const [animating, setAnimating] = React.useState(false);
+
+  const next = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  };
+
+  const previous = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+    setActiveIndex(nextIndex);
+  };
+
+  const goToIndex = (newIndex) => {
+    if (animating) return;
+    setActiveIndex(newIndex);
+  };
+
+  const slides = items.map((item) => {
+    return (
+      <CarouselItem
+        onExiting={() => setAnimating(true)}
+        onExited={() => setAnimating(false)}
+        key={item.src}
+      >
+        <img src={item.src} alt={item.altText} />
+      </CarouselItem>
+    );
+  });
+
   return (
     <>
       <Heading
@@ -24,27 +79,27 @@ const ContainerTechno = () => {
         m="10px auto"
       >
         <Text color="#254D69" fontFamily="heading" textAlign="center">
-          BEKERJA SAMA DENGAN
+          Acara Technoskill Sebelumnya
         </Text>
       </Heading>
-      <Flex m="30px auto" alignItems="center" justifyContent="center">
-        <Link style={{ textDecoration: "none" }} href="/">
-          <Image
-            width={["60px", "60px", "60px", "110px"]}
-            src="/sos/piptek.png"
-          />
-        </Link>
-        <Link style={{ textDecoration: "none" }} href="/exercise">
-          <Box ml={["30px", "40px", "50px", "60px"]}>
-            <Image width={["100px", "100px", "120px", "170px"]} src="exercise.png" />
-          </Box>
-        </Link>
-        <Link style={{ textDecoration: "none" }} href="/ieee">
-          <Box ml={["30px", "40px", "50px", "60px"]}>
-            <Image width={["110px", "110px", "130px", "180px"]} src="ieee.png" />
-          </Box>
-        </Link>
-      </Flex>
+      <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+        <CarouselIndicators
+          items={items}
+          activeIndex={activeIndex}
+          onClickHandler={goToIndex}
+        />
+        {slides}
+        <CarouselControl
+          direction="prev"
+          directionText="Previous"
+          onClickHandler={previous}
+        />
+        <CarouselControl
+          direction="next"
+          directionText="Next"
+          onClickHandler={next}
+        />
+      </Carousel>
     </>
   );
 };

@@ -19,10 +19,13 @@
     "formik": "^2.2.9",
     "framer-motion": "^2.9.5",
     "next": "^9.5.5",
+    "next-images": "^1.8.1",
+    "next-transpile-modules": "^8.0.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-firebase-hooks": "^3.0.4",
-    "react-firebaseui": "^5.0.2"
+    "react-firebaseui": "^5.0.2",
+    "reactstrap": "^8.10.0"
   },
   "devDependencies": {
     "@types/node": "^14.14.10",

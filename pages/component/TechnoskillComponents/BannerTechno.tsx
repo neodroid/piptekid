@@ -7,7 +7,7 @@ import {
   FormControl,
   FormLabel,
   Input,
-  Button as ChakraButton,
+  Button,
   Modal,
   ModalOverlay,
   ModalContent,
@@ -141,7 +141,7 @@ const BannerTechno = () => {
               }}
             >
               <Link style={{ textDecoration: "none" }} href="/" isExternal>
-                <ChakraButton
+                <Button
                   background="rgba(196, 196, 196,0.2)"
                   fontWeight="bold"
                   fontSize="30px"
@@ -157,7 +157,7 @@ const BannerTechno = () => {
                   }}
                 >
                   Guidebook
-                </ChakraButton>
+                </Button>
               </Link>
             </motion.div> */}
 
@@ -179,7 +179,7 @@ const BannerTechno = () => {
                         }}
                       >
                     <Link style={{textDecoration:"none"}} href="https://www.kaggle.com/t/df69ff54095b49cfadcd464cbb157c30" isExternal>
-                        <ChakraButton
+                        <Button
                         background="rgba(196, 196, 196,0.2)"
                           fontWeight= "bold"
                           fontSize= "30px"
@@ -195,7 +195,7 @@ const BannerTechno = () => {
                           }}
                           >
                             Submission
-                        </ChakraButton>
+                        </Button>
                     </Link>
                         </motion.div>*/}
 
@@ -221,7 +221,7 @@ const BannerTechno = () => {
                 href="https://forms.gle/EVN4DfTiHTukf3ut7"
                 isExternal
               >*/}
-              <ChakraButton
+              <Button
                 background="rgba(196, 196, 196,0.2)"
                 fontWeight="bold"
                 fontSize="30px"
@@ -238,8 +238,13 @@ const BannerTechno = () => {
                 }}
               >
                 Registration
-              </ChakraButton>
-              <Modal isOpen={isOpen} onClose={onClose}>
+              </Button>
+              <Modal
+                isOpen={isOpen}
+                onClose={onClose}
+                blockScrollOnMount={false}
+                closeOnOverlayClick={false}
+              >
                 <ModalOverlay />
                 <ModalContent>
                   <ModalHeader>
@@ -257,22 +262,28 @@ const BannerTechno = () => {
                       bukti: null,
                     }}
                     onSubmit={(values, actions) => {
-                      firebase.firestore().collection("register").doc().set({
-                        nama: values.nama,
-                        email: values.email,
-                        jurusan: values.jurusan,
-                        angkatan: values.angkatan,
-                        metode: values.metode,
-                        bukti: imageName,
-                      });
                       firebase
-                        .storage()
-                        .ref(`image/${imageName}`)
-                        .put(values.bukti)
+                        .firestore()
+                        .collection("register")
+                        .doc()
+                        .set({
+                          nama: values.nama,
+                          email: values.email,
+                          jurusan: values.jurusan,
+                          angkatan: values.angkatan,
+                          metode: values.metode,
+                          bukti: imageName,
+                        })
                         .then(() => {
-                          alert("Data sudah terkirim!");
-                          actions.setSubmitting(false);
-                          window.location.reload();
+                          firebase
+                            .storage()
+                            .ref(`image/${imageName}`)
+                            .put(values.bukti)
+                            .then(() => {
+                              alert("Data sudah terkirim!");
+                              actions.setSubmitting(false);
+                              window.location.reload();
+                            });
                         });
                     }}
                   >
@@ -310,8 +321,11 @@ const BannerTechno = () => {
                           <Field
                             name="email"
                             validate={(value) => {
+                              const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
                               if (!value)
                                 return "Isi untuk informasi selanjutnya";
+                                else if(!re.test(String(value).toLowerCase()))
+                                return "Emailnya yang bener ya!";
                             }}
                           >
                             {({ field, form }) => (
@@ -450,7 +464,13 @@ const BannerTechno = () => {
                           <Field
                             name="bukti"
                             validate={(value) => {
-                              if (!value) return "Buktinya ya taro sini!";
+                              if (
+                                value != null &&
+                                /\.(jpeg|jpg|png|PNG)$/.test(value.name) ==
+                                  false
+                              ) {
+                                return "Format harus jpeg/jpg/png ya";
+                              } else if (value == null) return "Isi file ya"
                             }}
                           >
                             {({ field, form }) => (
@@ -467,12 +487,15 @@ const BannerTechno = () => {
                                 <Input
                                   type="file"
                                   p="3px"
+                                  isRequired
                                   onChange={(event) => {
                                     props.setFieldValue(
                                       "bukti",
                                       event.target.files[0]
                                     );
-                                    setImageName(event.target.files[0].name);
+                                    if (event.target.files[0] != null) {
+                                      setImageName(event.target.files[0].name);
+                                    }
                                   }}
                                 />
                                 <FormErrorMessage>
@@ -484,7 +507,7 @@ const BannerTechno = () => {
                         </ModalBody>
 
                         <ModalFooter>
-                          <ChakraButton
+                          <Button
                             backgroundColor="teal.500"
                             mr={3}
                             color="white"
@@ -492,7 +515,7 @@ const BannerTechno = () => {
                             isLoading={props.isSubmitting}
                           >
                             Kirim
-                          </ChakraButton>
+                          </Button>
                         </ModalFooter>
                       </Form>
                     )}

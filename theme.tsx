@@ -1,6 +1,3 @@
-
-
-
 import { theme as chakraTheme } from "@chakra-ui/core";
 
 const colors = chakraTheme.colors;
