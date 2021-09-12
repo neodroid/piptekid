@@ -22,7 +22,7 @@ import { Formik, Form, Field } from "formik";
 import { useDisclosure } from "@chakra-ui/hooks";
 import React from "react";
 import { motion } from "framer-motion";
-import firebase from "../../../firebase/clientApp";
+import {firebaseApp, storage} from "../../../firebase/clientApp";
 import "firebase/compat/firestore";
 import "firebase/compat/storage";
 
@@ -256,7 +256,7 @@ const BannerTechno = () => {
                       bukti: null,
                     }}
                     onSubmit={(values, actions) => {
-                      firebase.firestore().collection("register").doc().set({
+                      firebaseApp.firestore().collection("register").doc().set({
                         nama: values.nama,
                         email: values.email,
                         jurusan: values.jurusan,
@@ -264,7 +264,7 @@ const BannerTechno = () => {
                         metode: values.metode,
                         bukti: imageName,
                       });
-                      firebase
+                      storage
                         .storage()
                         .ref(`image/${imageName}`)
                         .put(values.bukti)
