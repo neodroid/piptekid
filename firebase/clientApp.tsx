@@ -1,6 +1,6 @@
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/database';
-import { getStorage } from "firebase/storage";
+import "firebase/compat/storage";
 
 const clientCredentials = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -12,11 +12,8 @@ const clientCredentials = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-let firebaseApp;
-let storage;
 if(!firebase.apps.length){
-  firebaseApp = firebase.initializeApp(clientCredentials);
-  storage = getStorage(firebaseApp);
+  firebase.initializeApp(clientCredentials);
 }
 
-export {firebaseApp, storage}
+export default firebase;

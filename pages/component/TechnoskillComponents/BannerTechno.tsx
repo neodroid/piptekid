@@ -22,7 +22,7 @@ import { Formik, Form, Field } from "formik";
 import { useDisclosure } from "@chakra-ui/hooks";
 import React from "react";
 import { motion } from "framer-motion";
-import {firebaseApp, storage} from "../../../firebase/clientApp";
+import firebase from "../../../firebase/clientApp";
 import "firebase/compat/firestore";
 import "firebase/compat/storage";
 
@@ -122,6 +122,7 @@ const BannerTechno = () => {
             flexDirection={["column", "column", "column", "row"]}
             alignSelf="center"
           >
+            {/*
             <motion.div
               initial="hidden"
               animate="visible"
@@ -158,7 +159,7 @@ const BannerTechno = () => {
                   Guidebook
                 </ChakraButton>
               </Link>
-            </motion.div>
+            </motion.div> */}
 
             {/*<motion.div
                         initial="hidden"
@@ -256,7 +257,7 @@ const BannerTechno = () => {
                       bukti: null,
                     }}
                     onSubmit={(values, actions) => {
-                      firebaseApp.firestore().collection("register").doc().set({
+                      firebase.firestore().collection("register").doc().set({
                         nama: values.nama,
                         email: values.email,
                         jurusan: values.jurusan,
@@ -264,7 +265,7 @@ const BannerTechno = () => {
                         metode: values.metode,
                         bukti: imageName,
                       });
-                      storage
+                      firebase
                         .storage()
                         .ref(`image/${imageName}`)
                         .put(values.bukti)
