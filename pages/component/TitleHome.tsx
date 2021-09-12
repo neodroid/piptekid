@@ -200,8 +200,8 @@ const TitleHome = () => {
             }}
             onClick={() =>
               toast({
-                title: "TECHNOSKILL 1.0",
-                description: "Pewadahan terkait kehandalan di bidang teknologi!",
+                title: "TECHNOSKILL 2.0",
+                description: "Gains Fundamental Knowledge to Prepare Society 5.0.",
                 status: "success",
                 duration: 2500,
                 isClosable: true,
@@ -219,7 +219,3 @@ const TitleHome = () => {
 };
 
 export default TitleHome;
-
-{
-  /* <Icon ml="3" name="chevron-right" /> */
-}

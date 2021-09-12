@@ -19,7 +19,7 @@ const Footer = (props) => {
             "100%", // base
             "100%", // 480px upwards
             "100%", // 768px upwards
-            "75%", // 992px upwards
+            "90%", // 992px upwards
           ]}
           as="nav"
           align="center"

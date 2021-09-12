@@ -8,13 +8,6 @@ import Header from "./component/header";
 import Timeline from "./component/TechnoskillComponents/Timeline";
 import ContainerTechno from "./component/TechnoskillComponents/ContainerTechno";
 
-// function makeSound(){
-//   var snare= new Audio("https://www.mboxdrive.com/Jingle%20PSAF.mp3")
-//   snare.play();
-//   console.log("play snare");
-
-// // }
-
 export default function Technoskill() {
   return (
     <div>
@@ -26,7 +19,7 @@ export default function Technoskill() {
       <Header/>
       <BannerTechno />
       <AboutTechno />
-      <ContainerTechno/>
+      {/*<ContainerTechno/>*/}
       <Timeline />
     </div>
   );

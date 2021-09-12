@@ -1,4 +1,4 @@
-import { Flex, Heading, Box, Button, Icon, Text } from "@chakra-ui/core";
+import { Flex, Heading, Box, Button, Image, Text } from "@chakra-ui/core";
 import React from "react";
 
 const AboutTechno = () => {
@@ -11,10 +11,11 @@ const AboutTechno = () => {
         wrap="wrap"
         bg="white"
         color="#2F80ED"
+        flexDirection={["column","column","column","row"]}
         my="10"
       >
         <Box
-          maxW="100%"
+          w={["80%","80%","80%","50%"]}
           justifyContent="center"
         >
           <Heading
@@ -25,7 +26,6 @@ const AboutTechno = () => {
             fontWeight="bold"
             mb="10px"
           >
-            {" "}
             <Text color="#254D69" fontFamily="heading">
               APA ITU TECHNOSKILL?
             </Text>
@@ -42,10 +42,18 @@ const AboutTechno = () => {
             oleh PIPTEK IME FTUI dimana acara tersebut berupa 
             pelatihan untuk meningkatkan hardskill dan wawasan 
             ke-IPTEK-an. Technoskill tahun ini akan membawa tema 
-            <em> Basic Phyton</em> and <em>Machine Learning </em> 
+            <em> Gains Fundamental Knowledge to Prepare Society 5.0. </em>
+            yang didalamnya terdapat mikrokontroller dan IoT sebagai core
+            competence Departemen Teknik Elektro. Tujuannya
             untuk memberikan keahlian yang dibutuhkan agar dapat 
             menunjang masa perkuliahan dan masa kerjanya nanti.
           </Text>
+        </Box>
+        <Box
+          w={["80%","80%","80%","50%"]}
+          m={["0 auto","0 auto","0 auto","0 0 0 auto"]}
+        >
+          <Image src="/introimagetechno.jpg" m={["0 auto","0 auto","0 auto","0 0 0 auto"]}/>
         </Box>
       </Flex>
     </Flex>
