@@ -107,7 +107,7 @@ const Timeline = () => {
           <TimeMenu
             img="worksh.png"
             judul="Webinar and Awarding"
-            tanggal="1 - 6 November 2021"
+            tanggal="7 November 2021"
           />
         </Box>
       </Flex>

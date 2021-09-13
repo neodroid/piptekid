@@ -450,9 +450,9 @@ const BannerTechno = () => {
                                   {...field}
                                   id="metode"
                                 >
-                                  <option value="Ovo">Ovo ()</option>
-                                  <option value="Mandiri">Mandiri ()</option>
-                                  <option value="BNI">BNI ()</option>
+                                  <option value="BCA">BCA (4219999124 a/n Muhammad Akmal Zuhdi)</option>
+                                  <option value="Ovo">Ovo (081295852790 a/n Muhammad Akmal Zuhdi)</option>
+                                  <option value="Gopay">Gopay (081295852790 a/n Muhammad Akmal Zuhdi)</option>
                                 </Select>
                                 <FormErrorMessage>
                                   {form.errors.metode}
