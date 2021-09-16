@@ -135,7 +135,7 @@ const Timeline = () => {
               <br />
               No. HP: 085716279458
               <br />
-              ID Line: throiksyah_putra
+              ID Line: thoriksyah_putra
             </Text>
           </Box>
         </Flex>
