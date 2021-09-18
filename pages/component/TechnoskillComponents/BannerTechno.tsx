@@ -280,7 +280,6 @@ const BannerTechno = () => {
                             .ref(`image/${imageName}`)
                             .put(values.bukti)
                             .then(() => {
-                              alert("Data sudah terkirim!");
                               actions.setSubmitting(false);
                               window.location.reload();
                             });
