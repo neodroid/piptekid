@@ -280,6 +280,9 @@ const BannerTechno = () => {
                             .ref(`image/${imageName}`)
                             .put(values.bukti)
                             .then(() => {
+                              alert(
+                                "Data sudah terkirim, terimakasih telah daftar! Tekan 'OK' untuk melanjutkan"
+                              );
                               actions.setSubmitting(false);
                               window.location.reload();
                             });
@@ -320,10 +323,11 @@ const BannerTechno = () => {
                           <Field
                             name="email"
                             validate={(value) => {
-                              const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                              const re =
+                                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
                               if (!value)
                                 return "Isi untuk informasi selanjutnya";
-                                else if(!re.test(String(value).toLowerCase()))
+                              else if (!re.test(String(value).toLowerCase()))
                                 return "Emailnya yang bener ya!";
                             }}
                           >
@@ -449,9 +453,16 @@ const BannerTechno = () => {
                                   {...field}
                                   id="metode"
                                 >
-                                  <option value="BCA">BCA (4219999124 a/n Muhammad Akmal Zuhdi)</option>
-                                  <option value="Ovo">Ovo (081295852790 a/n Muhammad Akmal Zuhdi)</option>
-                                  <option value="Gopay">Gopay (081295852790 a/n Muhammad Akmal Zuhdi)</option>
+                                  <option value="BCA">
+                                    BCA (4219999124 a/n Muhammad Akmal Zuhdi)
+                                  </option>
+                                  <option value="Ovo">
+                                    Ovo (081295852790 a/n Muhammad Akmal Zuhdi)
+                                  </option>
+                                  <option value="Gopay">
+                                    Gopay (081295852790 a/n Muhammad Akmal
+                                    Zuhdi)
+                                  </option>
                                 </Select>
                                 <FormErrorMessage>
                                   {form.errors.metode}
@@ -469,7 +480,7 @@ const BannerTechno = () => {
                                   false
                               ) {
                                 return "Format harus jpeg/jpg/png ya";
-                              } else if (value == null) return "Isi file ya"
+                              } else if (value == null) return "Isi file ya";
                             }}
                           >
                             {({ field, form }) => (
