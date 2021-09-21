@@ -83,13 +83,13 @@ const Timeline = () => {
           <TimeMenu
             img="regis.png"
             judul="Open Registration (Presale)"
-            tanggal="12 - 16 September 2021"
+            tanggal="12 - 21 September 2021"
           />
 
           <TimeMenu
             img="regis.png"
             judul="Open Registration (Normal)"
-            tanggal="17 September - 13 Oktober 2021"
+            tanggal="22 September - 13 Oktober 2021"
             direc="row-reverse"
           />
 

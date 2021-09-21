@@ -17,6 +17,7 @@ import {
   ModalCloseButton,
   Select,
   FormErrorMessage,
+  useToast,
 } from "@chakra-ui/core";
 import { Formik, Form, Field } from "formik";
 import { useDisclosure } from "@chakra-ui/hooks";
@@ -29,6 +30,7 @@ import "firebase/compat/storage";
 const BannerTechno = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [imageName, setImageName] = React.useState("");
+  const toast = useToast();
   return (
     <>
       <Box
@@ -221,6 +223,34 @@ const BannerTechno = () => {
                 href="https://forms.gle/EVN4DfTiHTukf3ut7"
                 isExternal
               >*/}
+              <Button
+                background="rgba(196, 196, 196,0.2)"
+                fontWeight="bold"
+                fontSize="30px"
+                textAlign="center"
+                padding="25px"
+                borderRadius="34px"
+                color="white"
+                m="20px"
+                outline="none"
+                w={["230px", "230px", "250px", "350px"]}
+                _hover={{
+                  transform: "scale(1.05)",
+                }}
+                onClick={() =>
+                  toast({
+                    title: "PRESALE SUDAH DITUTUP",
+                    description:
+                      "Maaf masa presale sudah ditutup, tunggu esok hari untuk harga normal!",
+                    status: "info",
+                    duration: 10000,
+                    isClosable: true,
+                  })
+                }
+              >
+                Registration
+              </Button>
+              {/*
               <Button
                 background="rgba(196, 196, 196,0.2)"
                 fontWeight="bold"
@@ -531,8 +561,7 @@ const BannerTechno = () => {
                     )}
                   </Formik>
                 </ModalContent>
-              </Modal>
-              {/*</Link>*/}
+                                </Modal>*/}
             </motion.div>
           </Flex>
         </Flex>
