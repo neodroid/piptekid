@@ -237,16 +237,6 @@ const BannerTechno = () => {
                   _hover={{
                     transform: "scale(1.05)",
                   }}
-                  onClick={() =>
-                    toast({
-                      title: "PRESALE SUDAH DITUTUP",
-                      description:
-                        "Maaf masa presale sudah ditutup, tunggu esok hari untuk harga normal!",
-                      status: "info",
-                      duration: 10000,
-                      isClosable: true,
-                    })
-                  }
                 >
                   Registration
                 </Button>
