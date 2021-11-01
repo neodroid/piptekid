@@ -124,7 +124,6 @@ const BannerTechno = () => {
             flexDirection={["column", "column", "column", "row"]}
             alignSelf="center"
           >
-            {/*
             <motion.div
               initial="hidden"
               animate="visible"
@@ -142,7 +141,11 @@ const BannerTechno = () => {
                 },
               }}
             >
-              <Link style={{ textDecoration: "none" }} href="/" isExternal>
+              <Link
+                style={{ textDecoration: "none" }}
+                href="https://drive.google.com/drive/folders/1azbd82wIrvBXpe4X-wK0SpDuIoYM-0p3?usp=sharing"
+                isExternal
+              >
                 <Button
                   background="rgba(196, 196, 196,0.2)"
                   fontWeight="bold"
@@ -161,45 +164,49 @@ const BannerTechno = () => {
                   Guidebook
                 </Button>
               </Link>
-            </motion.div> */}
+            </motion.div>
 
-            {/*<motion.div
-                        initial="hidden"
-                        animate="visible"
-                        variants={{
-                          hidden: {
-                            scale: 0.8,
-                            opacity: 0,
-                          },
-                          visible: {
-                            scale: 1,
-                            opacity: 1,
-                            transition: {
-                              delay: 1.8,
-                            },
-                          },
-                        }}
-                      >
-                    <Link style={{textDecoration:"none"}} href="https://www.kaggle.com/t/df69ff54095b49cfadcd464cbb157c30" isExternal>
-                        <Button
-                        background="rgba(196, 196, 196,0.2)"
-                          fontWeight= "bold"
-                          fontSize= "30px"
-                          textAlign="center"
-                          padding="25px"
-                          borderRadius="34px"
-                          color="white"
-                          outline="none"
-                          w={["230px","230px","250px","350px"]}
-                          m="20px"
-                          _hover={{ 
-                            transform: "scale(1.05)",
-                          }}
-                          >
-                            Submission
-                        </Button>
-                    </Link>
-                        </motion.div>*/}
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: {
+                  scale: 0.8,
+                  opacity: 0,
+                },
+                visible: {
+                  scale: 1,
+                  opacity: 1,
+                  transition: {
+                    delay: 1.8,
+                  },
+                },
+              }}
+            >
+              <Link
+                style={{ textDecoration: "none" }}
+                href="https://forms.gle/mY7dxJm6am9mizNw7"
+                isExternal
+              >
+                <Button
+                  background="rgba(196, 196, 196,0.2)"
+                  fontWeight="bold"
+                  fontSize="30px"
+                  textAlign="center"
+                  padding="25px"
+                  borderRadius="34px"
+                  color="white"
+                  outline="none"
+                  w={["230px", "230px", "250px", "350px"]}
+                  m="20px"
+                  _hover={{
+                    transform: "scale(1.05)",
+                  }}
+                >
+                  Submission
+                </Button>
+              </Link>
+            </motion.div>
 
             <motion.div
               initial="hidden"
