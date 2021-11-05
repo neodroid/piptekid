@@ -101,7 +101,7 @@ const Timeline = () => {
           <TimeMenu
             img="compe.png"
             judul="Competition"
-            tanggal="1 - 6 November 2021"
+            tanggal="1 - 5 November 2021"
             direc="row-reverse"
           />
           <TimeMenu

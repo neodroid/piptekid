@@ -227,7 +227,7 @@ const BannerTechno = () => {
             >
               <Link
                 style={{ textDecoration: "none" }}
-                href="https://forms.gle/xZbDtj4SWLszmp9XA"
+                href="https://forms.gle/nBV9ra3CDGM4nkjJA"
                 isExternal
               >
                 <Button
@@ -245,7 +245,7 @@ const BannerTechno = () => {
                     transform: "scale(1.05)",
                   }}
                 >
-                  Registration
+                  Webinar
                 </Button>
               </Link>
               {/*
