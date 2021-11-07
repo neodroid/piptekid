@@ -227,7 +227,7 @@ const BannerTechno = () => {
             >
               <Link
                 style={{ textDecoration: "none" }}
-                href="https://forms.gle/nBV9ra3CDGM4nkjJA"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScyYiO_tcN_BZnw418a5-9BS8cQNJ4n8vWQrIq4lVIVq753Rg/viewform"
                 isExternal
               >
                 <Button
