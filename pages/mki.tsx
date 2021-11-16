@@ -3,6 +3,8 @@ import Head from "next/head";
 import Header from "./component/header";
 import BannerMKI from "./component/MKIComponents/BannerMKI";
 import AboutMKI from "./component/MKIComponents/AboutMKI";
+import ContentMKI from "./component/MKIComponents/ContentMKI";
+import FooterMKI from "./component/MKIComponents/FooterMKI";
 
 export default function Mki() {
   return (
@@ -15,6 +17,8 @@ export default function Mki() {
       <Header />
       <BannerMKI />
       <AboutMKI />
+      <ContentMKI />
+      <FooterMKI />
     </div>
   );
 }

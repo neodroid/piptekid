@@ -105,23 +105,29 @@ const BannerMKI = () => {
                 },
               }}
             >
-              <Button
-                background="rgba(196, 196, 196,0.2)"
-                fontWeight="bold"
-                fontSize="30px"
-                textAlign="center"
-                padding="25px"
-                borderRadius="34px"
-                color="white"
-                m="20px"
-                outline="none"
-                w={["230px", "230px", "250px", "340px"]}
-                _hover={{
-                  transform: "scale(1.05)",
-                }}
+              <Link
+                style={{ textDecoration: "none" }}
+                href="https://bit.ly/DTEScientificLeague"
+                isExternal
               >
-                Form Pendataan
-              </Button>
+                <Button
+                  background="rgba(196, 196, 196,0.2)"
+                  fontWeight="bold"
+                  fontSize={["20px", "30px"]}
+                  textAlign="center"
+                  padding="25px"
+                  borderRadius="34px"
+                  color="white"
+                  m="20px"
+                  outline="none"
+                  w={["230px", "230px", "250px", "340px"]}
+                  _hover={{
+                    transform: "scale(1.05)",
+                  }}
+                >
+                  Form Pendataan
+                </Button>
+              </Link>
             </motion.div>
           </Flex>
         </Flex>
