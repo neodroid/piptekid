@@ -186,7 +186,7 @@ const TitleHome = () => {
             },
           }}
         >
-          <Link style={{textDecoration:"none"}} href="/technoskill">
+          <Link style={{textDecoration:"none"}} href="/rotom">
             <Button
             as="a"
             backgroundColor="rgba(30, 113, 131,0.8)"
@@ -200,7 +200,7 @@ const TitleHome = () => {
             }}
             onClick={() =>
               toast({
-                title: "TECHNOSKILL 2.0",
+                title: "ROAD TO OIM",
                 description: "Gains Fundamental Knowledge to Prepare Society 5.0.",
                 status: "success",
                 duration: 2500,
