@@ -3,11 +3,11 @@ import { Box, Flex, Button, Text, Link } from "@chakra-ui/core";
 import { motion } from "framer-motion";
 import { NONAME } from "dns";
 
-const BannerRotom = () => {
+const BannerPKMService = () => {
   return (
     <>
       <Box
-        bgImage="url('/rotombanner.jpg')"
+        bgImage="url('/bannerservis.jpg')"
         bgPos="center"
         bgSize="cover"
         minHeight="700px"
@@ -39,32 +39,6 @@ const BannerRotom = () => {
                   scale: 1,
                   opacity: 1,
                   transition: {
-                    delay: 1.2,
-                  },
-                },
-              }}
-            >
-              <Text
-                fontStyle="italic"
-                fontWeight="500"
-                fontSize={["28px", "36px", "54px", "60px"]}
-                lineHeight={["40px", "54px", "72px", "84px"]}
-              >
-                Departemen Teknik Elektro
-              </Text>
-            </motion.div>
-            <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={{
-                hidden: {
-                  scale: 0.8,
-                  opacity: 0,
-                },
-                visible: {
-                  scale: 1,
-                  opacity: 1,
-                  transition: {
                     delay: 1.4,
                   },
                 },
@@ -77,7 +51,7 @@ const BannerRotom = () => {
                 fontSize={["44px", "54px", "72px", "72px"]}
                 lineHeight={["50px", "67px", "92px", "112px"]}
               >
-                Road To OIM!
+                PKM SERVICE
               </Text>
             </motion.div>
           </Box>
@@ -121,7 +95,7 @@ const BannerRotom = () => {
                   transform: "scale(1.05)",
                 }}
               >
-                Guidebook
+                PKM
               </Button>
             </motion.div>
 
@@ -167,4 +141,4 @@ const BannerRotom = () => {
   );
 };
 
-export default BannerRotom;
+export default BannerPKMService;

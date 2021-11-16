@@ -32,27 +32,9 @@ const TimeMenu = (props) => (
   </Flex>
 );
 
-const ContentRotom = () => {
+const TimelinePKMServis = () => {
   return (
     <>
-      <Box m="40px auto" w="85%">
-        <Text
-          fontWeight="300"
-          fontSize={["20px", "25px"]}
-          lineHeight="195.19%"
-          textAlign={["left", "justify"]}
-        >
-          Olimpiade Ilmiah Mahasiswa (OIM) FTUI adalah kompetisi keilmiahan
-          terbesar di Fakultas Teknik yang terdiri atas 14 cabang lomba, yaitu
-          PKM-P, PKM-K, PKM-M, PKM-T, PKM-KC, PKM-GT, PKM-AI, PKM-GFK, Quiz,
-          Debat Bahasa Indonesia, Debat Bahasa Inggris, Esai, Infografis, dan
-          Persembahan Departemen. Elektro Road to OIM FTUI (ROTOM) 2.0 merupakan
-          program kerja PIPTEK IME FTUI yang bertujuan untuk mencerdaskan dan
-          melatih mahasiswa DTE agar siap untuk menghadapi OIM FTUI 2022. ROTOM
-          2.0 terdiri atas pelatihan 3 cabang lomba non-PKM yaitu Quiz, Debat
-          Bahasa Indonesia dan Debat Bahasa Inggris.
-        </Text>
-      </Box>
       <Flex
         padding="10px 50px"
         background="linear-gradient(90deg, #090076 0%, rgba(81, 77, 128, 0.547297) 51.04%, rgba(255, 255, 255, 0) 100%)"
@@ -98,26 +80,25 @@ const ContentRotom = () => {
           <TimeMenu
             img="regis.png"
             judul="Open Registration"
-            tanggal="18 November 2021"
+            tanggal="17 November 2021"
           />
 
           <TimeMenu
             img="worksh.png"
-            judul="Briefing"
-            tanggal="7-8 Desember 2021"
+            judul="Close Registration"
+            tanggal="28 November 2021"
             direc="row-reverse"
           />
 
-          <TimeMenu img="compe.png" judul="Quiz" tanggal="9 Desember 2021" />
-          <TimeMenu
-            img="compe.png"
-            judul="Debat"
-            tanggal="10 Desember 2021"
-            direc="row-reverse"
-          />
+          <TimeMenu img="compe.png" judul="Webinar" tanggal="1 Desember 2021" />
         </Box>
       </Flex>
-      <Box bgImage="url('/rotomfooter.jpg')" bgPos="center" bgSize="cover" minH="300px">
+      <Box
+        bgImage="url('/rotomfooter.jpg')"
+        bgPos="center"
+        bgSize="cover"
+        minH="300px"
+      >
         <Flex
           backgroundColor="rgba(6, 0, 73,0.7)"
           w="100%"
@@ -138,7 +119,9 @@ const ContentRotom = () => {
               For Further Information
             </Text>
             <Text color="white" fontSize="20px">
-              TBD
+              Afiya Maritza
+              <br />
+              LINE: afiyamaritza
             </Text>
           </Box>
         </Flex>
@@ -147,4 +130,4 @@ const ContentRotom = () => {
   );
 };
 
-export default ContentRotom;
+export default TimelinePKMServis;

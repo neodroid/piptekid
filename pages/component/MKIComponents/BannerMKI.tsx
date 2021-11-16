@@ -3,11 +3,11 @@ import { Box, Flex, Button, Text, Link } from "@chakra-ui/core";
 import { motion } from "framer-motion";
 import { NONAME } from "dns";
 
-const BannerRotom = () => {
+const BannerMKI = () => {
   return (
     <>
       <Box
-        bgImage="url('/rotombanner.jpg')"
+        bgImage="url('/bannermki.jpg')"
         bgPos="center"
         bgSize="cover"
         minHeight="700px"
@@ -50,7 +50,7 @@ const BannerRotom = () => {
                 fontSize={["28px", "36px", "54px", "60px"]}
                 lineHeight={["40px", "54px", "72px", "84px"]}
               >
-                Departemen Teknik Elektro
+                MKI
               </Text>
             </motion.div>
             <motion.div
@@ -77,7 +77,7 @@ const BannerRotom = () => {
                 fontSize={["44px", "54px", "72px", "72px"]}
                 lineHeight={["50px", "67px", "92px", "112px"]}
               >
-                Road To OIM!
+                Manajemen Karya Ilmiah
               </Text>
             </motion.div>
           </Box>
@@ -87,7 +87,6 @@ const BannerRotom = () => {
             textAlign="center"
             flexDirection={["column", "column", "column", "row"]}
             alignSelf="center"
-            justifyContent="center"
           >
             <motion.div
               initial="hidden"
@@ -121,43 +120,7 @@ const BannerRotom = () => {
                   transform: "scale(1.05)",
                 }}
               >
-                Guidebook
-              </Button>
-            </motion.div>
-
-            <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={{
-                hidden: {
-                  scale: 0.8,
-                  opacity: 0,
-                },
-                visible: {
-                  scale: 1,
-                  opacity: 1,
-                  transition: {
-                    delay: 1.8,
-                  },
-                },
-              }}
-            >
-              <Button
-                background="rgba(196, 196, 196,0.2)"
-                fontWeight="bold"
-                fontSize="30px"
-                textAlign="center"
-                padding="25px"
-                borderRadius="34px"
-                color="white"
-                outline="none"
-                w={["230px", "230px", "250px", "350px"]}
-                m="20px"
-                _hover={{
-                  transform: "scale(1.05)",
-                }}
-              >
-                Registration
+                Form Pendataan
               </Button>
             </motion.div>
           </Flex>
@@ -167,4 +130,4 @@ const BannerRotom = () => {
   );
 };
 
-export default BannerRotom;
+export default BannerMKI;
