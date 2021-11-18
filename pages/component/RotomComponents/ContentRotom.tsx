@@ -138,7 +138,9 @@ const ContentRotom = () => {
               For Further Information
             </Text>
             <Text color="white" fontSize="20px">
-              TBD
+              Baihaqi Hamiz
+              <br />
+              ID Line: baihaqihamiz_
             </Text>
           </Box>
         </Flex>

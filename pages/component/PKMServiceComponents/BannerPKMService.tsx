@@ -1,9 +1,43 @@
 import React from "react";
-import { Box, Flex, Button, Text, Link } from "@chakra-ui/core";
+import {
+  Box,
+  Flex,
+  Button,
+  Text,
+  Link,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalCloseButton,
+} from "@chakra-ui/core";
 import { motion } from "framer-motion";
-import { NONAME } from "dns";
+import { useDisclosure } from "@chakra-ui/hooks";
 
 const BannerPKMService = () => {
+  const [size, setSize] = React.useState("xl");
+  const [position, setPosition] = React.useState({
+    width: "490",
+    height: "1707",
+  });
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const handleSizeClick = (newSize) => {
+    setSize(newSize);
+    onOpen();
+  };
+  const responsive = () => {
+    if (window.innerWidth <= 594) {
+      setSize("sm");
+      setPosition({ width: "320", height: "1957" });
+    } else {
+      setSize("xl");
+      setPosition({ width: "540", height: "1707" });
+    }
+  };
+
+  React.useEffect(() => {
+    responsive();
+    window.addEventListener("resize", responsive);
+  }, []);
   return (
     <>
       <Box
@@ -125,6 +159,8 @@ const BannerPKMService = () => {
                 borderRadius="34px"
                 color="white"
                 outline="none"
+                onClick={() => handleSizeClick(size)}
+                key={size}
                 w={["230px", "230px", "250px", "350px"]}
                 m="20px"
                 _hover={{
@@ -133,6 +169,40 @@ const BannerPKMService = () => {
               >
                 Registration
               </Button>
+              <Modal
+                isOpen={isOpen}
+                onClose={onClose}
+                size={size}
+                closeOnOverlayClick={false}
+                scrollBehavior="inside"
+                css={{
+                  "&::-webkit-scrollbar": {
+                    width: "4px",
+                  },
+                  "&::-webkit-scrollbar-track": {
+                    width: "6px",
+                  },
+                  "&::-webkit-scrollbar-thumb": {
+                    background: "rgba(158, 158, 158,0.6)",
+                    borderRadius: "24px",
+                  },
+                }}
+              >
+                <ModalOverlay />
+                <ModalContent>
+                  <ModalCloseButton />
+                  <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSeP5c8R6xnFdzKU4pamJGgmSI7OD9Iie9yYOtIdhSHI8pw37w/viewform?embedded=true"
+                    width={position.width}
+                    height={position.height}
+                    frameBorder="0"
+                    marginHeight={0}
+                    marginWidth={0}
+                  >
+                    Loading…
+                  </iframe>
+                </ModalContent>
+              </Modal>
             </motion.div>
           </Flex>
         </Flex>
