@@ -138,6 +138,11 @@ const BannerRotom = () => {
                 },
               }}
             >
+              <Link
+                style={{ textDecoration: "none" }}
+                href="https://drive.google.com/drive/folders/1QnrhzlT0X3I54wULEfxrtOcMuehdmjoU?usp=sharing"
+                isExternal
+              >
               <Button
                 background="rgba(196, 196, 196,0.2)"
                 fontWeight="bold"
@@ -155,6 +160,7 @@ const BannerRotom = () => {
               >
                 Guidebook
               </Button>
+              </Link>
             </motion.div>
 
             <motion.div
