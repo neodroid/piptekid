@@ -86,11 +86,11 @@ const TimelinePKMServis = () => {
           <TimeMenu
             img="worksh.png"
             judul="Close Registration"
-            tanggal="28 November 2021"
+            tanggal="3 Desember 2021"
             direc="row-reverse"
           />
 
-          <TimeMenu img="compe.png" judul="Webinar" tanggal="1 Desember 2021" />
+          <TimeMenu img="compe.png" judul="Webinar" tanggal="6 Desember 2021" />
         </Box>
       </Flex>
       <Box
